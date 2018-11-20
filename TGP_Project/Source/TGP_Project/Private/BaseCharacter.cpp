@@ -1,7 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BaseCharacter.h"
+
 #include "Paper2D/Classes/PaperFlipbookComponent.h"
+#include "Paper2D/Classes/PaperFlipbook.h"
 #include "Components/InputComponent.h"
 
 
@@ -15,12 +17,21 @@ ABaseCharacter::ABaseCharacter()
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	Sprite = CreateDefaultSubobject<UPaperFlipbookComponent>(TEXT("Sprite"));
 	Sprite->SetupAttachment(RootComponent);
+	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0.0f, 90.0f, -90.0f));
+	//Sprite->CollisionSource
+	//Sprite->SetFlipbook(DefaultFlipbook);
 
 }
 // Called when the game starts or when spawned
 void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	Sprite->SetFlipbook(DefaultFlipbook);
+
+	Sprite->Play();
+
+
+
 }
 // Called every frame
 void ABaseCharacter::Tick(float DeltaTime)

@@ -6,6 +6,8 @@
 #include "GameFramework/Pawn.h"
 #include "BaseCharacter.generated.h"
 
+class UPaperFlipbook;
+
 class UPaperFlipbookComponent;
 class USceneComponent;
 class UArrowComponent;
@@ -24,11 +26,21 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+
 public:
 	virtual void Tick(float deltaSeconds) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
-	UPaperFlipbookComponent* Sprite;
+	
+	UPROPERTY(EditAnywhere)
+		UPaperFlipbookComponent* Sprite;
+
+	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
+		UPaperFlipbook* DefaultFlipbook;
+		float playRate;
+		uint32 loopFlipbook;
+
+	//UPROPERTY(EditAnywhere, Category = "Movement Settings")
 	UArrowComponent* direction;
 
 
@@ -38,9 +50,13 @@ public:
 	void HandleMovement(float DeltaTime);
 
 
-	FVector2D MovementInput;
+	UPROPERTY(EditAnywhere, Category = "Movement Settings")
+		FVector2D MovementInput;
+
 	UPROPERTY(EditAnywhere, Category = "Movement Settings")
 		float MovementSpeed;
+
+	void SwitchFlipbook(UPaperFlipbook* newFlipbook);
 
 
 	

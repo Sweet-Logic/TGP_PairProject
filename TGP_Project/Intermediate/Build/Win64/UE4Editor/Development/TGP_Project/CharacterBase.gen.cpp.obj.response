@@ -23,6 +23,7 @@
 /wd4838
 /we4668
 /I .
+/I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private
 /I ..\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D
 /I ..\Plugins\2D\Paper2D\Source
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Classes
@@ -407,6 +408,7 @@
 /I ThirdParty\libSampleRate
 /I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Inc\TGP_Project
 /I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source
+/I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public
 /I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.14.26428\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
