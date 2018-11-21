@@ -8,13 +8,52 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPaperFlipbook;
 #ifdef TGP_PROJECT_BaseCharacter_generated_h
 #error "BaseCharacter.generated.h already included, missing '#pragma once' in BaseCharacter.h"
 #endif
 #define TGP_PROJECT_BaseCharacter_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_21_RPC_WRAPPERS
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_21_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFlipFlipbook) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FlipFlipbook(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSwitchFlipbook) \
+	{ \
+		P_GET_OBJECT(UPaperFlipbook,Z_Param_newFlipbook); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SwitchFlipbook(Z_Param_newFlipbook); \
+		P_NATIVE_END; \
+	}
+
+
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFlipFlipbook) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FlipFlipbook(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSwitchFlipbook) \
+	{ \
+		P_GET_OBJECT(UPaperFlipbook,Z_Param_newFlipbook); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SwitchFlipbook(Z_Param_newFlipbook); \
+		P_NATIVE_END; \
+	}
+
+
 #define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \

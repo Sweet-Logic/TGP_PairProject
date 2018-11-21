@@ -30,38 +30,52 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 
-	UPROPERTY(EditAnywhere)
+	//UPROPERTY(EditAnywhere)
 		UCameraComponent* Camera;
 
-	UPROPERTY(EditAnywhere)
+	//UPROPERTY(EditAnywhere)
 		USpringArmComponent* SpringArm;
 
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float OrthoWidth = 1024;
+		float OrthoWidth = 512;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float OrthoWidthMax = 1024;
+		float OrthoWidthMax = 768;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
 		float OrthoWidthMin = 256;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float ZoomSpeed = 0.5f;
+		float ZoomSpeed = 2.0f;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanSpeed = 1.0f;
+		float PanSpeed = 0.0f;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanSpeedMin = 1.0f;
+		float PanSpeedMin = 0.0f;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanSpeedMax = 2.5f;
+		float PanSpeedMax = 5.0f;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
 		float PanResetSpeed = 5.0f;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanMaxDistance = 100.0f;
+		float PanMaxDistance = 200.0f;
 
-	FVector2D MousePosition = FVector2D( 0,0 );
+	FVector2D MousePosition = FVector2D();
 	FVector MouseWorld = FVector();
 	FVector MouseWorldDir = FVector();
 	FVector2D ViewportSize = FVector2D();
 	FVector2D MousePosinNormal = FVector2D();
 
+	FVector PanInputVec = FVector();
+	UPROPERTY(EditAnywhere, Category = "Stealth Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
+		float SneakSpeed = 50.0f;
+	UPROPERTY(EditAnywhere, Category = "Stealth Settings")
+		bool bSneaking = false;
 
+	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
+		float SprintSpeed = 120.0f;
+	UPROPERTY(EditAnywhere, Category = "Movement Settings")
+		float SprintTimer = 3.0f; // time in seconds
+
+	float HiddenMultiplier = 1.0f; // donno, higher the value the easier it is for enimies to detect the player.
+
+	//Axis Mapping
+	void HandlePanning(float DeltaTime);
 
 	void ZoomCamera(float value);
 
@@ -69,9 +83,8 @@ public:
 
 	void PanCameraY(float value);
 
-	void MouseX(float value);
-	void MouseY(float value);
 
+	//Action Mapping
 	void Interact();
 
 	void Attack();
@@ -83,4 +96,8 @@ public:
 	void Pause();
 
 	void Roll();
+
+
+	void SprintRelease();
+
 };

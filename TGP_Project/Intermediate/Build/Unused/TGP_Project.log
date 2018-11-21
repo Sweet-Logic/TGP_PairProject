@@ -1,26 +1,7 @@
-﻿  Performing full C++ include scan (building a new target)
-  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for TGP_ProjectEditor (no existing makefile)
-  Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Parsing headers for TGP_ProjectEditor
-    Running UnrealHeaderTool "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for TGP_ProjectEditor in 14.1722601 seconds
-  Building 14 actions with 8 processes...
-    [1/14] PCLaunch.rc
-    [2/14] SharedPCH.Engine.cpp
-    [3/14] TGP_Project.cpp
-    [4/14] TGP_Project.init.gen.cpp
-    [5/14] BaseCharacter.cpp
-    [6/14] BaseCharacter.gen.cpp
-    [7/14] BasePlayer.gen.cpp
-    [8/14] TGP_ProjectGameModeBase.cpp
-    [9/14] BasePlayer.cpp
-    [10/14] CharacterBase.gen.cpp
-    [11/14] TGP_ProjectGameModeBase.gen.cpp
-    [12/14] CharacterBase.cpp
-    [13/14] UE4Editor-TGP_Project.lib
-       Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.exp
-    [14/14] UE4Editor-TGP_Project.dll
-       Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
-  Deploying TGP_ProjectEditor Win64 Development...
-  Total build time: 100.44 seconds (Parallel executor: 35.09 seconds)
+﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for hot reloading TGP_ProjectEditor (modules to compile have changed)
+  Compiling game modules for hot reload
+  Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+UnrealBuildTool : error : In D:\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp: #include "..\Public\BasePlayer.h" contains backslashes ('\'), please use forward slashes ('/') instead.
+                          (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.20\Engine\Build\BatchFiles\Build.bat" TGP_ProjectEditor Win64 Development "D:\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" -WaitMutex -FromMsBuild" exited with code 5. Please verify that you have sufficient rights to run this command.

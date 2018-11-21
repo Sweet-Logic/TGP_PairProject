@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\TGP_Project.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{F4B4600D-E64B-4A96-A01F-F476933DF7F4}</UniqueIdentifier>
+			<UniqueIdentifier>{39833AFD-B5D6-4C36-8806-CCD86899483D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TGP_Project.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{1C01BA76-0EC2-47EF-8A22-58B8991BCC0A}</UniqueIdentifier>
+			<UniqueIdentifier>{B8C7E78B-0907-4243-8529-174251B261F2}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\TGP_Project">
-			<UniqueIdentifier>{E4BF30C2-841E-4C85-94B1-8A25FA9C7A61}</UniqueIdentifier>
+			<UniqueIdentifier>{FC68ED33-5616-4707-B9B0-C99096ADE5C7}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\CharacterBase.cpp">
 			<Filter>Source\TGP_Project</Filter>
@@ -52,7 +52,7 @@
 			<Filter>Source\TGP_Project</Filter>
 		</ClInclude >
 		<Filter Include="Source\TGP_Project\Private">
-			<UniqueIdentifier>{09DA3DED-33F1-4849-8446-621A1C6A69E7}</UniqueIdentifier>
+			<UniqueIdentifier>{ACBFAF9D-F487-4DFB-8801-939A579E63B2}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BaseCharacter.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
@@ -61,7 +61,7 @@
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\TGP_Project\Public">
-			<UniqueIdentifier>{1824B9FB-DC97-4A74-BA2B-64DD734D387C}</UniqueIdentifier>
+			<UniqueIdentifier>{83C605BA-E41D-4C64-AEEE-D10DAEB5A93F}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\TGP_Project\Public\BaseCharacter.h">
 			<Filter>Source\TGP_Project\Public</Filter>

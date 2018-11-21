@@ -17,16 +17,21 @@ ABaseCharacter::ABaseCharacter()
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 	Sprite = CreateDefaultSubobject<UPaperFlipbookComponent>(TEXT("Sprite"));
 	Sprite->SetupAttachment(RootComponent);
-	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0.0f, 90.0f, -90.0f));
+	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, -90));
 	//Sprite->CollisionSource
 	//Sprite->SetFlipbook(DefaultFlipbook);
+	CurrentMovementSpeed = WalkSpeed;
+
+	
 
 }
 // Called when the game starts or when spawned
 void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	Sprite->SetFlipbook(DefaultFlipbook);
+	Sprite->SetFlipbook(WalikingFlipBook);
+	//Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(X, Y, Z));
+
 
 	Sprite->Play();
 
@@ -43,7 +48,7 @@ void ABaseCharacter::Tick(float DeltaTime)
 // Called to bind functionality to input
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 {
-
+	
 }
 
 void ABaseCharacter::MoveUp(float AxisValue)
@@ -56,15 +61,39 @@ void ABaseCharacter::MoveRight(float AxisValue)
 	MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
 }
 
+void ABaseCharacter::SwitchFlipbook(UPaperFlipbook * newFlipbook)
+{
+	Sprite->SetFlipbook(newFlipbook);
+}
+
+void ABaseCharacter::FlipFlipbook()
+{
+	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, 90));
+}
+
 void ABaseCharacter::HandleMovement(float DeltaTime)
 {
 	if (!MovementInput.IsZero())
 	{
+		SwitchFlipbook(WalikingFlipBook);
 		//Scale our movement input axis values by 100 units per second
-		MovementInput = MovementInput.GetSafeNormal() * 100.0f;
+		if (MovementInput.X < 0)
+		{
+			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, -90, 90));
+		}
+		else if(MovementInput.X > 0)
+		{
+			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, -90));
+		}
+
+		MovementInput = MovementInput.GetSafeNormal() * CurrentMovementSpeed;
 		FVector NewLocation = GetActorLocation();
-		NewLocation += FVector(0.0f, 1.0f,0.0f) * MovementInput.X * DeltaTime;
-		NewLocation += FVector(1.0f, 0.0f, 0.0f)   * MovementInput.Y * DeltaTime;
+		NewLocation += FVector(0.0f, 1.0f,0.0f) * (MovementInput.X) * DeltaTime;
+		NewLocation += FVector(1.0f, 0.0f, 0.0f)   * (MovementInput.Y) * DeltaTime;
 		SetActorLocation(NewLocation);
+	}
+	else
+	{
+		SwitchFlipbook(IdleFlipbook);
 	}
 }
