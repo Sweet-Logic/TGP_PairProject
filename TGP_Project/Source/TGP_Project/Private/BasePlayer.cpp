@@ -48,6 +48,7 @@ void ABasePlayer::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	ABaseCharacter::Tick(DeltaTime);
 
+	Score -= DeltaTime;
 
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetMousePosition(MousePosition.X, MousePosition.Y);
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->DeprojectMousePositionToWorld(MouseWorld, MouseWorldDir);

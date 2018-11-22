@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\TGP_Project.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{39833AFD-B5D6-4C36-8806-CCD86899483D}</UniqueIdentifier>
+			<UniqueIdentifier>{DF91EC72-DFE2-47BE-A40F-14225136B1F3}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TGP_Project.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{B8C7E78B-0907-4243-8529-174251B261F2}</UniqueIdentifier>
+			<UniqueIdentifier>{CF1871DE-EA9A-4BBD-B83B-4663FFCAD346}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\TGP_Project">
-			<UniqueIdentifier>{FC68ED33-5616-4707-B9B0-C99096ADE5C7}</UniqueIdentifier>
+			<UniqueIdentifier>{2C162DBF-2985-4955-803F-64D53D39700C}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\CharacterBase.cpp">
 			<Filter>Source\TGP_Project</Filter>
@@ -52,7 +52,7 @@
 			<Filter>Source\TGP_Project</Filter>
 		</ClInclude >
 		<Filter Include="Source\TGP_Project\Private">
-			<UniqueIdentifier>{ACBFAF9D-F487-4DFB-8801-939A579E63B2}</UniqueIdentifier>
+			<UniqueIdentifier>{75731E03-8AD5-41B3-BE2F-38C7E4679F25}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BaseCharacter.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
@@ -60,13 +60,19 @@
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BasePlayer.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\gm_TGPGAME.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
 		<Filter Include="Source\TGP_Project\Public">
-			<UniqueIdentifier>{83C605BA-E41D-4C64-AEEE-D10DAEB5A93F}</UniqueIdentifier>
+			<UniqueIdentifier>{3E9F2779-F76F-4AEC-9398-C17A963371CC}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\TGP_Project\Public\BaseCharacter.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\TGP_Project\Public\BasePlayer.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\gm_TGPGAME.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
 	</ItemGroup>

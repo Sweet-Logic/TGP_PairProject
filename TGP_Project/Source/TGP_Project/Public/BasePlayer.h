@@ -74,6 +74,8 @@ public:
 
 	float HiddenMultiplier = 1.0f; // donno, higher the value the easier it is for enimies to detect the player.
 
+	float Score = 10000;
+
 	//Axis Mapping
 	void HandlePanning(float DeltaTime);
 
