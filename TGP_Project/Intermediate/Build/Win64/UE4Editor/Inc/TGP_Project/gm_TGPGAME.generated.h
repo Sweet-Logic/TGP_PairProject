@@ -60,7 +60,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(Agm_TGPGAME); \
 
 
 #define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_19_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Score() { return STRUCT_OFFSET(Agm_TGPGAME, Score); } \
 	FORCEINLINE static uint32 __PPO__Civilian() { return STRUCT_OFFSET(Agm_TGPGAME, Civilian); } \
 	FORCEINLINE static uint32 __PPO__BodyGuard() { return STRUCT_OFFSET(Agm_TGPGAME, BodyGuard); } \
 	FORCEINLINE static uint32 __PPO__Target() { return STRUCT_OFFSET(Agm_TGPGAME, Target); }

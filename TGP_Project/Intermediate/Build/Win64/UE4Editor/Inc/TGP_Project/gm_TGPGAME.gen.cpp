@@ -44,10 +44,6 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Civilian_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Civilian;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Score_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Score;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -85,18 +81,10 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Civilian = { UE4CodeGen_Private::EPropertyClass::Object, "Civilian", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(Agm_TGPGAME, Civilian), Z_Construct_UClass_ABaseCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Civilian_MetaData, ARRAY_COUNT(Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Civilian_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Score_MetaData[] = {
-		{ "Category", "gm_TGPGAME" },
-		{ "ModuleRelativePath", "Public/gm_TGPGAME.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Score = { UE4CodeGen_Private::EPropertyClass::Float, "Score", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(Agm_TGPGAME, Score), METADATA_PARAMS(Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Score_MetaData, ARRAY_COUNT(Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Score_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_Agm_TGPGAME_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Target,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_BodyGuard,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Civilian,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Agm_TGPGAME_Statics::NewProp_Score,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_Agm_TGPGAME_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<Agm_TGPGAME>::IsAbstract,
@@ -121,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(Agm_TGPGAME, 4005769175);
+	IMPLEMENT_CLASS(Agm_TGPGAME, 3609504037);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_Agm_TGPGAME(Z_Construct_UClass_Agm_TGPGAME, &Agm_TGPGAME::StaticClass, TEXT("/Script/TGP_Project"), TEXT("Agm_TGPGAME"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(Agm_TGPGAME);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

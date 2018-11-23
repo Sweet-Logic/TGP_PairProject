@@ -13,8 +13,9 @@ class UCameraComponent;
 /**
  * 
  */
+
 UCLASS()
-class TGP_PROJECT_API ABasePlayer : public ABaseCharacter//, public APawn
+class TGP_PROJECT_API ABasePlayer : public ABaseCharacter
 {
 	GENERATED_BODY()
 	
