@@ -1,13 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BaseCharacter.h"
-
 #include "Paper2D/Classes/PaperFlipbookComponent.h"
 #include "Paper2D/Classes/PaperFlipbook.h"
 #include "Components/InputComponent.h"
-
-
-
 
 ABaseCharacter::ABaseCharacter()
 {
@@ -21,22 +17,15 @@ ABaseCharacter::ABaseCharacter()
 	//Sprite->CollisionSource
 	//Sprite->SetFlipbook(DefaultFlipbook);
 	CurrentMovementSpeed = WalkSpeed;
-
-	
-
 }
 // Called when the game starts or when spawned
 void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	Sprite->SetFlipbook(WalikingFlipBook);
+	Sprite->SetFlipbook(WalkingFlipBook);
 	//Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(X, Y, Z));
 
-
 	Sprite->Play();
-
-
-
 }
 // Called every frame
 void ABaseCharacter::Tick(float DeltaTime)
@@ -48,7 +37,6 @@ void ABaseCharacter::Tick(float DeltaTime)
 // Called to bind functionality to input
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 {
-	
 }
 
 void ABaseCharacter::MoveUp(float AxisValue)
@@ -75,7 +63,7 @@ void ABaseCharacter::HandleMovement(float DeltaTime)
 {
 	if (!MovementInput.IsZero())
 	{
-		SwitchFlipbook(WalikingFlipBook);
+		SwitchFlipbook(WalkingFlipBook);
 		//Scale our movement input axis values by 100 units per second
 		if (MovementInput.X < 0)
 		{

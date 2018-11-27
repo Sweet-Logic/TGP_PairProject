@@ -122,9 +122,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_playRate;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WalikingFlipBook_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WalkingFlipBook_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WalikingFlipBook;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WalkingFlipBook;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IdleFlipbook_MetaData[];
 #endif
@@ -196,12 +196,12 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate = { UE4CodeGen_Private::EPropertyClass::Float, "playRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, playRate), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkingFlipBook_MetaData[] = {
 		{ "Category", "Sprite Settings" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook = { UE4CodeGen_Private::EPropertyClass::Object, "WalikingFlipBook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, WalikingFlipBook), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkingFlipBook = { UE4CodeGen_Private::EPropertyClass::Object, "WalkingFlipBook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, WalkingFlipBook), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkingFlipBook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkingFlipBook_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_IdleFlipbook_MetaData[] = {
 		{ "Category", "Sprite Settings" },
@@ -217,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_loopFlipbook,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkingFlipBook,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_IdleFlipbook,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseCharacter_Statics::StaticCppClassTypeInfo = {
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 2278157185);
+	IMPLEMENT_CLASS(ABaseCharacter, 1234614412);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseCharacter(Z_Construct_UClass_ABaseCharacter, &ABaseCharacter::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

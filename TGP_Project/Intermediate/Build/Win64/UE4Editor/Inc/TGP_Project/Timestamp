@@ -1,4 +1,8 @@
-D:\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\BaseCharacter.h
-D:\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\BasePlayer.h
-D:\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\CharacterBase.h
-D:\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\TGP_ProjectGameModeBase.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\BaseAI.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\BaseCharacter.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\BasePlayer.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\BodyGuardAI.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\CivilianAI.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public\RestrictedArea.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\CharacterBase.h
+D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\TGP_ProjectGameModeBase.h
