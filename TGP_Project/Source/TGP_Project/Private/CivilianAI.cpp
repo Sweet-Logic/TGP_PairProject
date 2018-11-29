@@ -53,16 +53,47 @@ void ACivilianAI::Tick(float deltaTime)
 			//_randomTarget = GetActorLocation();
 		}
 	}
+	else if (_state == AI_STATE::ALERTED)
+	{
+		MoveToLocation(_hidingSpot->GetActorLocation());
+	}
+	else if (_state == AI_STATE::SUSPICIOUS)
+	{
+		this->Controller->StopMovement();
+	}
 }
 
 void ACivilianAI::OnPawnSeen(APawn * instigator)
 {
 	Super::OnPawnSeen(instigator);
+	//if gun on display
+	if (instigator)
+	{
+		_state = AI_STATE::ALERTED;
+		
+		float currentClosest;
+		for (int i = 0; i < _civHidingSpots.Num(); i++)
+		{
+			FVector delta = _hidingSpot->GetActorLocation() - _civHidingSpots[i]->GetActorLocation();
+			float distanceToWaypoint = delta.Size();
+
+			if (distanceToWaypoint < currentClosest)
+			{
+				currentClosest = distanceToWaypoint;
+				_hidingSpot = _civHidingSpots[i];
+			}
+		}
+	}
 }
 
 void ACivilianAI::OnNoiseHeard(APawn * instigator, const FVector & location, float volume)
 {
 	Super::OnNoiseHeard(instigator, location, volume);
+	//if heard gunshot
+	//if ()
+	{
+		_state = AI_STATE::SUSPICIOUS;
+	}
 }
 
 FVector ACivilianAI::GetRandomTarget(float x, float y, float width, float height)

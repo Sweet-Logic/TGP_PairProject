@@ -27,12 +27,17 @@ protected:
 	FVector GetRandomTarget(float x, float y, float width, float height);
 
 	UPROPERTY(VisibleAnywhere, Category = "AI")
-	FVector _randomTarget;
+		FVector _randomTarget;
 
 	UPROPERTY(EditInstanceOnly, Category = "AI")
-	float _moveDelay;
+		float _moveDelay;
 	float _moveTimeCounter;
 
 	UPROPERTY(EditInstanceOnly, Category = "AI")
-	int _maxMoveRadius;
+		int _maxMoveRadius;
+
+	UPROPERTY(EditInstanceOnly, Category = "AI", meta = (EditCondition = "_patrol"))
+		TArray<AActor*> _civHidingSpots;
+
+	AActor* _hidingSpot;
 };
