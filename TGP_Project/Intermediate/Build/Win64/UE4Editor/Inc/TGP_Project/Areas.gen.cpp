@@ -13,11 +13,60 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAreas() {}
 // Cross Module References
+	TGP_PROJECT_API UEnum* Z_Construct_UEnum_TGP_Project_EAREAS();
+	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_AAreas_NoRegister();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_AAreas();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 // End Cross Module References
+	static UEnum* EAREAS_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_TGP_Project_EAREAS, Z_Construct_UPackage__Script_TGP_Project(), TEXT("EAREAS"));
+		}
+		return Singleton;
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EAREAS(EAREAS_StaticEnum, TEXT("/Script/TGP_Project"), TEXT("EAREAS"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_TGP_Project_EAREAS_CRC() { return 1934496207U; }
+	UEnum* Z_Construct_UEnum_TGP_Project_EAREAS()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_TGP_Project();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EAREAS"), 0, Get_Z_Construct_UEnum_TGP_Project_EAREAS_CRC(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "A_AUTHORISED", (int64)A_AUTHORISED },
+				{ "A_RESTRICTED", (int64)A_RESTRICTED },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "A_AUTHORISED.DisplayName", "Authorised" },
+				{ "A_RESTRICTED.DisplayName", "Restricted" },
+				{ "ModuleRelativePath", "Public/Areas.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_TGP_Project,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				"EAREAS",
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				nullptr,
+				(uint8)UEnum::ECppForm::Regular,
+				"EAREAS",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	void AAreas::StaticRegisterNativesAAreas()
 	{
 	}

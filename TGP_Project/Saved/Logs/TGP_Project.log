@@ -396,3 +396,591 @@ LogInit: Object subsystem initialized
 [2018.11.29-09.27.34:842][279]CompilerResultsLog: Error: UnrealHeaderTool failed for target 'TGP_ProjectEditor' (platform: Win64, module info: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest, exit code: OtherCompilationError (5)).
 [2018.11.29-09.27.34:843][279]LogMainFrame: MainFrame: Module compiling took 16.200 seconds
 [2018.11.29-09.27.34:843][279]Warning: HotReload failed, recompile failed
+[2018.11.29-09.38.36:336][880]Candidate modules for hot reload:
+[2018.11.29-09.38.36:336][880]  TGP_Project
+[2018.11.29-09.38.36:336][880]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,8345 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-09.38.36:343][880]Warning: Starting HotReload took  0.1s.
+[2018.11.29-09.38.52:529][727]CompilerResultsLog: New page: Compilation - 29 Nov 2018 09:38:52
+[2018.11.29-09.38.52:529][727]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-09.38.52:529][727]CompilerResultsLog: Creating makefile for hot reloading TGP_ProjectEditor (game project files are newer)
+[2018.11.29-09.38.52:530][727]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-09.38.52:530][727]CompilerResultsLog: Performing full C++ include scan (no include cache file)
+[2018.11.29-09.38.52:530][727]CompilerResultsLog: Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.11.29-09.38.52:530][727]CompilerResultsLog: Parsing headers for TGP_ProjectEditor
+[2018.11.29-09.38.52:530][727]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.29-09.38.52:531][727]CompilerResultsLog: Error: C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/Source/TGP_Project/Public/Areas.h(12)  : Error: Missing '{' in 'Enum'
+[2018.11.29-09.38.52:532][727]CompilerResultsLog: Error: UnrealHeaderTool failed for target 'TGP_ProjectEditor' (platform: Win64, module info: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+[2018.11.29-09.38.52:532][727]LogMainFrame: MainFrame: Module compiling took 16.207 seconds
+[2018.11.29-09.38.52:532][727]Warning: HotReload failed, recompile failed
+[2018.11.29-09.45.10:498][560]LogSlate: Window 'Output Log' being destroyed
+[2018.11.29-09.45.10:502][560]LogSlate: Window 'Output Log' being destroyed
+[2018.11.29-09.45.39:249][494]Candidate modules for hot reload:
+[2018.11.29-09.45.39:249][494]  TGP_Project
+[2018.11.29-09.45.39:249][494]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,9785 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-09.45.39:255][494]Warning: Starting HotReload took  0.0s.
+[2018.11.29-09.46.36:330][859]CompilerResultsLog: New page: Compilation - 29 Nov 2018 09:46:36
+[2018.11.29-09.46.36:330][859]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-09.46.36:330][859]CompilerResultsLog: Creating makefile for hot reloading TGP_ProjectEditor (game project files are newer)
+[2018.11.29-09.46.36:330][859]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-09.46.36:330][859]CompilerResultsLog: Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.11.29-09.46.36:330][859]CompilerResultsLog: Parsing headers for TGP_ProjectEditor
+[2018.11.29-09.46.36:330][859]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.29-09.46.36:331][859]CompilerResultsLog: Reflection code generated for TGP_ProjectEditor in 10.4483234 seconds
+[2018.11.29-09.46.36:331][859]CompilerResultsLog: Building 20 actions with 8 processes...
+[2018.11.29-09.46.36:331][859]CompilerResultsLog:   [1/20] SharedPCH.Engine.cpp
+[2018.11.29-09.46.36:331][859]CompilerResultsLog:   [2/20] Areas.gen.cpp
+[2018.11.29-09.46.36:331][859]CompilerResultsLog:   [3/20] TGP_Project.init.gen.cpp
+[2018.11.29-09.46.36:331][859]CompilerResultsLog:   [4/20] AreaTriggers.gen.cpp
+[2018.11.29-09.46.36:331][859]CompilerResultsLog:   [5/20] BasePlayer.gen.cpp
+[2018.11.29-09.46.36:331][859]CompilerResultsLog:   [6/20] BaseCharacter.gen.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [7/20] CharacterBase.gen.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [8/20] gm_TGPGAME.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [9/20] gm_TGPGAME.gen.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [10/20] AreaTriggers.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [11/20] TGP_Project.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [12/20] Areas.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [13/20] TGP_ProjectGameModeBase.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [14/20] BaseCharacter.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [15/20] Enums.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [16/20] CharacterBase.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [17/20] TGP_ProjectGameModeBase.gen.cpp
+[2018.11.29-09.46.36:332][859]CompilerResultsLog:   [18/20] BasePlayer.cpp
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(39) : error C2065: 'DeltaTime': undeclared identifier
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(237) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(237) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(241) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(241) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.46.36:333][859]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-9785.dll
+[2018.11.29-09.46.36:333][859]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.29-09.46.36:333][859]CompilerResultsLog: Total build time: 56.61 seconds (Parallel executor: 0.00 seconds)
+[2018.11.29-09.46.36:334][859]LogMainFrame: MainFrame: Module compiling took 57.090 seconds
+[2018.11.29-09.46.36:334][859]Warning: HotReload failed, recompile failed
+[2018.11.29-09.46.45:256][644]LogVSAccessor: Warning: Couldn't goto line number '39' in 'C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp'
+[2018.11.29-09.48.16:354][906]Candidate modules for hot reload:
+[2018.11.29-09.48.16:354][906]  TGP_Project
+[2018.11.29-09.48.16:355][906]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,4977 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-09.48.16:358][906]Warning: Starting HotReload took  0.0s.
+[2018.11.29-09.48.29:993][350]CompilerResultsLog: New page: Compilation - 29 Nov 2018 09:48:29
+[2018.11.29-09.48.29:993][350]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-09.48.29:993][350]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-09.48.29:993][350]CompilerResultsLog: Performing full C++ include scan (no include cache file)
+[2018.11.29-09.48.29:993][350]CompilerResultsLog: Building 3 actions with 8 processes...
+[2018.11.29-09.48.29:993][350]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.11.29-09.48.29:993][350]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(39) : error C2065: 'DeltaTime': undeclared identifier
+[2018.11.29-09.48.29:993][350]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(240) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.48.29:993][350]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.48.29:994][350]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(240) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.48.29:994][350]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(244) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.48.29:994][350]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.48.29:994][350]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(244) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.48.29:994][350]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-4977.dll
+[2018.11.29-09.48.29:994][350]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.29-09.48.29:994][350]CompilerResultsLog: Total build time: 13.38 seconds (Parallel executor: 0.00 seconds)
+[2018.11.29-09.48.29:994][350]LogMainFrame: MainFrame: Module compiling took 13.645 seconds
+[2018.11.29-09.48.29:994][350]Warning: HotReload failed, recompile failed
+[2018.11.29-09.48.56:959][929]Candidate modules for hot reload:
+[2018.11.29-09.48.56:959][929]  TGP_Project
+[2018.11.29-09.48.56:959][929]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,9212 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-09.48.56:963][929]Warning: Starting HotReload took  0.0s.
+[2018.11.29-09.49.11:092][493]CompilerResultsLog: New page: Compilation - 29 Nov 2018 09:49:11
+[2018.11.29-09.49.11:093][493]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-09.49.11:093][493]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-09.49.11:093][493]CompilerResultsLog: Building 3 actions with 8 processes...
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(239) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(239) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(243) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(243) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.49.11:093][493]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-9212.dll
+[2018.11.29-09.49.11:093][493]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.29-09.49.11:093][493]CompilerResultsLog: Total build time: 13.84 seconds (Parallel executor: 0.00 seconds)
+[2018.11.29-09.49.11:093][493]LogMainFrame: MainFrame: Module compiling took 14.140 seconds
+[2018.11.29-09.49.11:093][493]Warning: HotReload failed, recompile failed
+[2018.11.29-09.51.05:369][900]Candidate modules for hot reload:
+[2018.11.29-09.51.05:369][900]  TGP_Project
+[2018.11.29-09.51.05:369][900]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,9031 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-09.51.05:373][900]Warning: Starting HotReload took  0.0s.
+[2018.11.29-09.51.17:929][459]CompilerResultsLog: New page: Compilation - 29 Nov 2018 09:51:17
+[2018.11.29-09.51.17:930][459]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-09.51.17:930][459]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-09.51.17:930][459]CompilerResultsLog: Building 3 actions with 8 processes...
+[2018.11.29-09.51.17:930][459]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.11.29-09.51.17:930][459]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(239) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.51.17:930][459]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.51.17:930][459]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(239) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.51.17:930][459]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(243) : error C2027: use of undefined type 'UPaperFlipbookComponent'
+[2018.11.29-09.51.17:931][459]CompilerResultsLog:   c:\users\m013603g\documents\github\tgp_pairproject\tgp_project\source\tgp_project\public\BaseCharacter.h(12): note: see declaration of 'UPaperFlipbookComponent'
+[2018.11.29-09.51.17:931][459]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp(243) : error C2227: left of '->SetRelativeLocationAndRotation' must point to class/struct/union/generic type
+[2018.11.29-09.51.17:931][459]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-9031.dll
+[2018.11.29-09.51.17:931][459]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.29-09.51.17:931][459]CompilerResultsLog: Total build time: 12.07 seconds (Parallel executor: 0.00 seconds)
+[2018.11.29-09.51.17:931][459]LogMainFrame: MainFrame: Module compiling took 12.569 seconds
+[2018.11.29-09.51.17:932][459]Warning: HotReload failed, recompile failed
+[2018.11.29-09.53.12:241][884]Candidate modules for hot reload:
+[2018.11.29-09.53.12:241][884]  TGP_Project
+[2018.11.29-09.53.12:241][884]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,1462 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-09.53.12:247][884]Warning: Starting HotReload took  0.0s.
+[2018.11.29-09.53.28:792][728]CompilerResultsLog: New page: Compilation - 29 Nov 2018 09:53:28
+[2018.11.29-09.53.28:792][728]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-09.53.28:792][728]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-09.53.28:792][728]CompilerResultsLog: Building 3 actions with 8 processes...
+[2018.11.29-09.53.28:792][728]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.11.29-09.53.28:792][728]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-1462.lib
+[2018.11.29-09.53.28:792][728]CompilerResultsLog:      Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1462.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1462.exp
+[2018.11.29-09.53.28:792][728]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-1462.dll
+[2018.11.29-09.53.28:792][728]CompilerResultsLog:      Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1462.suppressed.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1462.suppressed.exp
+[2018.11.29-09.53.28:792][728]CompilerResultsLog: Total build time: 16.30 seconds (Parallel executor: 14.17 seconds)
+[2018.11.29-09.53.28:792][728]LogMainFrame: MainFrame: Module compiling took 16.557 seconds
+[2018.11.29-09.53.28:833][728]LogClass: Could not find existing class Areas in package /Script/TGP_Project for HotReload, assuming new class
+[2018.11.29-09.53.28:833][728]LogClass: Could not find existing class AreaTriggers in package /Script/TGP_Project for HotReload, assuming new class
+[2018.11.29-09.53.28:834][728]LogClass: Could not find existing class BaseCharacter in package /Script/TGP_Project for HotReload, assuming new class
+[2018.11.29-09.53.28:834][728]LogClass: Function FlipFlipbook is new.
+[2018.11.29-09.53.28:834][728]LogClass: Function SwitchFlipbook is new.
+[2018.11.29-09.53.28:834][728]LogClass: Could not find existing class BasePlayer in package /Script/TGP_Project for HotReload, assuming new class
+[2018.11.29-09.53.28:835][728]LogClass: Could not find existing class gm_TGPGAME in package /Script/TGP_Project for HotReload, assuming new class
+[2018.11.29-09.53.28:836][728]LogClass: Could not find existing type EAREAS for HotReload. Assuming new
+[2018.11.29-09.53.28:839][728]LogHotReload: Re-instancing BaseCharacter after hot-reload.
+[2018.11.29-09.53.28:897][728]LogHotReload: Re-instancing BasePlayer after hot-reload.
+[2018.11.29-09.53.28:946][728]LogHotReload: Re-instancing gm_TGPGAME after hot-reload.
+[2018.11.29-09.53.29:000][728]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0005 seconds. Added 7 classes and 3 folders.
+[2018.11.29-09.53.29:003][728]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.11.29-09.53.29:142][728]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2580 classes and 608 folders.
+[2018.11.29-09.53.29:142][728]Display: HotReload took 16.9s.
+[2018.11.29-10.59.35:267][438]Candidate modules for hot reload:
+[2018.11.29-10.59.35:267][438]  TGP_Project
+[2018.11.29-10.59.35:268][438]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,9286 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-10.59.35:280][438]Warning: Starting HotReload took  0.0s.
+[2018.11.29-10.59.49:528][431]LogSlate: Window 'Pick Parent Class' being destroyed
+[2018.11.29-11.00.01:984][824]CompilerResultsLog: New page: Compilation - 29 Nov 2018 11:00:01
+[2018.11.29-11.00.01:985][824]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-11.00.01:985][824]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-11.00.01:985][824]CompilerResultsLog: Parsing headers for TGP_ProjectEditor
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.29-11.00.01:985][824]CompilerResultsLog: Reflection code generated for TGP_ProjectEditor in 10.6826745 seconds
+[2018.11.29-11.00.01:985][824]CompilerResultsLog: Building 6 actions with 8 processes...
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:   [1/6] Areas.cpp
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\Areas.cpp(26) : error C2664: 'void TBaseDynamicMulticastDelegate<FWeakObjectPtr,void,UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &>::__Internal_AddDynamic<AAreas>(UserClass *,void (__cdecl AAreas::* )(UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &),FName)': cannot convert argument 2 from 'void (__cdecl AAreas::* )(const FOverlapInfo &,bool)' to 'void (__cdecl AAreas::* )(UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &)'
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:           with
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:           [
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:               UserClass=AAreas
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:           ]
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:   C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\Areas.cpp(26): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:   [2/6] Areas.gen.cpp
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:   [3/6] BasePlayer.gen.cpp
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:   [4/6] BasePlayer.cpp
+[2018.11.29-11.00.01:985][824]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-9286.dll
+[2018.11.29-11.00.01:985][824]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.29-11.00.01:985][824]CompilerResultsLog: Total build time: 26.44 seconds (Parallel executor: 0.00 seconds)
+[2018.11.29-11.00.01:985][824]LogMainFrame: MainFrame: Module compiling took 26.725 seconds
+[2018.11.29-11.00.01:986][824]Warning: HotReload failed, recompile failed
+[2018.11.29-11.01.24:695][260]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BaseLevel' took 0.040
+[2018.11.29-11.01.24:697][260]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/RestrictedAreas] ([1] browsable assets)...
+[2018.11.29-11.01.24:697][260]OBJ SavePackage: Finished generating thumbnails for package [/Game/RestrictedAreas]
+[2018.11.29-11.01.24:716][260]LogSavePackage: Moving '../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/RestrictedAreas_Auto18A0E98E64795AC4300C0EA967EBB1F96.tmp' to '../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/RestrictedAreas_Auto1.uasset'
+[2018.11.29-11.01.24:719][260]LogFileHelpers: Auto-saving content packages took 0.023
+[2018.11.29-11.01.32:067][331]Candidate modules for hot reload:
+[2018.11.29-11.01.32:067][331]  TGP_Project
+[2018.11.29-11.01.32:068][331]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,4942 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-11.01.32:080][331]Warning: Starting HotReload took  0.0s.
+[2018.11.29-11.01.45:901][884]CompilerResultsLog: New page: Compilation - 29 Nov 2018 11:01:45
+[2018.11.29-11.01.45:902][884]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-11.01.45:902][884]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-11.01.45:902][884]CompilerResultsLog: Parsing headers for TGP_ProjectEditor
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.29-11.01.45:902][884]CompilerResultsLog: Reflection code generated for TGP_ProjectEditor in 10.4831243 seconds
+[2018.11.29-11.01.45:902][884]CompilerResultsLog: Building 4 actions with 8 processes...
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:   [1/4] Areas.cpp
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\Areas.cpp(37) : error C2065: 'OtherOverlap': undeclared identifier
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\Areas.cpp(37) : error C2228: left of '.OverlapInfo' must have class/struct/union
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:   C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\Areas.cpp(37): note: type is 'unknown-type'
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:    C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\Areas.cpp(37) : error C2228: left of '.Actor' must have class/struct/union
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:   [2/4] Areas.gen.cpp
+[2018.11.29-11.01.45:902][884]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-4942.dll
+[2018.11.29-11.01.45:902][884]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.29-11.01.45:902][884]CompilerResultsLog: Total build time: 13.57 seconds (Parallel executor: 0.00 seconds)
+[2018.11.29-11.01.45:902][884]LogMainFrame: MainFrame: Module compiling took 13.841 seconds
+[2018.11.29-11.01.45:902][884]Warning: HotReload failed, recompile failed
+[2018.11.29-11.01.51:888][518]LogVSAccessor: Warning: Couldn't goto line number '37' in 'C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\Areas.cpp'
+[2018.11.29-11.02.08:390][730]Candidate modules for hot reload:
+[2018.11.29-11.02.08:390][730]  TGP_Project
+[2018.11.29-11.02.08:390][730]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,4162 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-11.02.08:395][730]Warning: Starting HotReload took  0.0s.
+[2018.11.29-11.02.12:638][197]CompilerResultsLog: New page: Compilation - 29 Nov 2018 11:02:12
+[2018.11.29-11.02.12:638][197]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-11.02.12:638][197]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-11.02.12:638][197]CompilerResultsLog: Building 3 actions with 8 processes...
+[2018.11.29-11.02.12:638][197]CompilerResultsLog:   [1/3] Areas.cpp
+[2018.11.29-11.02.12:638][197]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-4162.lib
+[2018.11.29-11.02.12:638][197]CompilerResultsLog:      Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4162.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4162.exp
+[2018.11.29-11.02.12:638][197]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-4162.dll
+[2018.11.29-11.02.12:638][197]CompilerResultsLog:      Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4162.suppressed.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4162.suppressed.exp
+[2018.11.29-11.02.12:639][197]CompilerResultsLog: Total build time: 4.00 seconds (Parallel executor: 1.83 seconds)
+[2018.11.29-11.02.12:639][197]LogMainFrame: MainFrame: Module compiling took 4.254 seconds
+[2018.11.29-11.02.12:680][197]LogClass: Could not find existing class Areas in package /Script/TGP_Project for HotReload, assuming new class
+[2018.11.29-11.02.12:686][197]LogClass: EAREAS HotReload.
+[2018.11.29-11.02.12:688][197]LogHotReload: Re-instancing Areas after hot-reload.
+[2018.11.29-11.02.12:740][197]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0005 seconds. Added 7 classes and 3 folders.
+[2018.11.29-11.02.12:742][197]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2018.11.29-11.02.12:810][197]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2580 classes and 608 folders.
+[2018.11.29-11.02.12:810][197]Display: HotReload took  4.4s.
+[2018.11.29-11.02.17:399][691]LogSlate: Window 'Message Log' being destroyed
+[2018.11.29-11.02.17:403][691]LogSlate: Window 'Message Log' being destroyed
+[2018.11.29-11.02.18:286][783]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/RestrictedAreas.RestrictedAreas
+[2018.11.29-11.02.19:353][783]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0019 seconds. Added 116 classes and 0 folders.
+[2018.11.29-11.02.21:812][874]LogSlate: Took 0.006781 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.11.29-11.03.44:572][869]Candidate modules for hot reload:
+[2018.11.29-11.03.44:572][869]  TGP_Project
+[2018.11.29-11.03.44:572][869]Launching UnrealBuildTool... [C:/Epic/UE4/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,4863 Win64 Development -TargetType=Editor -Project="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "C:/Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.11.29-11.03.44:577][869]Warning: Starting HotReload took  0.0s.
+[2018.11.29-11.03.49:039][229]CompilerResultsLog: New page: Compilation - 29 Nov 2018 11:03:49
+[2018.11.29-11.03.49:039][229]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.29-11.03.49:039][229]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.29-11.03.49:039][229]CompilerResultsLog: Building 3 actions with 8 processes...
+[2018.11.29-11.03.49:039][229]CompilerResultsLog:   [1/3] Areas.cpp
+[2018.11.29-11.03.49:039][229]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-4863.lib
+[2018.11.29-11.03.49:039][229]CompilerResultsLog:      Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4863.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4863.exp
+[2018.11.29-11.03.49:039][229]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-4863.dll
+[2018.11.29-11.03.49:039][229]CompilerResultsLog:      Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4863.suppressed.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4863.suppressed.exp
+[2018.11.29-11.03.49:039][229]CompilerResultsLog: Total build time: 4.19 seconds (Parallel executor: 1.89 seconds)
+[2018.11.29-11.03.49:039][229]LogMainFrame: MainFrame: Module compiling took 4.474 seconds
+[2018.11.29-11.03.49:103][229]LogClass: EAREAS HotReload.
+[2018.11.29-11.03.49:109][229]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0005 seconds. Added 7 classes and 3 folders.
+[2018.11.29-11.03.49:112][229]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2018.11.29-11.03.49:486][229]LogContentBrowser: Native class hierarchy populated in 0.0116 seconds. Added 2580 classes and 608 folders.
+[2018.11.29-11.03.49:487][229]Display: HotReload took  4.9s.
+[2018.11.29-11.03.53:025][510]LogSlate: Window 'RestrictedAreas*' being destroyed
+[2018.11.29-11.03.53:029][510]LogSlate: Window 'RestrictedAreas*' being destroyed
+[2018.11.29-11.03.54:048][605]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/RestrictedAreas.RestrictedAreas
+[2018.11.29-11.03.56:305][777]LogSlate: Window 'RestrictedAreas*' being destroyed
+[2018.11.29-11.03.56:406][777]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/RestrictedAreas.RestrictedAreas
+[2018.11.29-11.04.01:473][115]LogSlate: Window 'RestrictedAreas*' being destroyed
+[2018.11.29-11.04.01:476][115]LogSlate: Window 'RestrictedAreas*' being destroyed
+[2018.11.29-11.04.04:025][257]LogSlate: Window 'Save Content' being destroyed
+[2018.11.29-11.04.04:047][257]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RestrictedAreas" FILE="../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/Content/RestrictedAreas.uasset" SILENT=true
+[2018.11.29-11.04.04:063][257]LogSavePackage: Moving '../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/RestrictedAreas2D367CBA4858A9417E5ED182974E481F.tmp' to '../../../../../../Users/m013603g/Documents/GitHub/TGP_PairProject/TGP_Project/Content/RestrictedAreas.uasset'
+[2018.11.29-11.04.04:837][321]LogSlate: Window 'TGP_Project - Unreal Editor' being destroyed
+[2018.11.29-11.04.04:838][321]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.11.29-11.04.05:060][322]Cmd: QUIT_EDITOR
+[2018.11.29-11.04.05:299][322]LogExit: Preparing to exit.
+[2018.11.29-11.04.06:135][322]LogExit: Editor shut down
+[2018.11.29-11.04.06:136][322]LogExit: Transaction tracking system shut down
+[2018.11.29-11.04.06:628][322]LogExit: Object subsystem successfully closed.
+[2018.11.29-11.04.06:651][322]LogShaderCompilers: Display: Shaders left to compile 0
+[2018.11.29-11.04.06:655][322]LogD3D11RHI: Shutdown
+[2018.11.29-11.04.06:655][322]LogD3D11RHI: CleanupD3DDevice
+[2018.11.29-11.04.06:666][322]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.11.29-11.04.06:713][322]LogModuleManager: Shutting down and abandoning module TGP_Project (621)
+[2018.11.29-11.04.06:713][322]LogModuleManager: Shutting down and abandoning module BlueprintGraph (620)
+[2018.11.29-11.04.06:713][322]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (616)
+[2018.11.29-11.04.06:713][322]LogModuleManager: Shutting down and abandoning module Voice (614)
+[2018.11.29-11.04.06:713][322]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (612)
+[2018.11.29-11.04.06:713][322]LogModuleManager: Shutting down and abandoning module SceneOutliner (610)
+[2018.11.29-11.04.06:713][322]LogModuleManager: Shutting down and abandoning module AddContentDialog (608)
+[2018.11.29-11.04.06:720][322]LogModuleManager: Shutting down and abandoning module WidgetCarousel (607)
+[2018.11.29-11.04.06:720][322]LogModuleManager: Shutting down and abandoning module EditorWidgets (604)
+[2018.11.29-11.04.06:721][322]LogModuleManager: Shutting down and abandoning module CollectionManager (602)
+[2018.11.29-11.04.06:721][322]LogModuleManager: Shutting down and abandoning module StatsViewer (600)
+[2018.11.29-11.04.06:721][322]LogModuleManager: Shutting down and abandoning module FoliageEdit (598)
+[2018.11.29-11.04.06:721][322]LogModuleManager: Shutting down and abandoning module LandscapeEditor (596)
+[2018.11.29-11.04.06:722][322]LogModuleManager: Shutting down and abandoning module MeshPaintMode (594)
+[2018.11.29-11.04.06:722][322]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (592)
+[2018.11.29-11.04.06:722][322]LogModuleManager: Shutting down and abandoning module ActorPickerMode (590)
+[2018.11.29-11.04.06:722][322]LogModuleManager: Shutting down and abandoning module GeometryMode (588)
+[2018.11.29-11.04.06:722][322]LogModuleManager: Shutting down and abandoning module TextureAlignMode (586)
+[2018.11.29-11.04.06:722][322]LogModuleManager: Shutting down and abandoning module BspMode (584)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (582)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (580)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module AutomationWorker (578)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (576)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module SequenceRecorder (575)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (572)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (570)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module PlacementMode (569)
+[2018.11.29-11.04.06:723][322]LogModuleManager: Shutting down and abandoning module MaterialEditor (568)
+[2018.11.29-11.04.06:724][322]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (564)
+[2018.11.29-11.04.06:724][322]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (562)
+[2018.11.29-11.04.06:724][322]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (560)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (558)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (556)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (554)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (552)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (550)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (548)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (546)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (544)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (542)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (540)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module CharacterAI (538)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module SmartSnapping (536)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module SessionServices (534)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module ViewportSnapping (532)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module ViewportInteraction (530)
+[2018.11.29-11.04.06:725][322]LogModuleManager: Shutting down and abandoning module ClothPainter (528)
+[2018.11.29-11.04.06:726][322]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (527)
+[2018.11.29-11.04.06:726][322]LogModuleManager: Shutting down and abandoning module LogVisualizer (524)
+[2018.11.29-11.04.06:727][322]LogModuleManager: Shutting down and abandoning module IntroTutorials (522)
+[2018.11.29-11.04.06:727][322]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (521)
+[2018.11.29-11.04.06:727][322]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (518)
+[2018.11.29-11.04.06:727][322]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (516)
+[2018.11.29-11.04.06:727][322]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (514)
+[2018.11.29-11.04.06:727][322]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (512)
+[2018.11.29-11.04.06:727][322]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (511)
+[2018.11.29-11.04.06:765][322]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (508)
+[2018.11.29-11.04.06:765][322]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (506)
+[2018.11.29-11.04.06:765][322]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (504)
+[2018.11.29-11.04.06:765][322]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (502)
+[2018.11.29-11.04.06:765][322]LogModuleManager: Shutting down and abandoning module InputBindingEditor (500)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module MergeActors (498)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (496)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module LocalizationService (495)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module HardwareTargeting (492)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (490)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module UndoHistory (488)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module XmlParser (486)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module Blutility (484)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (482)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (481)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (478)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module SettingsEditor (476)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module ProjectLauncher (474)
+[2018.11.29-11.04.06:766][322]LogModuleManager: Shutting down and abandoning module SessionFrontend (472)
+[2018.11.29-11.04.06:767][322]LogModuleManager: Shutting down and abandoning module ProfilerClient (470)
+[2018.11.29-11.04.06:767][322]LogModuleManager: Shutting down and abandoning module DeviceManager (468)
+[2018.11.29-11.04.06:767][322]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (467)
+[2018.11.29-11.04.06:833][322]LogModuleManager: Shutting down and abandoning module AutomationController (464)
+[2018.11.29-11.04.06:833][322]LogModuleManager: Shutting down and abandoning module AutomationWindow (462)
+[2018.11.29-11.04.06:833][322]LogModuleManager: Shutting down and abandoning module Layers (460)
+[2018.11.29-11.04.06:834][322]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (458)
+[2018.11.29-11.04.06:834][322]LogModuleManager: Shutting down and abandoning module DetailCustomizations (456)
+[2018.11.29-11.04.06:834][322]LogModuleManager: Shutting down and abandoning module PackagesDialog (454)
+[2018.11.29-11.04.06:835][322]LogModuleManager: Shutting down and abandoning module Persona (452)
+[2018.11.29-11.04.06:835][322]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (451)
+[2018.11.29-11.04.06:835][322]LogModuleManager: Shutting down and abandoning module AnimGraph (449)
+[2018.11.29-11.04.06:835][322]LogModuleManager: Shutting down and abandoning module Kismet (446)
+[2018.11.29-11.04.06:841][322]LogModuleManager: Shutting down and abandoning module GraphEditor (444)
+[2018.11.29-11.04.06:841][322]LogModuleManager: Shutting down and abandoning module ClassViewer (442)
+[2018.11.29-11.04.06:843][322]LogModuleManager: Shutting down and abandoning module Toolbox (440)
+[2018.11.29-11.04.06:843][322]LogModuleManager: Shutting down and abandoning module DesktopPlatform (439)
+[2018.11.29-11.04.06:843][322]LogModuleManager: Shutting down and abandoning module ModuleUI (436)
+[2018.11.29-11.04.06:843][322]LogModuleManager: Shutting down and abandoning module MovieSceneTools (434)
+[2018.11.29-11.04.06:843][322]LogModuleManager: Shutting down and abandoning module OutputLog (432)
+[2018.11.29-11.04.06:843][322]LogModuleManager: Shutting down and abandoning module GammaUI (430)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module Documentation (428)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (426)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module MovieScene (424)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (422)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module LauncherPlatform (420)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module AnalyticsET (418)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module PortalServices (416)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module PortalRpc (414)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module MessagingRpc (412)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module AIModule (410)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module GameplayDebugger (409)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module AITestSuite (407)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module NavigationSystem (405)
+[2018.11.29-11.04.06:844][322]LogModuleManager: Shutting down and abandoning module ProfilerService (402)
+[2018.11.29-11.04.07:080][322]LogModuleManager: Shutting down and abandoning module TaskGraph (400)
+[2018.11.29-11.04.07:080][322]LogModuleManager: Shutting down and abandoning module SteamVRController (398)
+[2018.11.29-11.04.07:080][322]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (396)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (394)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module OculusInput (392)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (390)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module EditableMesh (388)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (386)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module CableComponent (384)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module AudioCapture (382)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (380)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module AndroidPermission (378)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (376)
+[2018.11.29-11.04.07:081][322]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (374)
+[2018.11.29-11.04.07:082][322]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (372)
+[2018.11.29-11.04.07:082][322]LogModuleManager: Shutting down and abandoning module MediaCompositing (370)
+[2018.11.29-11.04.07:082][322]LogModuleManager: Shutting down and abandoning module LinearTimecode (368)
+[2018.11.29-11.04.07:082][322]LogModuleManager: Shutting down and abandoning module ImgMedia (366)
+[2018.11.29-11.04.07:087][322]LogModuleManager: Shutting down and abandoning module HTML5Networking (364)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (362)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (360)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module BackChannel (358)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module AppleVision (356)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module AppleImageUtils (354)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module AlembicImporter (352)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module AlembicLibrary (351)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module GeometryCache (350)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (349)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (344)
+[2018.11.29-11.04.07:088][322]LogModuleManager: Shutting down and abandoning module DatasmithContent (342)
+[2018.11.29-11.04.07:090][322]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (340)
+[2018.11.29-11.04.07:090][322]LogModuleManager: Shutting down and abandoning module PluginBrowser (338)
+[2018.11.29-11.04.07:090][322]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (336)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module PolygonModeling (334)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module MeshEditor (332)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (330)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module CryptoKeys (328)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (326)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (324)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module UObjectPlugin (322)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (320)
+[2018.11.29-11.04.07:091][322]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (318)
+[2018.11.29-11.04.07:092][322]LogModuleManager: Shutting down and abandoning module GitSourceControl (316)
+[2018.11.29-11.04.07:092][322]LogModuleManager: Shutting down and abandoning module SourceControl (315)
+[2018.11.29-11.04.07:092][322]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (312)
+[2018.11.29-11.04.07:092][322]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (310)
+[2018.11.29-11.04.07:092][322]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (308)
+[2018.11.29-11.04.07:092][322]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (306)
+[2018.11.29-11.04.07:092][322]LogModuleManager: Shutting down and abandoning module Paper2DEditor (304)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module MeshPaint (303)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (298)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (296)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module PhysXVehicles (294)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module OculusEditor (292)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (290)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (288)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (286)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
+[2018.11.29-11.04.07:093][322]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
+[2018.11.29-11.04.07:193][322]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
+[2018.11.29-11.04.07:294][322]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
+[2018.11.29-11.04.07:294][322]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
+[2018.11.29-11.04.07:294][322]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
+[2018.11.29-11.04.07:294][322]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
+[2018.11.29-11.04.07:294][322]LogModuleManager: Shutting down and abandoning module DataValidation (270)
+[2018.11.29-11.04.07:294][322]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
+[2018.11.29-11.04.07:295][322]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
+[2018.11.29-11.04.07:296][322]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
+[2018.11.29-11.04.07:296][322]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
+[2018.11.29-11.04.07:297][322]LogModuleManager: Shutting down and abandoning module MainFrame (262)
+[2018.11.29-11.04.07:297][322]LogModuleManager: Shutting down and abandoning module HotReload (261)
+[2018.11.29-11.04.07:298][322]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
+[2018.11.29-11.04.07:301][322]LogModuleManager: Shutting down and abandoning module TreeMap (255)
+[2018.11.29-11.04.07:301][322]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
+[2018.11.29-11.04.07:301][322]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
+[2018.11.29-11.04.07:301][322]LogModuleManager: Shutting down and abandoning module Paper2D (248)
+[2018.11.29-11.04.07:301][322]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
+[2018.11.29-11.04.07:301][322]LogModuleManager: Shutting down and abandoning module WmfMedia (244)
+[2018.11.29-11.04.07:304][322]LogModuleManager: Shutting down and abandoning module Media (243)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module PacketHandler (240)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (238)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (236)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module MediaAssets (234)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module Overlay (232)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module OverlayEditor (231)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module VREditor (228)
+[2018.11.29-11.04.07:311][322]LogModuleManager: Shutting down and abandoning module StringTableEditor (226)
+[2018.11.29-11.04.07:312][322]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (224)
+[2018.11.29-11.04.07:312][322]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (222)
+[2018.11.29-11.04.07:312][322]LogModuleManager: Shutting down and abandoning module FunctionalTesting (220)
+[2018.11.29-11.04.07:312][322]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (218)
+[2018.11.29-11.04.07:312][322]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (217)
+[2018.11.29-11.04.07:313][322]LogModuleManager: Shutting down and abandoning module UMG (214)
+[2018.11.29-11.04.07:313][322]LogModuleManager: Shutting down and abandoning module UMGEditor (213)
+[2018.11.29-11.04.07:313][322]LogModuleManager: Shutting down and abandoning module Sequencer (212)
+[2018.11.29-11.04.07:314][322]LogModuleManager: Shutting down and abandoning module MessageLog (209)
+[2018.11.29-11.04.07:314][322]LogModuleManager: Shutting down and abandoning module SlateReflector (204)
+[2018.11.29-11.04.07:315][322]LogModuleManager: Shutting down and abandoning module Slate (202)
+[2018.11.29-11.04.07:315][322]LogModuleManager: Shutting down and abandoning module EditorStyle (200)
+[2018.11.29-11.04.07:318][322]LogModuleManager: Shutting down and abandoning module MRMesh (198)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (196)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (194)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module XAudio2 (192)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module Networking (190)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module Core (188)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module LevelSequence (186)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module KismetCompiler (184)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module MeshUtilities (182)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (181)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (180)
+[2018.11.29-11.04.07:319][322]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (179)
+[2018.11.29-11.04.07:320][322]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (177)
+[2018.11.29-11.04.07:320][322]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (175)
+[2018.11.29-11.04.07:320][322]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (173)
+[2018.11.29-11.04.07:321][322]LogModuleManager: Shutting down and abandoning module MaterialBaking (169)
+[2018.11.29-11.04.07:321][322]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (165)
+[2018.11.29-11.04.07:321][322]LogModuleManager: Shutting down and abandoning module DerivedDataCache (162)
+[2018.11.29-11.04.07:398][322]LogDerivedDataCache: Shutdown
+[2018.11.29-11.04.07:398][322]LogModuleManager: Shutting down and abandoning module XGEController (160)
+[2018.11.29-11.04.07:398][322]LogXGEController: Cleaning working directory: C:/Users/m013603g/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.11.29-11.04.07:399][322]LogModuleManager: Shutting down and abandoning module TargetPlatform (158)
+[2018.11.29-11.04.07:399][322]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (157)
+[2018.11.29-11.04.07:399][322]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (155)
+[2018.11.29-11.04.07:399][322]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (153)
+[2018.11.29-11.04.07:399][322]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (151)
+[2018.11.29-11.04.07:399][322]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (149)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (147)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (145)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (143)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (141)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (139)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module ImageWrapper (138)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (135)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (133)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (131)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (129)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (127)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (125)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (123)
+[2018.11.29-11.04.07:400][322]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (121)
+[2018.11.29-11.04.07:401][322]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (119)
+[2018.11.29-11.04.07:401][322]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (117)
+[2018.11.29-11.04.07:402][322]LogModuleManager: Shutting down and abandoning module Messaging (115)
+[2018.11.29-11.04.07:402][322]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (113)
+[2018.11.29-11.04.07:403][322]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (111)
+[2018.11.29-11.04.07:403][322]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (109)
+[2018.11.29-11.04.07:411][322]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (107)
+[2018.11.29-11.04.07:411][322]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (105)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (103)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (101)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (99)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (97)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (95)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (93)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (91)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module InputCore (88)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module Settings (86)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module PhysXCooking (84)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module SteamVR (82)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module OculusHMD (80)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (78)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (76)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
+[2018.11.29-11.04.07:412][322]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (70)
+[2018.11.29-11.04.07:414][322]LogModuleManager: Shutting down and abandoning module XMPP (65)
+[2018.11.29-11.04.07:415][322]LogModuleManager: Shutting down and abandoning module WebSockets (64)
+[2018.11.29-11.04.07:431][322]LogModuleManager: Shutting down and abandoning module HTTP (61)
+[2018.11.29-11.04.07:432][322]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.11.29-11.04.07:432][322]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BC846A45B-4E5E-C01C-7DA9-599F3D0CAB49%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.20.3-4369336%2B%2B%2BUE4%2BRelease-4.20&UserID=3394514e4577c5e345fce08a170427c1%7C%7C2aec92a2-f300-4d41-b02b-ef52dee98cf4&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.11.29-11.04.07:465][322]LogModuleManager: Shutting down and abandoning module SSL (60)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapEmulator (56)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (54)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (52)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (50)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (48)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (46)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapGestures (44)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (42)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeapController (40)
+[2018.11.29-11.04.07:467][322]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module MagicLeap (38)
+[2018.11.29-11.04.07:467][322]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.11.29-11.04.07:468][322]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.11.29-11.04.07:468][322]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.11.29-11.04.07:468][322]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.11.29-11.04.07:468][322]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.11.29-11.04.07:468][322]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.11.29-11.04.07:469][322]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.11.29-11.04.07:470][322]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.11.29-11.04.07:480][322]LogExit: Exiting.
+[2018.11.29-11.04.07:487][322]Log file closed, 11/29/18 11:04:07

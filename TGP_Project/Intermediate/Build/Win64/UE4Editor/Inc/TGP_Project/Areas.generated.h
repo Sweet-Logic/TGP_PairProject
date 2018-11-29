@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TGP_PROJECT_Areas_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_RPC_WRAPPERS
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_INCLASS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_RPC_WRAPPERS
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAreas(); \
 	friend struct Z_Construct_UClass_AAreas_Statics; \
@@ -24,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(AAreas)
 
 
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_INCLASS \
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesAAreas(); \
 	friend struct Z_Construct_UClass_AAreas_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(AAreas)
 
 
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_STANDARD_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAreas(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAreas) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_ENHANCED_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AAreas(AAreas&&); \
@@ -57,26 +57,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAreas); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AAreas)
 
 
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_PRIVATE_PROPERTY_OFFSET
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_9_PROLOG
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_GENERATED_BODY_LEGACY \
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_PRIVATE_PROPERTY_OFFSET
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_18_PROLOG
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_RPC_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_INCLASS \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_STANDARD_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_INCLASS \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TGP_Project_Source_TGP_Project_Public_Areas_h_12_GENERATED_BODY \
+#define TGP_Project_Source_TGP_Project_Public_Areas_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_INCLASS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_Areas_h_12_ENHANCED_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_INCLASS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_Areas_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -85,4 +85,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define CURRENT_FILE_ID TGP_Project_Source_TGP_Project_Public_Areas_h
 
 
+#define FOREACH_ENUM_EAREAS(op) \
+	op(A_AUTHORISED) \
+	op(A_RESTRICTED) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

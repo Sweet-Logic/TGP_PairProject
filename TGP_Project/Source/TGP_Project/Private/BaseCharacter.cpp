@@ -43,7 +43,6 @@ void ABaseCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	HandleMovement(DeltaTime);
 }
 // Called to bind functionality to input
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
@@ -71,29 +70,3 @@ void ABaseCharacter::FlipFlipbook()
 	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, 90));
 }
 
-void ABaseCharacter::HandleMovement(float DeltaTime)
-{
-	if (!MovementInput.IsZero())
-	{
-		SwitchFlipbook(WalikingFlipBook);
-		//Scale our movement input axis values by 100 units per second
-		if (MovementInput.X < 0)
-		{
-			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, -90, 90));
-		}
-		else if(MovementInput.X > 0)
-		{
-			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, -90));
-		}
-
-		MovementInput = MovementInput.GetSafeNormal() * CurrentMovementSpeed;
-		FVector NewLocation = GetActorLocation();
-		NewLocation += FVector(0.0f, 1.0f,0.0f) * (MovementInput.X) * DeltaTime;
-		NewLocation += FVector(1.0f, 0.0f, 0.0f)   * (MovementInput.Y) * DeltaTime;
-		SetActorLocation(NewLocation);
-	}
-	else
-	{
-		SwitchFlipbook(IdleFlipbook);
-	}
-}

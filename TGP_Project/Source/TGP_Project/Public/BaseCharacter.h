@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Paper2D/Classes/PaperCharacter.h"
 #include "BaseCharacter.generated.h"
 
 class UPaperFlipbook;
@@ -16,7 +17,7 @@ class UArrowComponent;
  * 
  */
 UCLASS()
-class TGP_PROJECT_API ABaseCharacter : public APawn
+class TGP_PROJECT_API ABaseCharacter : public APaperCharacter
 {
 	GENERATED_BODY()
 
@@ -54,7 +55,6 @@ public:
 		void FlipFlipbook();
 
 
-	void HandleMovement(float DeltaTime);
 
 
 	//UPROPERTY(EditAnywhere, Category = "Movement Settings")

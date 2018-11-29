@@ -3,6 +3,8 @@
 #include "BasePlayer.h"
 #include "Runtime/Engine/Classes/GameFramework/SpringArmComponent.h"
 #include "Runtime/Engine/Classes/Camera/CameraComponent.h"
+#include "Paper2D/Classes/PaperFlipbookComponent.h"
+
 #include "Components/InputComponent.h"
 
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
@@ -36,6 +38,7 @@ void ABasePlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
+
 	Camera->SetOrthoWidth(OrthoWidth);
 
 	ViewportSize = FVector2D(GEngine->GameViewport->Viewport->GetSizeXY());
@@ -46,6 +49,9 @@ void ABasePlayer::BeginPlay()
 void ABasePlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	HandleMovement(DeltaTime);
+
 	ABaseCharacter::Tick(DeltaTime);
 
 	Score -= DeltaTime;
@@ -220,5 +226,33 @@ void ABasePlayer::HandlePanning(float DeltaTime)
 		PanSpeed = PanSpeedMin;
 
 		SpringArm->TargetOffset -= OffsetDir * PanResetSpeed;
+	}
+}
+
+
+void ABasePlayer::HandleMovement(float DeltaTime)
+{
+	if (!MovementInput.IsZero())
+	{
+		SwitchFlipbook(WalikingFlipBook);
+		//Scale our movement input axis values by 100 units per second
+		if (MovementInput.X < 0)
+		{
+			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, -90, 90));
+		}
+		else if (MovementInput.X > 0)
+		{
+			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, -90));
+		}
+
+		MovementInput = MovementInput.GetSafeNormal() * CurrentMovementSpeed;
+		FVector NewLocation = GetActorLocation();
+		NewLocation += FVector(0.0f, 1.0f, 0.0f) * (MovementInput.X) * DeltaTime;
+		NewLocation += FVector(1.0f, 0.0f, 0.0f)   * (MovementInput.Y) * DeltaTime;
+		SetActorLocation(NewLocation);
+	}
+	else
+	{
+		SwitchFlipbook(IdleFlipbook);
 	}
 }
