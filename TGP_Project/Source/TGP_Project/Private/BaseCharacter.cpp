@@ -4,8 +4,11 @@
 
 #include "Paper2D/Classes/PaperFlipbookComponent.h"
 #include "Paper2D/Classes/PaperFlipbook.h"
+#include "Paper2D/Classes/PaperSprite.h"
 #include "Components/InputComponent.h"
 #include "Components/BoxComponent.h"
+#include "Engine.h"
+
 
 
 
@@ -39,6 +42,9 @@ void ABaseCharacter::BeginPlay()
 
 	Sprite->Play();
 
+	FVector2D size = WalikingFlipBook->GetSpriteAtFrame(0)->GetSourceSize();
+
+	BoxComponent->SetBoxExtent(FVector(size.X, size.X, 1.0f));
 
 
 }
@@ -82,5 +88,4 @@ void ABaseCharacter::Collision(UPrimitiveComponent* OverlappedComponent,
 	bool bFromSweep,
 	const FHitResult &SweepResult)
 {
-	
 }

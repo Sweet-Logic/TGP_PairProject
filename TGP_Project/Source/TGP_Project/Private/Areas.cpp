@@ -3,6 +3,7 @@
 #include "Areas.h"
 #include "BasePlayer.h"
 #include "Components/BoxComponent.h"
+#include "Engine.h"
 
 
 // Sets default values
@@ -16,6 +17,11 @@ AAreas::AAreas()
 
 	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &AAreas::EnterRestictedArea);
 
+	BoxComponent->OnComponentEndOverlap.AddDynamic(this, &AAreas::ExitRestictedArea);
+
+	BoxComponent->SetGenerateOverlapEvents(true);
+
+
 }
 
 // Called when the game starts or when spawned
@@ -26,7 +32,7 @@ void AAreas::BeginPlay()
 
 }
 
-UFUNCTION()
+
 void AAreas::EnterRestictedArea(UPrimitiveComponent* OverlappedComponent,
 	AActor* OtherActor,
 	UPrimitiveComponent* OtherComp,
@@ -34,20 +40,35 @@ void AAreas::EnterRestictedArea(UPrimitiveComponent* OverlappedComponent,
 	bool bFromSweep,
 	const FHitResult &SweepResult)
 {
-	ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
-	if (hitPawn != nullptr)
+	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
-		hitPawn->InRestictedArea = true;
+		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, TEXT("hit"));
+
+		if (hitPawn != nullptr)
+		{
+			hitPawn->InRestictedArea = false;
+		}
 	}
+
 }
 
-void AAreas::ExitRestictedArea(const FOverlapInfo & OtherOverlap, bool bDoNotifies, bool bSkipNotifySelf)
+void AAreas::ExitRestictedArea(UPrimitiveComponent* OverlappedComponent,
+	AActor* OtherActor,
+	UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex)
 {
-	ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherOverlap.OverlapInfo.Actor);
-	if (hitPawn != nullptr)
+	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
-		hitPawn->InRestictedArea = true;
+		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, TEXT("help"));
+
+		if (hitPawn != nullptr)
+		{
+			hitPawn->InRestictedArea = false;
+		}
 	}
+	
 }
 
 

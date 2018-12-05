@@ -59,19 +59,19 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "FlippingFlipbooks")
 		void FlipFlipbook();
 
-
-	void Collision(UPrimitiveComponent* OverlappedComponent,
-		AActor* OtherActor,
-		UPrimitiveComponent* OtherComp,
-		int32 OtherBodyIndex,
-		bool bFromSweep,
-		const FHitResult &SweepResult);
+	UFUNCTION()
+		void Collision(UPrimitiveComponent* OverlappedComponent,
+			AActor* OtherActor,
+			UPrimitiveComponent* OtherComp,
+			int32 OtherBodyIndex,
+			bool bFromSweep,
+			const FHitResult &SweepResult);
 
 	//UPROPERTY(EditAnywhere, Category = "Movement Settings")
 	FVector2D MovementInput;
 
 	//Movement Settings
-	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
+	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "200.0", UIMin = "0.0", UIMax = "200.0"))
 		float WalkSpeed = 80.0f;
 
 

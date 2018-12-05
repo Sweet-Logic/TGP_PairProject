@@ -65,7 +65,6 @@ void ABasePlayer::Tick(float DeltaTime)
 
 	if (GEngine)
 	{
-
 	}
 }
 // Called to bind functionality to input
