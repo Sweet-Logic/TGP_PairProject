@@ -18,10 +18,10 @@ void AAreas::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
+	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 
 	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
-	//BoxComponent->SetupAttachment(RootComponent);
+	BoxComponent->SetupAttachment(RootComponent);
 
 	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &AAreas::EnterRestictedArea);
 }

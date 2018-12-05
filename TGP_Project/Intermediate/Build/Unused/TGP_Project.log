@@ -2,6 +2,6 @@
   Creating makefile for hot reloading TGP_ProjectEditor (modules to compile have changed)
   Compiling game modules for hot reload
   Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-UnrealBuildTool : error : In D:\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\BasePlayer.cpp: #include "..\Public\BasePlayer.h" contains backslashes ('\'), please use forward slashes ('/') instead.
-                          (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.20\Engine\Build\BatchFiles\Build.bat" TGP_ProjectEditor Win64 Development "D:\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" -WaitMutex -FromMsBuild" exited with code 5. Please verify that you have sufficient rights to run this command.
+  Target is up to date
+  Deploying TGP_ProjectEditor Win64 Development...
+  Total build time: 11.15 seconds (NoActionsToExecute executor: 0.00 seconds)

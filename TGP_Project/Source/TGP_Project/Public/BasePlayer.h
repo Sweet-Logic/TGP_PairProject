@@ -77,7 +77,9 @@ public:
 
 	void HandleMovement(float DeltaTime);
 
-	bool InRestictedArea = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Areas")
+		bool InRestictedArea = false;
 
 
 	float Score = 10000;

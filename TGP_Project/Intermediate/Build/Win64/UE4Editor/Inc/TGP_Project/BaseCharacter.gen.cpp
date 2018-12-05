@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 // Cross Module References
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
-	PAPER2D_API UClass* Z_Construct_UClass_APaperCharacter();
+	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_FlipFlipbook();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_SwitchFlipbook();
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ABaseCharacter_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_APaperCharacter,
+		(UObject* (*)())Z_Construct_UClass_APawn,
 		(UObject* (*)())Z_Construct_UPackage__Script_TGP_Project,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacter_Statics::FuncInfo[] = {
@@ -243,7 +243,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 1250172190);
+	IMPLEMENT_CLASS(ABaseCharacter, 2278157185);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseCharacter(Z_Construct_UClass_ABaseCharacter, &ABaseCharacter::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -59,7 +59,7 @@ private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
 public: \
-	DECLARE_CLASS(ABaseCharacter, APaperCharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
+	DECLARE_CLASS(ABaseCharacter, APawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
@@ -68,7 +68,7 @@ private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
 public: \
-	DECLARE_CLASS(ABaseCharacter, APaperCharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
+	DECLARE_CLASS(ABaseCharacter, APawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 

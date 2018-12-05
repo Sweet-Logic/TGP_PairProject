@@ -17,7 +17,7 @@ class UArrowComponent;
  * 
  */
 UCLASS()
-class TGP_PROJECT_API ABaseCharacter : public APaperCharacter
+class TGP_PROJECT_API ABaseCharacter : public APawn
 {
 	GENERATED_BODY()
 
