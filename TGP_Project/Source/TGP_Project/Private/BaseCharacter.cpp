@@ -60,14 +60,32 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	
 }
 
+void ABaseCharacter::EnableMovement()
+{
+	canMove = true;
+}
+
+void ABaseCharacter::StopMovement()
+{
+	canMove = false;
+
+}
+
 void ABaseCharacter::MoveUp(float AxisValue)
 {
-	MovementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	canMove = true;
+	if (canMove)
+	{
+		MovementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	}
 }
 
 void ABaseCharacter::MoveRight(float AxisValue)
 {
-	MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	if (canMove)
+	{
+		MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	}
 }
 
 void ABaseCharacter::SwitchFlipbook(UPaperFlipbook * newFlipbook)

@@ -28,7 +28,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-
+	bool canMove = true;
 public:
 	virtual void Tick(float deltaSeconds) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
@@ -83,9 +83,13 @@ public:
 		float Y = 0.0f;
 	UPROPERTY(EditAnywhere, Category = "Movement Settings")
 		float Z = 0.0f;
+	
+	void EnableMovement();
 
+	void StopMovement();
 	
 	void MoveUp(float value);
 	void MoveRight(float value);
 
+	bool IsAlive = true;
 };
