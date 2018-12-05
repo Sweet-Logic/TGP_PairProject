@@ -5,6 +5,7 @@
 #include "Paper2D/Classes/PaperFlipbookComponent.h"
 #include "Paper2D/Classes/PaperFlipbook.h"
 #include "Components/InputComponent.h"
+#include "Components/BoxComponent.h"
 
 
 
@@ -22,7 +23,10 @@ ABaseCharacter::ABaseCharacter()
 	//Sprite->SetFlipbook(DefaultFlipbook);
 	CurrentMovementSpeed = WalkSpeed;
 
-	
+	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
+	BoxComponent->SetupAttachment(RootComponent);
+
+	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &ABaseCharacter::Collision);
 
 }
 // Called when the game starts or when spawned
@@ -70,3 +74,13 @@ void ABaseCharacter::FlipFlipbook()
 	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, 90));
 }
 
+UFUNCTION()
+void ABaseCharacter::Collision(UPrimitiveComponent* OverlappedComponent,
+	AActor* OtherActor,
+	UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex,
+	bool bFromSweep,
+	const FHitResult &SweepResult)
+{
+	
+}

@@ -1,7 +1,10 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
   Creating makefile for hot reloading TGP_ProjectEditor (modules to compile have changed)
   Compiling game modules for hot reload
-  Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Target is up to date
-  Deploying TGP_ProjectEditor Win64 Development...
-  Total build time: 11.15 seconds (NoActionsToExecute executor: 0.00 seconds)
+  Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Parsing headers for TGP_ProjectEditor
+    Running UnrealHeaderTool "D:\git\TGP_PairProject\TGP_Project\TGP_Project.uproject" "D:\git\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  D:/git/TGP_PairProject/TGP_Project/Source/TGP_Project/Public/BaseCharacter.h(38) : LogCompile: Error: Unknown variable specifier 'VisableAnywhere'
+  D:/git/TGP_PairProject/TGP_Project/Source/TGP_Project/Public/BaseCharacter.h(40) : LogCompile: Error: Unknown variable specifier 'VisableAnywhere'
+EXEC : error : UnrealHeaderTool failed for target 'TGP_ProjectEditor' (platform: Win64, module info: D:\git\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command "C:\Epic\UE4\UE_4.20\Engine\Build\BatchFiles\Build.bat TGP_ProjectEditor Win64 Development "D:\git\TGP_PairProject\TGP_Project\TGP_Project.uproject" -WaitMutex -FromMsBuild" exited with code 5. Please verify that you have sufficient rights to run this command.

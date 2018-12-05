@@ -24,7 +24,8 @@ public:
 	// Sets default values for this actor's properties
 	AAreas();
 
-	UBoxComponent* BoxComponent;
+	UPROPERTY(VisibleAnywhere)
+		UBoxComponent* BoxComponent;
 
 protected:
 	// Called when the game starts or when spawned

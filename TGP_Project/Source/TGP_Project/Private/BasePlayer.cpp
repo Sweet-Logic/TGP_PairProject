@@ -11,6 +11,7 @@
 #include "Runtime/Engine/Classes/GameFramework/PlayerController.h"
 #include "Engine.h"
 #include "../Public/BasePlayer.h"
+#include "Components/BoxComponent.h"
 //#include "UnrealString.h"
 
 

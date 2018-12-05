@@ -12,6 +12,7 @@ class UPaperFlipbook;
 class UPaperFlipbookComponent;
 class USceneComponent;
 class UArrowComponent;
+class UBoxComponent;
 
 /**
  * 
@@ -33,8 +34,12 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 	//Components
-	UPaperFlipbookComponent* Sprite;
-	UArrowComponent* direction;
+	UPROPERTY(VisibleAnywhere)
+		UBoxComponent* BoxComponent;
+	UPROPERTY(VisibleAnywhere)
+		UPaperFlipbookComponent* Sprite;
+	UPROPERTY(VisibleAnywhere)
+		UArrowComponent* direction;
 	
 	
 
@@ -55,7 +60,12 @@ public:
 		void FlipFlipbook();
 
 
-
+	void Collision(UPrimitiveComponent* OverlappedComponent,
+		AActor* OtherActor,
+		UPrimitiveComponent* OtherComp,
+		int32 OtherBodyIndex,
+		bool bFromSweep,
+		const FHitResult &SweepResult);
 
 	//UPROPERTY(EditAnywhere, Category = "Movement Settings")
 	FVector2D MovementInput;

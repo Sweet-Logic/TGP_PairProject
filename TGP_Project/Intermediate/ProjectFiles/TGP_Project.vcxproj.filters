@@ -1,90 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\TGP_Project.uproject" />
-    <Filter Include="Source">
-      <UniqueIdentifier>{1FF04F47-07DE-422F-8C01-03C3473C10F9}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\TGP_Project.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <None Include="..\..\Source\TGP_ProjectEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{9385476C-D6DF-41C7-BA2C-757E00312684}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
-    <Filter Include="Source\TGP_Project">
-      <UniqueIdentifier>{F4C546DF-A0DA-4AF8-BBE4-FEE741B0D431}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\TGP_Project\CharacterBase.cpp">
-      <Filter>Source\TGP_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\TGP_Project\CharacterBase.h">
-      <Filter>Source\TGP_Project</Filter>
-    </ClInclude>
-    <None Include="..\..\Source\TGP_Project\TGP_Project.Build.cs">
-      <Filter>Source\TGP_Project</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\TGP_Project\TGP_Project.cpp">
-      <Filter>Source\TGP_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\TGP_Project\TGP_Project.h">
-      <Filter>Source\TGP_Project</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\TGP_Project\TGP_ProjectGameModeBase.cpp">
-      <Filter>Source\TGP_Project</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\TGP_Project\TGP_ProjectGameModeBase.h">
-      <Filter>Source\TGP_Project</Filter>
-    </ClInclude>
-    <Filter Include="Source\TGP_Project\Private">
-      <UniqueIdentifier>{2CF672BD-3F7A-4FE7-A271-9C13CEC74C63}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\TGP_Project\Private\Areas.cpp">
-      <Filter>Source\TGP_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TGP_Project\Private\BaseCharacter.cpp">
-      <Filter>Source\TGP_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TGP_Project\Private\BasePlayer.cpp">
-      <Filter>Source\TGP_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TGP_Project\Private\Enums.cpp">
-      <Filter>Source\TGP_Project\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TGP_Project\Private\gm_TGPGAME.cpp">
-      <Filter>Source\TGP_Project\Private</Filter>
-    </ClCompile>
-    <Filter Include="Source\TGP_Project\Public">
-      <UniqueIdentifier>{6A8F645A-84D7-4E13-A266-6ECCA67252AD}</UniqueIdentifier>
-    </Filter>
-    <ClInclude Include="..\..\Source\TGP_Project\Public\Areas.h">
-      <Filter>Source\TGP_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\TGP_Project\Public\BaseCharacter.h">
-      <Filter>Source\TGP_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\TGP_Project\Public\BasePlayer.h">
-      <Filter>Source\TGP_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\TGP_Project\Public\Enums.h">
-      <Filter>Source\TGP_Project\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\TGP_Project\Public\gm_TGPGAME.h">
-      <Filter>Source\TGP_Project\Public</Filter>
-    </ClInclude>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\TGP_Project.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{190D9BE0-FA6C-4BB6-985B-DAB717B809BB}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TGP_Project.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\TGP_ProjectEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{B87F2E6B-C226-4BCE-837E-A67CD688806F}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\TGP_Project">
+			<UniqueIdentifier>{EFA7FEF7-8BAE-485D-B5EC-E1048A4C9730}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TGP_Project\CharacterBase.cpp">
+			<Filter>Source\TGP_Project</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TGP_Project\CharacterBase.h">
+			<Filter>Source\TGP_Project</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\TGP_Project\TGP_Project.Build.cs">
+			<Filter>Source\TGP_Project</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\TGP_Project\TGP_Project.cpp">
+			<Filter>Source\TGP_Project</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TGP_Project\TGP_Project.h">
+			<Filter>Source\TGP_Project</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\TGP_Project\TGP_ProjectGameModeBase.cpp">
+			<Filter>Source\TGP_Project</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TGP_Project\TGP_ProjectGameModeBase.h">
+			<Filter>Source\TGP_Project</Filter>
+		</ClInclude >
+		<Filter Include="Source\TGP_Project\Private">
+			<UniqueIdentifier>{95927576-662A-44EC-8F4E-AB45A6E17725}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TGP_Project\Private\Areas.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\AreaTriggers.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\BaseCharacter.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\BasePlayer.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\Enums.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\gm_TGPGAME.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
+		<Filter Include="Source\TGP_Project\Public">
+			<UniqueIdentifier>{DDC7FE14-4CC1-47D1-BA17-AD81B25D5845}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Source\TGP_Project\Public\Areas.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\AreaTriggers.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\BaseCharacter.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\BasePlayer.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\Enums.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\gm_TGPGAME.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+	</ItemGroup>
 </Project>

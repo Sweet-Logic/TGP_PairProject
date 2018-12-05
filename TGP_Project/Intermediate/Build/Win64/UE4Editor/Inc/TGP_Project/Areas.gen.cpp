@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 	TGP_PROJECT_API UClass* Z_Construct_UClass_AAreas_NoRegister();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_AAreas();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
 	static UEnum* EAREAS_StaticEnum()
 	{
@@ -80,6 +81,11 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BoxComponent;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -93,6 +99,17 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 		{ "ModuleRelativePath", "Public/Areas.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAreas_Statics::NewProp_BoxComponent_MetaData[] = {
+		{ "Category", "Areas" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Areas.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAreas_Statics::NewProp_BoxComponent = { UE4CodeGen_Private::EPropertyClass::Object, "BoxComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AAreas, BoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AAreas_Statics::NewProp_BoxComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAreas_Statics::NewProp_BoxComponent_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAreas_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAreas_Statics::NewProp_BoxComponent,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAreas_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AAreas>::IsAbstract,
 	};
@@ -101,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
 		0x009000A0u,
 		nullptr, 0,
-		nullptr, 0,
+		Z_Construct_UClass_AAreas_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AAreas_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
@@ -116,7 +133,7 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAreas, 4111562655);
+	IMPLEMENT_CLASS(AAreas, 688238932);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAreas(Z_Construct_UClass_AAreas, &AAreas::StaticClass, TEXT("/Script/TGP_Project"), TEXT("AAreas"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAreas);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
