@@ -17,7 +17,7 @@ AAreas::AAreas()
 
 	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &AAreas::EnterRestictedArea);
 
-	BoxComponent->OnComponentEndOverlap.AddDynamic(this, &AAreas::ExitRestictedArea);
+	OnActorEndOverlap.AddDynamic(this, &AAreas::ExitRestictedArea);
 
 	BoxComponent->SetGenerateOverlapEvents(true);
 
@@ -47,18 +47,16 @@ void AAreas::EnterRestictedArea(UPrimitiveComponent* OverlappedComponent,
 
 		if (hitPawn != nullptr)
 		{
-			hitPawn->InRestictedArea = false;
+			hitPawn->InRestictedArea = true;
 		}
 	}
 
 }
 
-void AAreas::ExitRestictedArea(UPrimitiveComponent* OverlappedComponent,
-	AActor* OtherActor,
-	UPrimitiveComponent* OtherComp,
-	int32 OtherBodyIndex)
+void AAreas::ExitRestictedArea(AActor* Actor,
+	AActor* OtherActor)
 {
-	if (OtherActor && (OtherActor != this) && OtherComp)
+	if (OtherActor && (OtherActor != this))
 	{
 		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, TEXT("help"));
@@ -76,6 +74,16 @@ void AAreas::ExitRestictedArea(UPrimitiveComponent* OverlappedComponent,
 void AAreas::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	TSet<AActor*> tActor;
+	GetOverlappingActors(tActor);
+
+	TArray<AActor*> aActor = tActor.Array();
+
+	int count = aActor.Max();
+
+
+	GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Yellow, FString::FromInt(count));
 
 }
 

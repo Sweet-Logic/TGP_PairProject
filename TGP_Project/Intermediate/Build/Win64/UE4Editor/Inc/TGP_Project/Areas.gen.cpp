@@ -167,46 +167,22 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 	{
 		struct Areas_eventExitRestictedArea_Parms
 		{
-			UPrimitiveComponent* OverlappedComponent;
+			AActor* Actor;
 			AActor* OtherActor;
-			UPrimitiveComponent* OtherComp;
-			int32 OtherBodyIndex;
 		};
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_OtherBodyIndex;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverlappedComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OverlappedComponent;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherBodyIndex = { UE4CodeGen_Private::EPropertyClass::Int, "OtherBodyIndex", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(Areas_eventExitRestictedArea_Parms, OtherBodyIndex), METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherComp_MetaData[] = {
-		{ "EditInline", "true" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherComp = { UE4CodeGen_Private::EPropertyClass::Object, "OtherComp", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(Areas_eventExitRestictedArea_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherComp_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherComp_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherActor = { UE4CodeGen_Private::EPropertyClass::Object, "OtherActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(Areas_eventExitRestictedArea_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OverlappedComponent_MetaData[] = {
-		{ "EditInline", "true" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OverlappedComponent = { UE4CodeGen_Private::EPropertyClass::Object, "OverlappedComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080080, 1, nullptr, STRUCT_OFFSET(Areas_eventExitRestictedArea_Parms, OverlappedComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OverlappedComponent_MetaData, ARRAY_COUNT(Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OverlappedComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_Actor = { UE4CodeGen_Private::EPropertyClass::Object, "Actor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(Areas_eventExitRestictedArea_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherBodyIndex,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OtherActor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_OverlappedComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::NewProp_Actor,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AAreas_ExitRestictedArea_Statics::Function_MetaDataParams[] = {
@@ -248,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AAreas_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AAreas_EnterRestictedArea, "EnterRestictedArea" }, // 3506218467
-		{ &Z_Construct_UFunction_AAreas_ExitRestictedArea, "ExitRestictedArea" }, // 1408038285
+		{ &Z_Construct_UFunction_AAreas_ExitRestictedArea, "ExitRestictedArea" }, // 1979275527
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAreas_Statics::Class_MetaDataParams[] = {
@@ -290,7 +266,7 @@ void EmptyLinkFunctionForGeneratedCodeAreas() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAreas, 1566076092);
+	IMPLEMENT_CLASS(AAreas, 3671109510);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAreas(Z_Construct_UClass_AAreas, &AAreas::StaticClass, TEXT("/Script/TGP_Project"), TEXT("AAreas"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAreas);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

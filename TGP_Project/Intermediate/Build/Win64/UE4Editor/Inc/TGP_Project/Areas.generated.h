@@ -8,8 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 struct FHitResult;
 #ifdef TGP_PROJECT_Areas_generated_h
 #error "Areas.generated.h already included, missing '#pragma once' in Areas.h"
@@ -20,13 +20,11 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execExitRestictedArea) \
 	{ \
-		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent); \
+		P_GET_OBJECT(AActor,Z_Param_Actor); \
 		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
-		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_OtherBodyIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->ExitRestictedArea(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex); \
+		P_THIS->ExitRestictedArea(Z_Param_Actor,Z_Param_OtherActor); \
 		P_NATIVE_END; \
 	} \
  \
@@ -49,13 +47,11 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execExitRestictedArea) \
 	{ \
-		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent); \
+		P_GET_OBJECT(AActor,Z_Param_Actor); \
 		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
-		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_OtherBodyIndex); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->ExitRestictedArea(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex); \
+		P_THIS->ExitRestictedArea(Z_Param_Actor,Z_Param_OtherActor); \
 		P_NATIVE_END; \
 	} \
  \
