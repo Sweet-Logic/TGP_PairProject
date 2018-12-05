@@ -4,7 +4,11 @@
 
 #include "Paper2D/Classes/PaperFlipbookComponent.h"
 #include "Paper2D/Classes/PaperFlipbook.h"
+#include "Paper2D/Classes/PaperSprite.h"
 #include "Components/InputComponent.h"
+#include "Components/BoxComponent.h"
+#include "Engine.h"
+
 
 
 
@@ -22,7 +26,10 @@ ABaseCharacter::ABaseCharacter()
 	//Sprite->SetFlipbook(DefaultFlipbook);
 	CurrentMovementSpeed = WalkSpeed;
 
-	
+	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
+	BoxComponent->SetupAttachment(RootComponent);
+
+	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &ABaseCharacter::Collision);
 
 }
 // Called when the game starts or when spawned
@@ -35,6 +42,9 @@ void ABaseCharacter::BeginPlay()
 
 	Sprite->Play();
 
+	FVector2D size = WalikingFlipBook->GetSpriteAtFrame(0)->GetSourceSize();
+
+	BoxComponent->SetBoxExtent(FVector(size.X, size.X, 1.0f));
 
 
 }
@@ -43,7 +53,6 @@ void ABaseCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	HandleMovement(DeltaTime);
 }
 // Called to bind functionality to input
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
@@ -51,14 +60,32 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	
 }
 
+void ABaseCharacter::EnableMovement()
+{
+	canMove = true;
+}
+
+void ABaseCharacter::StopMovement()
+{
+	canMove = false;
+
+}
+
 void ABaseCharacter::MoveUp(float AxisValue)
 {
-	MovementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	canMove = true;
+	if (canMove)
+	{
+		MovementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	}
 }
 
 void ABaseCharacter::MoveRight(float AxisValue)
 {
-	MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	if (canMove)
+	{
+		MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	}
 }
 
 void ABaseCharacter::SwitchFlipbook(UPaperFlipbook * newFlipbook)
@@ -71,29 +98,12 @@ void ABaseCharacter::FlipFlipbook()
 	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, 90));
 }
 
-void ABaseCharacter::HandleMovement(float DeltaTime)
+UFUNCTION()
+void ABaseCharacter::Collision(UPrimitiveComponent* OverlappedComponent,
+	AActor* OtherActor,
+	UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex,
+	bool bFromSweep,
+	const FHitResult &SweepResult)
 {
-	if (!MovementInput.IsZero())
-	{
-		SwitchFlipbook(WalikingFlipBook);
-		//Scale our movement input axis values by 100 units per second
-		if (MovementInput.X < 0)
-		{
-			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, -90, 90));
-		}
-		else if(MovementInput.X > 0)
-		{
-			Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, -90));
-		}
-
-		MovementInput = MovementInput.GetSafeNormal() * CurrentMovementSpeed;
-		FVector NewLocation = GetActorLocation();
-		NewLocation += FVector(0.0f, 1.0f,0.0f) * (MovementInput.X) * DeltaTime;
-		NewLocation += FVector(1.0f, 0.0f, 0.0f)   * (MovementInput.Y) * DeltaTime;
-		SetActorLocation(NewLocation);
-	}
-	else
-	{
-		SwitchFlipbook(IdleFlipbook);
-	}
 }

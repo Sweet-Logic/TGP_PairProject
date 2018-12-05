@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Paper2D/Classes/PaperCharacter.h"
 #include "BaseCharacter.generated.h"
 
 class UPaperFlipbook;
@@ -11,6 +12,7 @@ class UPaperFlipbook;
 class UPaperFlipbookComponent;
 class USceneComponent;
 class UArrowComponent;
+class UBoxComponent;
 
 /**
  * 
@@ -26,14 +28,18 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-
+	bool canMove = true;
 public:
 	virtual void Tick(float deltaSeconds) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 	//Components
-	UPaperFlipbookComponent* Sprite;
-	UArrowComponent* direction;
+	UPROPERTY(VisibleAnywhere)
+		UBoxComponent* BoxComponent;
+	UPROPERTY(VisibleAnywhere)
+		UPaperFlipbookComponent* Sprite;
+	UPROPERTY(VisibleAnywhere)
+		UArrowComponent* direction;
 	
 	
 
@@ -53,15 +59,19 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "FlippingFlipbooks")
 		void FlipFlipbook();
 
-
-	void HandleMovement(float DeltaTime);
-
+	UFUNCTION()
+		void Collision(UPrimitiveComponent* OverlappedComponent,
+			AActor* OtherActor,
+			UPrimitiveComponent* OtherComp,
+			int32 OtherBodyIndex,
+			bool bFromSweep,
+			const FHitResult &SweepResult);
 
 	//UPROPERTY(EditAnywhere, Category = "Movement Settings")
 	FVector2D MovementInput;
 
 	//Movement Settings
-	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
+	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "200.0", UIMin = "0.0", UIMax = "200.0"))
 		float WalkSpeed = 80.0f;
 
 
@@ -73,9 +83,13 @@ public:
 		float Y = 0.0f;
 	UPROPERTY(EditAnywhere, Category = "Movement Settings")
 		float Z = 0.0f;
+	
+	void EnableMovement();
 
+	void StopMovement();
 	
 	void MoveUp(float value);
 	void MoveRight(float value);
 
+	bool IsAlive = true;
 };

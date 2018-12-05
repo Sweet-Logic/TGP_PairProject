@@ -13,8 +13,9 @@ class UCameraComponent;
 /**
  * 
  */
+
 UCLASS()
-class TGP_PROJECT_API ABasePlayer : public ABaseCharacter//, public APawn
+class TGP_PROJECT_API ABasePlayer : public ABaseCharacter
 {
 	GENERATED_BODY()
 	
@@ -73,6 +74,15 @@ public:
 		float SprintTimer = 3.0f; // time in seconds
 
 	float HiddenMultiplier = 1.0f; // donno, higher the value the easier it is for enimies to detect the player.
+
+	void HandleMovement(float DeltaTime);
+
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Areas")
+		bool InRestictedArea = false;
+
+
+	float Score = 10000;
 
 	//Axis Mapping
 	void HandlePanning(float DeltaTime);
