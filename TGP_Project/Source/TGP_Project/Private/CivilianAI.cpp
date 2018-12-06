@@ -71,7 +71,7 @@ void ACivilianAI::OnPawnSeen(APawn * instigator)
 	{
 		_state = AI_STATE::ALERTED;
 		
-		float currentClosest;
+		float currentClosest = 10000.0f;
 		for (int i = 0; i < _civHidingSpots.Num(); i++)
 		{
 			FVector delta = _hidingSpot->GetActorLocation() - _civHidingSpots[i]->GetActorLocation();

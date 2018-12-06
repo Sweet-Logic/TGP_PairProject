@@ -427,8 +427,14 @@
 		<ClInclude Include="..\..\Source\TGP_Project\TGP_ProjectGameModeBase.h" />
 		<ClCompile Include="..\..\Source\TGP_Project\Private\Areas.cpp" />
 		<ClCompile Include="..\..\Source\TGP_Project\Private\AreaTriggers.cpp" />
+		<ClCompile Include="..\..\Source\TGP_Project\Private\BaseAI.cpp" />
+		<ClInclude Include="..\..\Source\TGP_Project\Private\BaseAI.h" />
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BaseCharacter.cpp" />
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BasePlayer.cpp" />
+		<ClCompile Include="..\..\Source\TGP_Project\Private\BodyGuardAI.cpp" />
+		<ClInclude Include="..\..\Source\TGP_Project\Private\BodyGuardAI.h" />
+		<ClCompile Include="..\..\Source\TGP_Project\Private\CivilianAI.cpp" />
+		<ClInclude Include="..\..\Source\TGP_Project\Private\CivilianAI.h" />
 		<ClCompile Include="..\..\Source\TGP_Project\Private\Enums.cpp" />
 		<ClCompile Include="..\..\Source\TGP_Project\Private\gm_TGPGAME.cpp" />
 		<ClCompile Include="..\..\Source\TGP_Project\Private\RestrictedEntrance.cpp" />
