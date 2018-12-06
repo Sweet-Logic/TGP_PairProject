@@ -1,19 +1,35 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for TGP_ProjectEditor (no existing makefile)
+  Performing full C++ include scan (no include cache file)
+  Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Parsing headers for TGP_ProjectEditor
-    Running UnrealHeaderTool "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for TGP_ProjectEditor in 10.8027747 seconds
-  Building 10 actions with 8 processes...
-    [1/10] TGP_Project.init.gen.cpp
-    [2/10] BaseCharacter.gen.cpp
-    [3/10] gm_TGPGAME.cpp
-    [4/10] BasePlayer.gen.cpp
-    [5/10] Areas.cpp
-    [6/10] gm_TGPGAME.gen.cpp
-    [7/10] BaseCharacter.cpp
-    [8/10] BasePlayer.cpp
-    [9/10] UE4Editor-TGP_Project.lib
-       Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.exp
-    [10/10] UE4Editor-TGP_Project.dll
-       Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
+    Running UnrealHeaderTool "C:\Users\m018585h\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "C:\Users\m018585h\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for TGP_ProjectEditor in 9.7964654 seconds
+  Building 23 actions with 8 processes...
+    [1/23] PCLaunch.rc
+    [2/23] SharedPCH.Engine.cpp
+    [3/23] TGP_Project.init.gen.cpp
+    [4/23] AreaTriggers.gen.cpp
+    [5/23] RestrictedEntrance.gen.cpp
+    [6/23] CharacterBase.gen.cpp
+    [7/23] BasePlayer.gen.cpp
+    [8/23] BaseCharacter.gen.cpp
+    [9/23] gm_TGPGAME.gen.cpp
+    [10/23] RestrictedEntrance.cpp
+    [11/23] Enums.cpp
+    [12/23] Areas.gen.cpp
+    [13/23] AreaTriggers.cpp
+    [14/23] TGP_Project.cpp
+    [15/23] TGP_ProjectGameModeBase.cpp
+    [16/23] CharacterBase.cpp
+    [17/23] gm_TGPGAME.cpp
+    [18/23] TGP_ProjectGameModeBase.gen.cpp
+    [19/23] BasePlayer.cpp
+    [20/23] Areas.cpp
+    [21/23] BaseCharacter.cpp
+    [22/23] UE4Editor-TGP_Project.lib
+       Creating library C:\Users\m018585h\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.lib and object C:\Users\m018585h\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.exp
+    [23/23] UE4Editor-TGP_Project.dll
+       Creating library C:\Users\m018585h\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object C:\Users\m018585h\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
   Deploying TGP_ProjectEditor Win64 Development...
-  Total build time: 25.53 seconds (Parallel executor: 12.12 seconds)
+  Total build time: 85.00 seconds (Parallel executor: 34.98 seconds)
