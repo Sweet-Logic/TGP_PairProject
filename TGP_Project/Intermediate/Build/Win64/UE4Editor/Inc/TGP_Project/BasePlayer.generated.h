@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TGP_PROJECT_BasePlayer_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS_NO_PURE_DECLS
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABasePlayer(); \
 	friend struct Z_Construct_UClass_ABasePlayer_Statics; \
@@ -24,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(ABasePlayer)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesABasePlayer(); \
 	friend struct Z_Construct_UClass_ABasePlayer_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(ABasePlayer)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_STANDARD_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABasePlayer(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABasePlayer) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_ENHANCED_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABasePlayer(ABasePlayer&&); \
@@ -57,26 +57,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABasePlayer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABasePlayer)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_PRIVATE_PROPERTY_OFFSET
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_17_PROLOG
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_GENERATED_BODY_LEGACY \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_18_PROLOG
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_STANDARD_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_GENERATED_BODY \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_ENHANCED_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

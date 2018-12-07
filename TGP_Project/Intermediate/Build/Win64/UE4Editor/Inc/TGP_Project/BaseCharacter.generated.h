@@ -17,7 +17,7 @@ class UPaperFlipbook;
 #endif
 #define TGP_PROJECT_BaseCharacter_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_RPC_WRAPPERS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execCollision) \
 	{ \
@@ -51,7 +51,7 @@ class UPaperFlipbook;
 	}
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execCollision) \
 	{ \
@@ -85,7 +85,7 @@ class UPaperFlipbook;
 	}
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_INCLASS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
@@ -94,7 +94,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_INCLASS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
@@ -103,7 +103,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_STANDARD_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABaseCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABaseCharacter) \
@@ -116,7 +116,7 @@ private: \
 public:
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_ENHANCED_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABaseCharacter(ABaseCharacter&&); \
@@ -127,26 +127,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABaseCharacter)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_PRIVATE_PROPERTY_OFFSET
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_20_PROLOG
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_GENERATED_BODY_LEGACY \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_PRIVATE_PROPERTY_OFFSET
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_19_PROLOG
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_RPC_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_INCLASS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_STANDARD_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_GENERATED_BODY \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_INCLASS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_23_ENHANCED_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

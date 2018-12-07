@@ -12,6 +12,7 @@
 #include "Engine.h"
 #include "../Public/BasePlayer.h"
 #include "Components/BoxComponent.h"
+#include "WeaponBase.h"
 //#include "UnrealString.h"
 
 
@@ -83,6 +84,8 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* InputComponent)
 
 
 	InputComponent->BindAction("SneakAction", IE_Pressed, this, &ABasePlayer::Sneak);
+	InputComponent->BindAction("AttackAction", IE_Pressed, this, &ABasePlayer::Attack);
+
 }
 
 void ABasePlayer::ZoomCamera(float value)
@@ -110,6 +113,15 @@ void ABasePlayer::Attack()
 {
 	//Switches animation
 	//Uses the attack function in the current weapon? or checks collision and calls damaged in the opponent actor?
+	if (_currentWeapon != nullptr)
+	{
+		FVector temp;
+		temp.X = MousePosinNormal.Y;
+		temp.Y = MousePosinNormal.X;
+		temp.Z = 0.0f;
+
+		_currentWeapon->Fire(temp);
+	}
 }
 
 void ABasePlayer::Sneak()

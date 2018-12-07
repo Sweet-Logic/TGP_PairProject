@@ -13,7 +13,6 @@ class UPaperFlipbookComponent;
 class USceneComponent;
 class UArrowComponent;
 class UBoxComponent;
-
 /**
  * 
  */
@@ -38,9 +37,9 @@ public:
 		UBoxComponent* BoxComponent;
 	UPROPERTY(VisibleAnywhere)
 		UPaperFlipbookComponent* Sprite;
+
 	UPROPERTY(VisibleAnywhere)
 		UArrowComponent* direction;
-	
 	
 
 	//Sprite Settings

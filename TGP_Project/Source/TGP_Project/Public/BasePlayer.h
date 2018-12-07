@@ -9,6 +9,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
+class AWeaponBase;
 
 /**
  * 
@@ -22,6 +23,7 @@ class TGP_PROJECT_API ABasePlayer : public ABaseCharacter
 public:
 	ABasePlayer();
 
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -30,6 +32,8 @@ public:
 
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
+	UPROPERTY(EditAnywhere)
+		AWeaponBase* _currentWeapon;
 
 	//UPROPERTY(EditAnywhere)
 		UCameraComponent* Camera;
@@ -60,7 +64,9 @@ public:
 	FVector MouseWorld = FVector();
 	FVector MouseWorldDir = FVector();
 	FVector2D ViewportSize = FVector2D();
-	FVector2D MousePosinNormal = FVector2D();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerMusicSkill)
+		FVector2D MousePosinNormal = FVector2D();
 
 	FVector PanInputVec = FVector();
 	UPROPERTY(EditAnywhere, Category = "Stealth Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))

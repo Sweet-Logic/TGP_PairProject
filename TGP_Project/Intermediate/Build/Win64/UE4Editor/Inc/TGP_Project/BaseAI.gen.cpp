@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "TGP_Project/Private/BaseAI.h"
+#include "TGP_Project/Public/BaseAI.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -36,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		return Singleton;
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_AI_STATE(AI_STATE_StaticEnum, TEXT("/Script/TGP_Project"), TEXT("AI_STATE"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_TGP_Project_AI_STATE_CRC() { return 2881586726U; }
+	uint32 Get_Z_Construct_UEnum_TGP_Project_AI_STATE_CRC() { return 4000273592U; }
 	UEnum* Z_Construct_UEnum_TGP_Project_AI_STATE()
 	{
 #if WITH_HOT_RELOAD
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "Private/BaseAI.h" },
+				{ "ModuleRelativePath", "Public/BaseAI.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseAI_OnNoiseHeard_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseAI_OnNoiseHeard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseAI, "OnNoiseHeard", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00C80400, sizeof(BaseAI_eventOnNoiseHeard_Parms), Z_Construct_UFunction_ABaseAI_OnNoiseHeard_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseAI_OnNoiseHeard_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseAI_OnNoiseHeard_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseAI_OnNoiseHeard_Statics::Function_MetaDataParams)) };
@@ -158,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseAI_OnPawnSeen_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseAI_OnPawnSeen_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseAI, "OnPawnSeen", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080400, sizeof(BaseAI_eventOnPawnSeen_Parms), Z_Construct_UFunction_ABaseAI_OnPawnSeen_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseAI_OnPawnSeen_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseAI_OnPawnSeen_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseAI_OnPawnSeen_Statics::Function_MetaDataParams)) };
@@ -190,7 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseAI_OnStateChanged_Statics::Function_MetaDataParams[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseAI_OnStateChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseAI, "OnStateChanged", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(BaseAI_eventOnStateChanged_Parms), Z_Construct_UFunction_ABaseAI_OnStateChanged_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseAI_OnStateChanged_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseAI_OnStateChanged_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseAI_OnStateChanged_Statics::Function_MetaDataParams)) };
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseAI_ResetOrientation_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseAI_ResetOrientation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseAI, "ResetOrientation", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseAI_ResetOrientation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseAI_ResetOrientation_Statics::Function_MetaDataParams)) };
@@ -269,50 +269,50 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_TGP_Project,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseAI_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABaseAI_OnNoiseHeard, "OnNoiseHeard" }, // 262832611
-		{ &Z_Construct_UFunction_ABaseAI_OnPawnSeen, "OnPawnSeen" }, // 4168028650
-		{ &Z_Construct_UFunction_ABaseAI_OnStateChanged, "OnStateChanged" }, // 2939517391
-		{ &Z_Construct_UFunction_ABaseAI_ResetOrientation, "ResetOrientation" }, // 3376094953
+		{ &Z_Construct_UFunction_ABaseAI_OnNoiseHeard, "OnNoiseHeard" }, // 2365885626
+		{ &Z_Construct_UFunction_ABaseAI_OnPawnSeen, "OnPawnSeen" }, // 4275662019
+		{ &Z_Construct_UFunction_ABaseAI_OnStateChanged, "OnStateChanged" }, // 3834879443
+		{ &Z_Construct_UFunction_ABaseAI_ResetOrientation, "ResetOrientation" }, // 924837884
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "BaseAI.h" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp_mapHeight_MetaData[] = {
 		{ "Category", "MapBoundries" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp_mapHeight = { UE4CodeGen_Private::EPropertyClass::Float, "mapHeight", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseAI, mapHeight), METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapHeight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp_mapWidth_MetaData[] = {
 		{ "Category", "MapBoundries" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp_mapWidth = { UE4CodeGen_Private::EPropertyClass::Float, "mapWidth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseAI, mapWidth), METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapWidth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp_mapY_MetaData[] = {
 		{ "Category", "MapBoundries" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp_mapY = { UE4CodeGen_Private::EPropertyClass::Float, "mapY", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseAI, mapY), METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapY_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapY_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX_MetaData[] = {
 		{ "Category", "MapBoundries" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX = { UE4CodeGen_Private::EPropertyClass::Float, "mapX", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseAI, mapX), METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToTarget_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToTarget = { UE4CodeGen_Private::EPropertyClass::Float, "_minDistanceToTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(ABaseAI, _minDistanceToTarget), METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToTarget_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToTarget_MetaData)) };
@@ -320,7 +320,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp__sensor_MetaData[] = {
 		{ "Category", "PawnSensing" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Private/BaseAI.h" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp__sensor = { UE4CodeGen_Private::EPropertyClass::Object, "_sensor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(ABaseAI, _sensor), Z_Construct_UClass_UPawnSensingComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp__sensor_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp__sensor_MetaData)) };
@@ -355,7 +355,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseAI, 2676654568);
+	IMPLEMENT_CLASS(ABaseAI, 3268075106);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseAI(Z_Construct_UClass_ABaseAI, &ABaseAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

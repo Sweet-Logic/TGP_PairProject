@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\TGP_Project.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{7DEC6525-E9D4-4A6F-A8F6-1E7D01D2B916}</UniqueIdentifier>
+			<UniqueIdentifier>{711CC4D5-B0A4-4A25-AFFF-81E5574F8964}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TGP_Project.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{E1ED40A7-2B71-4BF4-8B2E-A1DE1D004DE4}</UniqueIdentifier>
+			<UniqueIdentifier>{F2ED977D-90A6-4FD7-AE9B-27D84EADF82D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\TGP_Project">
-			<UniqueIdentifier>{0A53906A-EA03-4F1B-9F77-694C117B2BD8}</UniqueIdentifier>
+			<UniqueIdentifier>{DDC8EEC1-7481-4E85-8FD6-4C64394BD200}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\CharacterBase.cpp">
 			<Filter>Source\TGP_Project</Filter>
@@ -52,7 +52,7 @@
 			<Filter>Source\TGP_Project</Filter>
 		</ClInclude >
 		<Filter Include="Source\TGP_Project\Private">
-			<UniqueIdentifier>{274D9923-B31F-484E-B156-16B393003517}</UniqueIdentifier>
+			<UniqueIdentifier>{19110311-77E9-45D9-B7A9-386E37F29B38}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\Private\Areas.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
@@ -63,9 +63,6 @@
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BaseAI.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
-		<ClInclude Include="..\..\Source\TGP_Project\Private\BaseAI.h">
-			<Filter>Source\TGP_Project\Private</Filter>
-		</ClInclude >
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BaseCharacter.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
@@ -75,31 +72,34 @@
 		<ClCompile Include="..\..\Source\TGP_Project\Private\BodyGuardAI.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
-		<ClInclude Include="..\..\Source\TGP_Project\Private\BodyGuardAI.h">
-			<Filter>Source\TGP_Project\Private</Filter>
-		</ClInclude >
 		<ClCompile Include="..\..\Source\TGP_Project\Private\CivilianAI.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
-		<ClInclude Include="..\..\Source\TGP_Project\Private\CivilianAI.h">
-			<Filter>Source\TGP_Project\Private</Filter>
-		</ClInclude >
 		<ClCompile Include="..\..\Source\TGP_Project\Private\Enums.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\TGP_Project\Private\gm_TGPGAME.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\ProjectileBase.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
 		<ClCompile Include="..\..\Source\TGP_Project\Private\RestrictedEntrance.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
+		<ClCompile Include="..\..\Source\TGP_Project\Private\WeaponBase.cpp">
+			<Filter>Source\TGP_Project\Private</Filter>
+		</ClCompile >
 		<Filter Include="Source\TGP_Project\Public">
-			<UniqueIdentifier>{F768D76D-E027-4205-943E-0733BCDB7C67}</UniqueIdentifier>
+			<UniqueIdentifier>{ECFF923F-6810-4BFF-856D-D29412BA482E}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\TGP_Project\Public\Areas.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\TGP_Project\Public\AreaTriggers.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\BaseAI.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\TGP_Project\Public\BaseCharacter.h">
@@ -108,13 +108,25 @@
 		<ClInclude Include="..\..\Source\TGP_Project\Public\BasePlayer.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\BodyGuardAI.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\CivilianAI.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
 		<ClInclude Include="..\..\Source\TGP_Project\Public\Enums.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\TGP_Project\Public\gm_TGPGAME.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\ProjectileBase.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
 		<ClInclude Include="..\..\Source\TGP_Project\Public\RestrictedEntrance.h">
+			<Filter>Source\TGP_Project\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TGP_Project\Public\WeaponBase.h">
 			<Filter>Source\TGP_Project\Public</Filter>
 		</ClInclude >
 	</ItemGroup>
