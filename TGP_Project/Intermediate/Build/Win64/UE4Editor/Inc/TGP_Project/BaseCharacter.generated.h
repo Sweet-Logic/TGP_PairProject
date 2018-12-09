@@ -17,7 +17,7 @@ class UPaperFlipbook;
 #endif
 #define TGP_PROJECT_BaseCharacter_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execCollision) \
 	{ \
@@ -51,7 +51,7 @@ class UPaperFlipbook;
 	}
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execCollision) \
 	{ \
@@ -85,25 +85,25 @@ class UPaperFlipbook;
 	}
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
 public: \
-	DECLARE_CLASS(ABaseCharacter, APawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
+	DECLARE_CLASS(ABaseCharacter, APaperCharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_INCLASS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
 public: \
-	DECLARE_CLASS(ABaseCharacter, APawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
+	DECLARE_CLASS(ABaseCharacter, APaperCharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_STANDARD_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABaseCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABaseCharacter) \
@@ -116,7 +116,7 @@ private: \
 public:
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_ENHANCED_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABaseCharacter(ABaseCharacter&&); \
@@ -127,26 +127,42 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABaseCharacter)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_PRIVATE_PROPERTY_OFFSET
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_19_PROLOG
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_GENERATED_BODY_LEGACY \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO___boxComponent() { return STRUCT_OFFSET(ABaseCharacter, _boxComponent); } \
+	FORCEINLINE static uint32 __PPO___direction() { return STRUCT_OFFSET(ABaseCharacter, _direction); } \
+	FORCEINLINE static uint32 __PPO___currentWeapon() { return STRUCT_OFFSET(ABaseCharacter, _currentWeapon); } \
+	FORCEINLINE static uint32 __PPO___weaponInventory() { return STRUCT_OFFSET(ABaseCharacter, _weaponInventory); } \
+	FORCEINLINE static uint32 __PPO___defaultGun() { return STRUCT_OFFSET(ABaseCharacter, _defaultGun); } \
+	FORCEINLINE static uint32 __PPO___defaultMelee() { return STRUCT_OFFSET(ABaseCharacter, _defaultMelee); } \
+	FORCEINLINE static uint32 __PPO___idleFlipbook() { return STRUCT_OFFSET(ABaseCharacter, _idleFlipbook); } \
+	FORCEINLINE static uint32 __PPO___walikingFlipBook() { return STRUCT_OFFSET(ABaseCharacter, _walikingFlipBook); } \
+	FORCEINLINE static uint32 __PPO___playRate() { return STRUCT_OFFSET(ABaseCharacter, _playRate); } \
+	FORCEINLINE static uint32 __PPO___loopFlipbook() { return STRUCT_OFFSET(ABaseCharacter, _loopFlipbook); } \
+	FORCEINLINE static uint32 __PPO___walkSpeed() { return STRUCT_OFFSET(ABaseCharacter, _walkSpeed); } \
+	FORCEINLINE static uint32 __PPO___x() { return STRUCT_OFFSET(ABaseCharacter, _x); } \
+	FORCEINLINE static uint32 __PPO___y() { return STRUCT_OFFSET(ABaseCharacter, _y); } \
+	FORCEINLINE static uint32 __PPO___z() { return STRUCT_OFFSET(ABaseCharacter, _z); }
+
+
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_24_PROLOG
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_STANDARD_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_INCLASS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_GENERATED_BODY \
+#define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_INCLASS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_22_ENHANCED_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_INCLASS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

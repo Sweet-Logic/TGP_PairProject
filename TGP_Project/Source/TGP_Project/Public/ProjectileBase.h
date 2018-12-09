@@ -31,7 +31,7 @@ public:
 
 	FVector _forwardVector;
 
-	float _velocity = 150.0f;
+	float _velocity = 2.0f;
 
 	float _lifeTime = 5.0f;
 	

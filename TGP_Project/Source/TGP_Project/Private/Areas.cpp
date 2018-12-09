@@ -47,7 +47,7 @@ void AAreas::EnterRestictedArea(UPrimitiveComponent* OverlappedComponent,
 
 		if (hitPawn != nullptr)
 		{
-			hitPawn->InRestictedArea = true;
+			hitPawn->IsPlayerInRestrictedArea(true);
 		}
 	}
 
@@ -63,7 +63,7 @@ void AAreas::ExitRestictedArea(AActor* Actor,
 
 		if (hitPawn != nullptr)
 		{
-			hitPawn->InRestictedArea = false;
+			hitPawn->IsPlayerInRestrictedArea(true);
 		}
 	}
 	
@@ -83,7 +83,7 @@ void AAreas::Tick(float DeltaTime)
 	int count = aActor.Max();
 
 
-	GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Yellow, FString::FromInt(count));
+	//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Yellow, FString::FromInt(count));
 
 }
 

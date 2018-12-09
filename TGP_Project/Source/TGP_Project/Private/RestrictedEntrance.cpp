@@ -48,7 +48,7 @@ void ARestrictedEntrance::Enter(UPrimitiveComponent* OverlappedComponent,
 		{
 			for (int i = 0; i < Guards.Max(); i++)
 			{
-				if (Guards[i]->IsAlive)
+				if (Guards[i]->IsCharacterAlive())
 				{
 					hitPawn->StopMovement();
 

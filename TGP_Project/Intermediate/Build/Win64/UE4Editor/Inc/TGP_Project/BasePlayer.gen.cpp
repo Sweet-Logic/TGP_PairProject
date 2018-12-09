@@ -18,7 +18,6 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
 	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
-	TGP_PROJECT_API UClass* Z_Construct_UClass_AWeaponBase_NoRegister();
 // End Cross Module References
 	void ABasePlayer::StaticRegisterNativesABasePlayer()
 	{
@@ -34,71 +33,67 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InRestictedArea_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__inRestictedArea_MetaData[];
 #endif
-		static void NewProp_InRestictedArea_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_InRestictedArea;
+		static void NewProp__inRestictedArea_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp__inRestictedArea;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintTimer_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__sprintTimer_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintTimer;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__sprintTimer;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__sprintSpeed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintSpeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__sprintSpeed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bSneaking_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__isSneaking_MetaData[];
 #endif
-		static void NewProp_bSneaking_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSneaking;
+		static void NewProp__isSneaking_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp__isSneaking;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SneakSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__sneakSpeed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SneakSpeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__sneakSpeed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MousePosinNormal_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__mousePosinNormal_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_MousePosinNormal;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp__mousePosinNormal;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PanMaxDistance_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__panMaxDistance_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_PanMaxDistance;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__panMaxDistance;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PanResetSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__panResetSpeed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_PanResetSpeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__panResetSpeed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PanSpeedMax_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__panSpeedMax_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_PanSpeedMax;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__panSpeedMax;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PanSpeedMin_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__panSpeedMin_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_PanSpeedMin;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__panSpeedMin;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PanSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__panSpeed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_PanSpeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__panSpeed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ZoomSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__zoomSpeed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ZoomSpeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__zoomSpeed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OrthoWidthMin_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__orthoWidthMin_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OrthoWidthMin;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__orthoWidthMin;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OrthoWidthMax_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__orthoWidthMax_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OrthoWidthMax;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__orthoWidthMax;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OrthoWidth_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__orthoWidth_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_OrthoWidth;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__currentWeapon_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__currentWeapon;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__orthoWidth;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -115,150 +110,146 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_InRestictedArea_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__inRestictedArea_MetaData[] = {
 		{ "Category", "Areas" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
+		{ "ToolTip", "Stealth Variables" },
 	};
 #endif
-	void Z_Construct_UClass_ABasePlayer_Statics::NewProp_InRestictedArea_SetBit(void* Obj)
+	void Z_Construct_UClass_ABasePlayer_Statics::NewProp__inRestictedArea_SetBit(void* Obj)
 	{
-		((ABasePlayer*)Obj)->InRestictedArea = 1;
+		((ABasePlayer*)Obj)->_inRestictedArea = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_InRestictedArea = { UE4CodeGen_Private::EPropertyClass::Bool, "InRestictedArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ABasePlayer), &Z_Construct_UClass_ABasePlayer_Statics::NewProp_InRestictedArea_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_InRestictedArea_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_InRestictedArea_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__inRestictedArea = { UE4CodeGen_Private::EPropertyClass::Bool, "_inRestictedArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ABasePlayer), &Z_Construct_UClass_ABasePlayer_Statics::NewProp__inRestictedArea_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__inRestictedArea_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__inRestictedArea_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintTimer_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintTimer_MetaData[] = {
 		{ "Category", "Movement Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintTimer = { UE4CodeGen_Private::EPropertyClass::Float, "SprintTimer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, SprintTimer), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintTimer_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintTimer_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintTimer = { UE4CodeGen_Private::EPropertyClass::Float, "_sprintTimer", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _sprintTimer), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintTimer_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintTimer_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintSpeed_MetaData[] = {
 		{ "Category", "Movement Settings" },
 		{ "ClampMax", "120.0" },
 		{ "ClampMin", "0.0" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
+		{ "ToolTip", "Movement Variables" },
 		{ "UIMax", "200.0" },
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "SprintSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, SprintSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "_sprintSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _sprintSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintSpeed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_bSneaking_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__isSneaking_MetaData[] = {
 		{ "Category", "Stealth Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	void Z_Construct_UClass_ABasePlayer_Statics::NewProp_bSneaking_SetBit(void* Obj)
+	void Z_Construct_UClass_ABasePlayer_Statics::NewProp__isSneaking_SetBit(void* Obj)
 	{
-		((ABasePlayer*)Obj)->bSneaking = 1;
+		((ABasePlayer*)Obj)->_isSneaking = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_bSneaking = { UE4CodeGen_Private::EPropertyClass::Bool, "bSneaking", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ABasePlayer), &Z_Construct_UClass_ABasePlayer_Statics::NewProp_bSneaking_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_bSneaking_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_bSneaking_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__isSneaking = { UE4CodeGen_Private::EPropertyClass::Bool, "_isSneaking", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ABasePlayer), &Z_Construct_UClass_ABasePlayer_Statics::NewProp__isSneaking_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__isSneaking_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__isSneaking_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_SneakSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__sneakSpeed_MetaData[] = {
 		{ "Category", "Stealth Settings" },
 		{ "ClampMax", "120.0" },
 		{ "ClampMin", "0.0" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
+		{ "ToolTip", "Stealth Variables" },
 		{ "UIMax", "200.0" },
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_SneakSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "SneakSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, SneakSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SneakSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_SneakSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__sneakSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "_sneakSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _sneakSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__sneakSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__sneakSpeed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_MousePosinNormal_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__mousePosinNormal_MetaData[] = {
 		{ "Category", "PlayerMusicSkill" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_MousePosinNormal = { UE4CodeGen_Private::EPropertyClass::Struct, "MousePosinNormal", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ABasePlayer, MousePosinNormal), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_MousePosinNormal_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_MousePosinNormal_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__mousePosinNormal = { UE4CodeGen_Private::EPropertyClass::Struct, "_mousePosinNormal", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _mousePosinNormal), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__mousePosinNormal_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__mousePosinNormal_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanMaxDistance_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__panMaxDistance_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanMaxDistance = { UE4CodeGen_Private::EPropertyClass::Float, "PanMaxDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, PanMaxDistance), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanMaxDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanMaxDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__panMaxDistance = { UE4CodeGen_Private::EPropertyClass::Float, "_panMaxDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _panMaxDistance), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panMaxDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panMaxDistance_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanResetSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__panResetSpeed_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanResetSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "PanResetSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, PanResetSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanResetSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanResetSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__panResetSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "_panResetSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _panResetSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panResetSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panResetSpeed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMax_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMax_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMax = { UE4CodeGen_Private::EPropertyClass::Float, "PanSpeedMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, PanSpeedMax), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMax_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMax = { UE4CodeGen_Private::EPropertyClass::Float, "_panSpeedMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _panSpeedMax), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMax_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMin_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMin_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMin = { UE4CodeGen_Private::EPropertyClass::Float, "PanSpeedMin", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, PanSpeedMin), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMin_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMin_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMin = { UE4CodeGen_Private::EPropertyClass::Float, "_panSpeedMin", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _panSpeedMin), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMin_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMin_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeed_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "PanSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, PanSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "_panSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _panSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_ZoomSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__zoomSpeed_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_ZoomSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "ZoomSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, ZoomSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_ZoomSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_ZoomSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__zoomSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "_zoomSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _zoomSpeed), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__zoomSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__zoomSpeed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMin_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMin_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMin = { UE4CodeGen_Private::EPropertyClass::Float, "OrthoWidthMin", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, OrthoWidthMin), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMin_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMin_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMin = { UE4CodeGen_Private::EPropertyClass::Float, "_orthoWidthMin", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _orthoWidthMin), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMin_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMin_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMax_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMax_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMax = { UE4CodeGen_Private::EPropertyClass::Float, "OrthoWidthMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, OrthoWidthMax), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMax_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMax = { UE4CodeGen_Private::EPropertyClass::Float, "_orthoWidthMax", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _orthoWidthMax), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMax_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMax_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidth_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidth_MetaData[] = {
 		{ "Category", "Camera Settings" },
 		{ "ModuleRelativePath", "Public/BasePlayer.h" },
+		{ "ToolTip", "Camera Settings" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidth = { UE4CodeGen_Private::EPropertyClass::Float, "OrthoWidth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, OrthoWidth), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidth_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABasePlayer_Statics::NewProp__currentWeapon_MetaData[] = {
-		{ "Category", "BasePlayer" },
-		{ "ModuleRelativePath", "Public/BasePlayer.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__currentWeapon = { UE4CodeGen_Private::EPropertyClass::Object, "_currentWeapon", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _currentWeapon), Z_Construct_UClass_AWeaponBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__currentWeapon_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__currentWeapon_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidth = { UE4CodeGen_Private::EPropertyClass::Float, "_orthoWidth", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABasePlayer, _orthoWidth), METADATA_PARAMS(Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidth_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABasePlayer_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_InRestictedArea,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintTimer,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_SprintSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_bSneaking,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_SneakSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_MousePosinNormal,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanMaxDistance,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanResetSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMax,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeedMin,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_PanSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_ZoomSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMin,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidthMax,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp_OrthoWidth,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__currentWeapon,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__inRestictedArea,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintTimer,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__sprintSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__isSneaking,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__sneakSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__mousePosinNormal,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__panMaxDistance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__panResetSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMax,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeedMin,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__panSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__zoomSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMin,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidthMax,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABasePlayer_Statics::NewProp__orthoWidth,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABasePlayer_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABasePlayer>::IsAbstract,
@@ -283,7 +274,7 @@ void EmptyLinkFunctionForGeneratedCodeBasePlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABasePlayer, 3419906656);
+	IMPLEMENT_CLASS(ABasePlayer, 3505966276);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABasePlayer(Z_Construct_UClass_ABasePlayer, &ABasePlayer::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABasePlayer"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABasePlayer);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

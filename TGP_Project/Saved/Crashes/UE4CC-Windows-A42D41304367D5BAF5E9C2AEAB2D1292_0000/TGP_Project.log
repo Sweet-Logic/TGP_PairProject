@@ -1,0 +1,1278 @@
+﻿Log file open, 12/08/18 20:31:55
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: TGP_Project
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.181339
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapEmulator
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.090s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.20-CL-4369336
+LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
+LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
+LogInit: Net CL: 4212847
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz, GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Sep 17 2018 12:26:19
+LogInit: Compiled with Visual C++: 19.13.26129.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.20
+LogInit: Command Line:  
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 20
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 24
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 26
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
+LogStreaming: Display: Took  0.001s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.12.08-20.31.55:809][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.08-20.31.55:810][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.12.08-20.31.55:834][  0]LogHAL: Display: Platform has ~ 16 GB [17009229824 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.12.08-20.31.55:834][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2018.12.08-20.31.55:834][  0]LogInit: Going up to parent DeviceProfile []
+[2018.12.08-20.31.55:834][  0]LogInit: Computer: GROUNDZERO
+[2018.12.08-20.31.55:835][  0]LogInit: User: TDSSK
+[2018.12.08-20.31.55:835][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.12.08-20.31.55:835][  0]LogInit: High frequency timer resolution =3.222652 MHz
+[2018.12.08-20.31.55:835][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2018.12.08-20.31.55:835][  0]LogMemory: Platform Memory Stats for Windows
+[2018.12.08-20.31.55:835][  0]LogMemory: Process Physical Memory: 101.67 MB used, 101.67 MB peak
+[2018.12.08-20.31.55:835][  0]LogMemory: Process Virtual Memory: 92.30 MB used, 92.30 MB peak
+[2018.12.08-20.31.55:835][  0]LogMemory: Physical Memory: 9653.04 MB used,  6568.23 MB free, 16221.27 MB total
+[2018.12.08-20.31.55:835][  0]LogMemory: Virtual Memory: 532.16 MB used,  6568.23 MB free, 134217728.00 MB total
+[2018.12.08-20.31.55:856][  0]LogInit: Using OS detected language (en-GB).
+[2018.12.08-20.31.55:856][  0]LogInit: Using OS detected locale (en-GB).
+[2018.12.08-20.31.55:857][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2018.12.08-20.31.56:208][  0]LogStreaming: Display: Took  0.352s to InitEngineTextLocalization.
+[2018.12.08-20.31.56:209][  0]LogInit: Setting process to per monitor DPI aware
+[2018.12.08-20.31.56:232][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.12.08-20.31.56:232][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.12.08-20.31.56:428][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.08-20.31.56:428][  0]LogD3D11RHI: D3D11 adapters:
+[2018.12.08-20.31.56:486][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2018.12.08-20.31.56:486][  0]LogD3D11RHI:       6052/0/8110 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.12.08-20.31.56:491][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.12.08-20.31.56:491][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2018.12.08-20.31.56:493][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.12.08-20.31.56:493][  0]LogD3D11RHI:       0/0/8110 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.12.08-20.31.56:493][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.12.08-20.31.56:500][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.12.08-20.31.56:500][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2018.12.08-20.31.56:500][  0]LogWindows: EnumDisplayDevices:
+[2018.12.08-20.31.56:500][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2018.12.08-20.31.56:501][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2018.12.08-20.31.56:501][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2018.12.08-20.31.56:501][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2018.12.08-20.31.56:501][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.08-20.31.56:501][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.08-20.31.56:502][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.08-20.31.56:502][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2018.12.08-20.31.56:502][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2018.12.08-20.31.56:502][  0]LogD3D11RHI:   Driver Version: 397.64 (internal:24.21.13.9764, unified:397.64)
+[2018.12.08-20.31.56:502][  0]LogD3D11RHI:      Driver Date: 5-7-2018
+[2018.12.08-20.31.56:502][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2018.12.08-20.31.56:537][  0]LogD3D11RHI: Async texture creation enabled
+[2018.12.08-20.31.56:574][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.12.08-20.31.56:575][  0]LogShaderCompilers: Guid format shader working directory is -1 characters bigger than the processId version (D:/Documents/GitHub/TGP_PairProject/TGP_Project/Intermediate/Shaders/WorkingDirectory/1424/).
+[2018.12.08-20.31.56:575][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/TDSSK/AppData/Local/Temp/UnrealShaderWorkingDir/B827158E45D8CE7E00B41BA074B483E3/'.
+[2018.12.08-20.31.56:796][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.12.08-20.31.56:809][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.12.08-20.31.56:822][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.12.08-20.31.56:836][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.12.08-20.31.56:849][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.12.08-20.31.56:863][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.12.08-20.31.56:876][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.12.08-20.31.56:889][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.12.08-20.31.56:895][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:968][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.08-20.31.56:969][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.12.08-20.31.57:029][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.08-20.31.57:029][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.08-20.31.57:052][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.08-20.31.57:052][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.08-20.31.57:063][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.12.08-20.31.57:076][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.12.08-20.31.57:088][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.12.08-20.31.57:100][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.12.08-20.31.57:108][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.08-20.31.57:109][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.12.08-20.31.57:159][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.12.08-20.31.57:159][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.12.08-20.31.57:159][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.12.08-20.31.57:900][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.12.08-20.31.57:947][  0]LogDerivedDataCache: Loaded boot cache 0.05s 71MB C:/Users/TDSSK/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.12.08-20.31.57:947][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/TDSSK/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2018.12.08-20.31.57:947][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Documents/GitHub/TGP_PairProject/TGP_Project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.12.08-20.31.57:947][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.12.08-20.31.57:947][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Documents/GitHub/TGP_PairProject/TGP_Project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.08-20.31.57:947][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.12.08-20.31.57:959][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.12.08-20.31.57:972][  0]LogDerivedDataCache: Using Local data cache path C:/Users/TDSSK/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.12.08-20.31.57:972][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.12.08-20.31.57:972][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.12.08-20.31.57:988][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.12.08-20.31.57:990][  0]LogSlate: Using FreeType 2.6.0
+[2018.12.08-20.31.57:990][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.12.08-20.31.58:074][  0]LogAssetRegistry: FAssetRegistry took 0.0266 seconds to start up
+[2018.12.08-20.31.58:365][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.08-20.31.58:487][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.12.08-20.31.58:490][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.12.08-20.31.58:490][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.12.08-20.31.58:490][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.12.08-20.31.58:490][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.12.08-20.31.58:502][  0]LogNetVersion: TGP_Project 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 95638710)
+[2018.12.08-20.31.58:962][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.075660 seconds
+[2018.12.08-20.31.58:968][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2018.12.08-20.31.58:968][  0]LogUObjectAllocator: 6690864 out of 0 bytes used by permanent object pool.
+[2018.12.08-20.31.58:968][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.12.08-20.32.00:431][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.12.08-20.32.00:445][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.12.08-20.32.00:606][  0]SourceControl: Source control is disabled
+[2018.12.08-20.32.00:606][  0]SourceControl: Source control is disabled
+[2018.12.08-20.32.00:607][  0]SourceControl: Source control is disabled
+[2018.12.08-20.32.00:608][  0]SourceControl: Source control is disabled
+[2018.12.08-20.32.00:770][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.12.08-20.32.00:853][  0]LogOcInput: OculusInput pre-init called
+[2018.12.08-20.32.00:913][  0]LogEngine: Initializing Engine...
+[2018.12.08-20.32.00:913][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.08-20.32.00:916][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.08-20.32.00:916][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.08-20.32.00:916][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.08-20.32.00:916][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.08-20.32.01:178][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.12.08-20.32.01:189][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.12.08-20.32.01:208][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.32.01:245][  0]LogInit: FAudioDevice initialized.
+[2018.12.08-20.32.01:245][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.12.08-20.32.01:528][  0]LogDerivedDataCache: Saved boot cache 0.28s 71MB C:/Users/TDSSK/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.12.08-20.32.01:543][  0]LogInit: Texture streaming: Enabled
+[2018.12.08-20.32.01:575][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.12.08-20.32.01:593][  0]LogInit: Transaction tracking system initialized
+[2018.12.08-20.32.01:614][  0]BlueprintLog: New page: Editor Load
+[2018.12.08-20.32.01:679][  0]LocalizationService: Localization service is disabled
+[2018.12.08-20.32.01:945][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.12.08-20.32.01:945][  0]LogCook: Display: Mobile HDR setting 1
+[2018.12.08-20.32.01:945][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.12.08-20.32.01:945][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.08-20.32.01:945][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.08-20.32.01:945][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.08-20.32.01:945][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.08-20.32.02:066][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/' took 0.01s
+[2018.12.08-20.32.02:066][  0]SourceControl: Source control is disabled
+[2018.12.08-20.32.02:066][  0]Cmd: MAP LOAD FILE="D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/Levels/BaseLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.12.08-20.32.02:067][  0]LightingResults: New page: Lighting Build
+[2018.12.08-20.32.02:069][  0]MapCheck: New page: Map Check
+[2018.12.08-20.32.02:069][  0]LightingResults: New page: Lighting Build
+[2018.12.08-20.32.02:174][  0]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.32.02:179][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.12.08-20.32.02:200][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.12.08-20.32.02:337][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 137.036ms to complete.
+[2018.12.08-20.32.02:337][  0]LogFileHelpers: Loading map 'BaseLevel' took 0.271
+[2018.12.08-20.32.02:473][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.32.02:479][  0]LogCollectionManager: Loaded 0 collections in 0.001372 seconds
+[2018.12.08-20.32.02:518][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Collections/' took 0.01s
+[2018.12.08-20.32.02:518][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/Developers/TDSSK/Collections/' took 0.01s
+[2018.12.08-20.32.02:518][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/Collections/' took 0.01s
+[2018.12.08-20.32.02:518][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.12.08-20.32.02:527][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2585 classes and 606 folders.
+[2018.12.08-20.32.02:532][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.12.08-20.32.02:590][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.12.08-20.32.02:594][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2018.12.08-20.32.02:650][  0]LogSlate: Took 0.001510 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.12.08-20.32.02:653][  0]LogSlate: Took 0.001249 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.12.08-20.32.02:660][  0]LogSlate: Took 0.001179 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.12.08-20.32.02:746][  0]LogRenderer: Reallocating scene render targets to support 1208x600 Format 10 NumSamples 1 (Frame:1).
+[2018.12.08-20.32.02:784][  0]LogSlate: Took 0.000639 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.08-20.32.02:877][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.12.08-20.32.02:877][  0]LogLoad: (Engine Initialization) Total time: 8.43 seconds
+[2018.12.08-20.32.02:877][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.12.08-20.32.02:915][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.12.08-20.32.02:964][  1]LogAssetRegistry: Asset discovery search completed in 4.9120 seconds
+[2018.12.08-20.32.02:965][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.12.08-20.32.02:965][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000034 seconds (updated 0 objects)
+[2018.12.08-20.32.21:018][280]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.32.21:110][291]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.32.21:123][291]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.32.21:136][291]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:32:21)
+[2018.12.08-20.32.21:136][291]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.32.21:138][291]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001875s)
+[2018.12.08-20.32.21:138][291]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.32.21:138][291]LogPlayLevel: PIE: World Init took: (0.000585s)
+[2018.12.08-20.32.21:138][291]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002592s)
+[2018.12.08-20.32.21:172][291]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.32.21:185][291]LogInit: FAudioDevice initialized.
+[2018.12.08-20.32.21:228][291]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.32.21:229][291]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.32.21
+[2018.12.08-20.32.21:230][291]LogWorld: Bringing up level for play took: 0.001024
+[2018.12.08-20.32.21:246][291]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 10 classes and 0 folders.
+[2018.12.08-20.32.21:248][291]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 1.054
+[2018.12.08-20.32.31:022][451]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2018.12.08-20.32.32:713][617]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.32.39:394][392]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.32.50:476][720]LogSlate: Took 0.000198 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.12.08-20.32.59:921][770]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.33.04:243][278]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.33.09:495][872]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.33.12:735][243]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.33.26:251][809]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.33.26:280][809]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.33.26:300][809]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.33.26:353][815]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2018.12.08-20.33.36:436][187]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.33.36:522][196]Candidate modules for hot reload:
+[2018.12.08-20.33.36:522][196]  TGP_Project
+[2018.12.08-20.33.36:522][196]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,1552 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-20.33.36:524][196]Warning: Starting HotReload took  0.0s.
+[2018.12.08-20.33.38:885][480]CompilerResultsLog: New page: Compilation - 8 Dec 2018 20:33:38
+[2018.12.08-20.33.38:885][480]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-20.33.38:885][480]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-20.33.38:885][480]CompilerResultsLog: Target is up to date
+[2018.12.08-20.33.38:885][480]CompilerResultsLog: Total build time: 2.12 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.12.08-20.33.38:885][480]LogMainFrame: MainFrame: Module compiling took 2.367 seconds
+[2018.12.08-20.33.38:916][480]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-20.33.38:916][480]Display: HotReload took  2.4s.
+[2018.12.08-20.33.41:817][828]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.33.41:831][828]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.33.41:831][828]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:33:41)
+[2018.12.08-20.33.41:831][828]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.33.41:833][828]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001829s)
+[2018.12.08-20.33.41:834][828]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.33.41:834][828]LogPlayLevel: PIE: World Init took: (0.000645s)
+[2018.12.08-20.33.41:834][828]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002595s)
+[2018.12.08-20.33.41:870][828]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.33.41:883][828]LogInit: FAudioDevice initialized.
+[2018.12.08-20.33.41:908][828]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.33.41:909][828]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.33.41
+[2018.12.08-20.33.41:909][828]LogWorld: Bringing up level for play took: 0.000761
+[2018.12.08-20.33.41:922][828]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.273
+[2018.12.08-20.33.49:173][686]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.33.51:500][942]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.34.04:935][481]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.34.13:888][453]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.13:913][456]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.16:364][750]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.16:372][751]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.17:247][856]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.21:338][301]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.34.24:344][632]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.24:614][663]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.31:746][485]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.34.33:269][638]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.34.35:674][885]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.34.47:646][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2018.12.08-20.34.48:632][335]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2018.12.08-20.34.49:105][389]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.34.52:390][721]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.34.55:505][ 59]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.35.00:612][656]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.35.00:748][669]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.35.00:779][669]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.35.00:800][669]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.35.00:828][672]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2018.12.08-20.35.14:973][181]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.35.15:073][192]Candidate modules for hot reload:
+[2018.12.08-20.35.15:073][192]  TGP_Project
+[2018.12.08-20.35.15:073][192]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,9576 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-20.35.15:075][192]Warning: Starting HotReload took  0.0s.
+[2018.12.08-20.35.17:472][480]CompilerResultsLog: New page: Compilation - 8 Dec 2018 20:35:17
+[2018.12.08-20.35.17:472][480]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-20.35.17:472][480]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-20.35.17:472][480]CompilerResultsLog: Target is up to date
+[2018.12.08-20.35.17:472][480]CompilerResultsLog: Total build time: 2.15 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.12.08-20.35.17:472][480]LogMainFrame: MainFrame: Module compiling took 2.403 seconds
+[2018.12.08-20.35.17:504][480]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-20.35.17:504][480]Display: HotReload took  2.4s.
+[2018.12.08-20.35.20:502][838]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.35.20:576][847]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.35.20:590][847]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.35.20:590][847]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:35:20)
+[2018.12.08-20.35.20:591][847]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.35.20:592][847]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001874s)
+[2018.12.08-20.35.20:593][847]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.35.20:593][847]LogPlayLevel: PIE: World Init took: (0.000639s)
+[2018.12.08-20.35.20:593][847]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002639s)
+[2018.12.08-20.35.20:628][847]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.35.20:641][847]LogInit: FAudioDevice initialized.
+[2018.12.08-20.35.20:669][847]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.35.20:671][847]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.35.20
+[2018.12.08-20.35.20:671][847]LogWorld: Bringing up level for play took: 0.000859
+[2018.12.08-20.35.20:684][847]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.489
+[2018.12.08-20.35.25:979][476]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.35.34:633][482]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.35.41:991][990]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.35.42:021][990]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.35.42:042][990]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.35.42:069][993]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2018.12.08-20.35.50:497][135]Candidate modules for hot reload:
+[2018.12.08-20.35.50:497][135]  TGP_Project
+[2018.12.08-20.35.50:497][135]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,9937 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-20.35.50:499][135]Warning: Starting HotReload took  0.0s.
+[2018.12.08-20.36.04:355][794]CompilerResultsLog: New page: Compilation - 8 Dec 2018 20:36:04
+[2018.12.08-20.36.04:355][794]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-20.36.04:355][794]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-20.36.04:355][794]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-20.36.04:355][794]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-20.36.04:355][794]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-9937.lib
+[2018.12.08-20.36.04:355][794]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9937.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9937.exp
+[2018.12.08-20.36.04:355][794]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-9937.dll
+[2018.12.08-20.36.04:355][794]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9937.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9937.suppressed.exp
+[2018.12.08-20.36.04:355][794]CompilerResultsLog: Total build time: 13.60 seconds (Parallel executor: 11.47 seconds)
+[2018.12.08-20.36.04:355][794]LogMainFrame: MainFrame: Module compiling took 13.860 seconds
+[2018.12.08-20.36.04:383][794]LogClass: EAREAS HotReload.
+[2018.12.08-20.36.04:383][794]LogClass: AI_STATE HotReload.
+[2018.12.08-20.36.04:392][794]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-20.36.04:393][794]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-20.36.04:479][794]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-20.36.04:479][794]Display: HotReload took 14.0s.
+[2018.12.08-20.36.07:117][110]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.36.07:131][110]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.36.07:131][110]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:36:07)
+[2018.12.08-20.36.07:131][110]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.36.07:133][110]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001868s)
+[2018.12.08-20.36.07:133][110]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.36.07:133][110]LogPlayLevel: PIE: World Init took: (0.000600s)
+[2018.12.08-20.36.07:133][110]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002631s)
+[2018.12.08-20.36.07:169][110]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.36.07:182][110]LogInit: FAudioDevice initialized.
+[2018.12.08-20.36.07:208][110]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.36.07:209][110]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.36.07
+[2018.12.08-20.36.07:209][110]LogWorld: Bringing up level for play took: 0.000849
+[2018.12.08-20.36.07:222][110]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 1.027
+[2018.12.08-20.36.13:301][831]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.36.13:377][840]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.36.13:409][840]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.36.13:429][840]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.36.13:481][846]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2018.12.08-20.36.14:389][955]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.36.14:402][955]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.36.14:402][955]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:36:14)
+[2018.12.08-20.36.14:403][955]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.36.14:404][955]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001746s)
+[2018.12.08-20.36.14:405][955]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.36.14:405][955]LogPlayLevel: PIE: World Init took: (0.000574s)
+[2018.12.08-20.36.14:405][955]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002435s)
+[2018.12.08-20.36.14:441][955]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.36.14:453][955]LogInit: FAudioDevice initialized.
+[2018.12.08-20.36.14:480][955]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.36.14:481][955]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.36.14
+[2018.12.08-20.36.14:482][955]LogWorld: Bringing up level for play took: 0.000722
+[2018.12.08-20.36.14:494][955]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.3
+[2018.12.08-20.36.16:253][165]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.36.16:761][206]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.12.08-20.36.25:095][168]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.36.35:604][375]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.36.35:714][385]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.36.35:745][385]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.36.35:766][385]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.36.35:788][387]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2018.12.08-20.36.41:439][ 63]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2018.12.08-20.37.04:317][732]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.37.04:383][740]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.37.04:397][740]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.37.04:397][740]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:37:04)
+[2018.12.08-20.37.04:397][740]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.37.04:399][740]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001920s)
+[2018.12.08-20.37.04:399][740]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.37.04:400][740]LogPlayLevel: PIE: World Init took: (0.000622s)
+[2018.12.08-20.37.04:400][740]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002654s)
+[2018.12.08-20.37.04:435][740]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.37.04:447][740]LogInit: FAudioDevice initialized.
+[2018.12.08-20.37.04:473][740]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.37.04:474][740]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.37.04
+[2018.12.08-20.37.04:475][740]LogWorld: Bringing up level for play took: 0.001041
+[2018.12.08-20.37.04:487][740]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.293
+[2018.12.08-20.37.06:535][983]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.37.09:553][315]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.37.09:658][324]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.37.09:688][324]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.37.09:709][324]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.37.09:729][326]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2018.12.08-20.37.11:999][596]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.37.12:065][604]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.37.12:079][604]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.37.12:079][604]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:37:12)
+[2018.12.08-20.37.12:079][604]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.37.12:081][604]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001832s)
+[2018.12.08-20.37.12:081][604]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.37.12:082][604]LogPlayLevel: PIE: World Init took: (0.000517s)
+[2018.12.08-20.37.12:082][604]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002466s)
+[2018.12.08-20.37.12:117][604]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.37.12:129][604]LogInit: FAudioDevice initialized.
+[2018.12.08-20.37.12:156][604]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.37.12:157][604]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.37.12
+[2018.12.08-20.37.12:158][604]LogWorld: Bringing up level for play took: 0.000875
+[2018.12.08-20.37.12:170][604]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.024
+[2018.12.08-20.37.16:964][177]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.37.17:040][186]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.37.17:068][186]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.37.17:089][186]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.37.17:142][192]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2018.12.08-20.37.18:502][355]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.37.18:516][355]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.37.18:516][355]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:37:18)
+[2018.12.08-20.37.18:516][355]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.37.18:518][355]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001859s)
+[2018.12.08-20.37.18:519][355]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.37.18:519][355]LogPlayLevel: PIE: World Init took: (0.000623s)
+[2018.12.08-20.37.18:519][355]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002593s)
+[2018.12.08-20.37.18:554][355]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.37.18:567][355]LogInit: FAudioDevice initialized.
+[2018.12.08-20.37.18:595][355]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.37.18:596][355]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.37.18
+[2018.12.08-20.37.18:597][355]LogWorld: Bringing up level for play took: 0.000839
+[2018.12.08-20.37.18:609][355]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.415
+[2018.12.08-20.37.22:271][794]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.37.22:925][872]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.37.34:163][161]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.37.34:369][183]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.37.34:852][240]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.37.37:361][540]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.37.51:100][186]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.37.51:450][227]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.37.57:621][925]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.38.23:885][ 28]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.38.27:311][436]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.38.27:486][457]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.38.31:412][928]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.38.31:636][955]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.38.36:096][490]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.38.37:679][680]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.38.37:854][701]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.38.39:263][870]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.38.40:103][966]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-20.38.50:722][173]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.38.52:525][331]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/PlayerCharacter.PlayerCharacter
+[2018.12.08-20.38.52:974][331]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 116 classes and 0 folders.
+[2018.12.08-20.38.53:704][331]LogSlate: Took 0.000204 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.12.08-20.38.55:430][525]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.38.55:461][525]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.38.55:487][525]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.38.55:543][526]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2018.12.08-20.38.59:482][995]BlueprintLog: New page: Compile PlayerCharacter
+[2018.12.08-20.39.00:682][114]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.39.00:700][114]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.39.00:700][114]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:39:00)
+[2018.12.08-20.39.00:701][114]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.39.00:703][114]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001933s)
+[2018.12.08-20.39.00:703][114]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.39.00:703][114]LogPlayLevel: PIE: World Init took: (0.000565s)
+[2018.12.08-20.39.00:703][114]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002624s)
+[2018.12.08-20.39.00:743][114]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.39.00:756][114]LogInit: FAudioDevice initialized.
+[2018.12.08-20.39.00:784][114]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.39.00:786][114]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.39.00
+[2018.12.08-20.39.00:786][114]LogWorld: Bringing up level for play took: 0.000849
+[2018.12.08-20.39.00:799][114]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.605
+[2018.12.08-20.39.11:947][451]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.39.12:123][472]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.39.13:364][621]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.39.13:448][631]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.39.13:482][631]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.39.13:509][631]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.39.13:557][636]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2018.12.08-20.39.38:536][730]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.39.39:149][767]Candidate modules for hot reload:
+[2018.12.08-20.39.39:149][767]  TGP_Project
+[2018.12.08-20.39.39:149][767]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,5201 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-20.39.39:151][767]Warning: Starting HotReload took  0.0s.
+[2018.12.08-20.39.52:896][412]CompilerResultsLog: New page: Compilation - 8 Dec 2018 20:39:52
+[2018.12.08-20.39.52:896][412]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-20.39.52:896][412]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-20.39.52:896][412]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-20.39.52:896][412]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-20.39.52:896][412]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-5201.lib
+[2018.12.08-20.39.52:896][412]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-5201.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-5201.exp
+[2018.12.08-20.39.52:897][412]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-5201.dll
+[2018.12.08-20.39.52:897][412]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-5201.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-5201.suppressed.exp
+[2018.12.08-20.39.52:897][412]CompilerResultsLog: Total build time: 13.51 seconds (Parallel executor: 11.39 seconds)
+[2018.12.08-20.39.52:897][412]LogMainFrame: MainFrame: Module compiling took 13.750 seconds
+[2018.12.08-20.39.52:938][412]LogClass: EAREAS HotReload.
+[2018.12.08-20.39.52:938][412]LogClass: AI_STATE HotReload.
+[2018.12.08-20.39.52:947][412]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-20.39.52:949][412]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-20.39.53:269][412]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-20.39.53:269][412]Display: HotReload took 14.1s.
+[2018.12.08-20.39.55:361][641]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.39.55:436][650]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.39.55:450][650]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.39.55:450][650]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:39:55)
+[2018.12.08-20.39.55:450][650]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.39.55:452][650]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002144s)
+[2018.12.08-20.39.55:453][650]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.39.55:453][650]LogPlayLevel: PIE: World Init took: (0.000584s)
+[2018.12.08-20.39.55:453][650]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002863s)
+[2018.12.08-20.39.55:511][650]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.39.55:524][650]LogInit: FAudioDevice initialized.
+[2018.12.08-20.39.55:553][650]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.39.55:554][650]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.39.55
+[2018.12.08-20.39.55:555][650]LogWorld: Bringing up level for play took: 0.000997
+[2018.12.08-20.39.55:567][650]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.627
+[2018.12.08-20.39.57:563][889]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.39.57:737][910]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.39.59:530][125]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.39.59:615][135]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.39.59:651][135]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.39.59:681][135]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.39.59:721][139]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2018.12.08-20.40.23:214][322]Candidate modules for hot reload:
+[2018.12.08-20.40.23:214][322]  TGP_Project
+[2018.12.08-20.40.23:214][322]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,1438 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-20.40.23:216][322]Warning: Starting HotReload took  0.0s.
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog: New page: Compilation - 8 Dec 2018 20:40:37
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-1438.lib
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1438.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1438.exp
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-1438.dll
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1438.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-1438.suppressed.exp
+[2018.12.08-20.40.37:786][ 63]CompilerResultsLog: Total build time: 14.33 seconds (Parallel executor: 12.12 seconds)
+[2018.12.08-20.40.37:786][ 63]LogMainFrame: MainFrame: Module compiling took 14.575 seconds
+[2018.12.08-20.40.37:838][ 63]LogClass: EAREAS HotReload.
+[2018.12.08-20.40.37:838][ 63]LogClass: AI_STATE HotReload.
+[2018.12.08-20.40.37:847][ 63]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-20.40.37:850][ 63]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-20.40.38:176][ 63]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-20.40.38:176][ 63]Display: HotReload took 15.0s.
+[2018.12.08-20.40.39:931][268]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.40.39:944][268]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.40.39:944][268]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:40:39)
+[2018.12.08-20.40.39:944][268]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.40.39:947][268]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002246s)
+[2018.12.08-20.40.39:947][268]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.40.39:947][268]LogPlayLevel: PIE: World Init took: (0.000622s)
+[2018.12.08-20.40.39:947][268]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002973s)
+[2018.12.08-20.40.40:020][268]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.40.40:033][268]LogInit: FAudioDevice initialized.
+[2018.12.08-20.40.40:059][268]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.40.40:060][268]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.40.40
+[2018.12.08-20.40.40:060][268]LogWorld: Bringing up level for play took: 0.000937
+[2018.12.08-20.40.40:073][268]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.121
+[2018.12.08-20.40.48:170][239]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.40.48:345][260]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.40.49:737][427]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.40.49:829][438]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.40.49:866][438]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.40.49:896][438]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.40.49:929][439]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2018.12.08-20.47.20:684][319]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.08-20.47.29:656][395]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-20.47.29:693][395]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/BaseLevel" FILE="D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Levels/BaseLevel_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.12.08-20.47.29:722][395]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/BaseLevel_Auto1A7F2C1754B6DD6818899A1823188864C.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Levels/BaseLevel_Auto1.umap'
+[2018.12.08-20.47.29:724][395]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BaseLevel' took 0.056
+[2018.12.08-20.47.29:724][395]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.056
+[2018.12.08-20.47.29:727][395]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/PlayerCharacter] ([1] browsable assets)...
+[2018.12.08-20.47.29:727][395]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PlayerCharacter]
+[2018.12.08-20.47.29:745][395]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/PlayerCharacter_Auto1279E063243C1FEF8CE34E48F90A07DA7.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Blueprints/PlayerCharacter_Auto1.uasset'
+[2018.12.08-20.47.29:746][395]LogFileHelpers: Auto-saving content packages took 0.020
+[2018.12.08-20.55.09:912][606]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-20.55.09:925][606]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-20.55.09:926][606]PIE: New page: PIE session: BaseLevel (8 Dec 2018 20:55:09)
+[2018.12.08-20.55.09:926][606]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-20.55.09:928][606]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002204s)
+[2018.12.08-20.55.09:928][606]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-20.55.09:929][606]LogPlayLevel: PIE: World Init took: (0.000706s)
+[2018.12.08-20.55.09:929][606]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.003108s)
+[2018.12.08-20.55.09:975][606]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-20.55.09:989][606]LogInit: FAudioDevice initialized.
+[2018.12.08-20.55.10:015][606]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-20.55.10:016][606]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-20.55.10
+[2018.12.08-20.55.10:017][606]LogWorld: Bringing up level for play took: 0.001166
+[2018.12.08-20.55.10:029][606]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.165
+[2018.12.08-20.55.12:932][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.55.16:759][410]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.55.16:933][431]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-20.55.20:475][856]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-20.55.20:551][865]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.55.20:586][865]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-20.55.20:615][865]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-20.55.20:654][869]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2018.12.08-20.56.56:111][224]LogHotReload: New module detected: UE4Editor-TGP_Project-2273.dll
+[2018.12.08-20.56.57:133][228]LogHotReload: Starting Hot-Reload from IDE
+[2018.12.08-20.56.57:213][228]LogClass: EAREAS HotReload.
+[2018.12.08-20.56.57:213][228]LogClass: AI_STATE HotReload.
+[2018.12.08-20.56.57:224][228]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-20.56.57:227][228]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-20.56.57:882][228]LogContentBrowser: Native class hierarchy populated in 0.0122 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-20.56.57:903][228]Display: HotReload took  0.8s.
+[2018.12.08-20.57.12:774][361]Candidate modules for hot reload:
+[2018.12.08-20.57.12:774][361]  TGP_Project
+[2018.12.08-20.57.12:774][361]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,7633 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-20.57.12:776][361]Warning: Starting HotReload took  0.0s.
+[2018.12.08-20.57.20:211][253]CompilerResultsLog: New page: Compilation - 8 Dec 2018 20:57:20
+[2018.12.08-20.57.20:211][253]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-20.57.20:211][253]CompilerResultsLog: Creating makefile for hot reloading TGP_ProjectEditor (modules to compile have changed)
+[2018.12.08-20.57.20:211][253]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-20.57.20:211][253]CompilerResultsLog: Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.08-20.57.20:211][253]CompilerResultsLog: Target is up to date
+[2018.12.08-20.57.20:211][253]CompilerResultsLog: Total build time: 7.19 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.12.08-20.57.20:211][253]LogMainFrame: MainFrame: Module compiling took 7.440 seconds
+[2018.12.08-20.57.20:504][253]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-20.57.20:504][253]Display: HotReload took  7.7s.
+[2018.12.08-21.02.10:576][ 49]LogEditorViewport: Clicking on Actor (LMB): EntranceToRestictedArea_C (EntranceToRestictedArea)
+[2018.12.08-21.02.22:541][478]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-21.02.39:114][443]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.02.39:180][451]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.02.39:194][451]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.02.39:194][451]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:02:39)
+[2018.12.08-21.02.39:194][451]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.02.39:199][451]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005037s)
+[2018.12.08-21.02.39:200][451]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.02.39:200][451]LogPlayLevel: PIE: World Init took: (0.000701s)
+[2018.12.08-21.02.39:200][451]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.005854s)
+[2018.12.08-21.02.39:293][451]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.02.39:306][451]LogInit: FAudioDevice initialized.
+[2018.12.08-21.02.39:336][451]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.02.39:337][451]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.02.39
+[2018.12.08-21.02.39:337][451]LogWorld: Bringing up level for play took: 0.000925
+[2018.12.08-21.02.39:350][451]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 1.156
+[2018.12.08-21.02.58:184][710]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.02.58:219][710]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.02.58:251][710]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.02.58:283][712]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2018.12.08-21.03.16:030][816]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-21.03.16:985][916]Candidate modules for hot reload:
+[2018.12.08-21.03.16:985][916]  TGP_Project
+[2018.12.08-21.03.16:985][916]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,3215 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.03.16:987][916]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.03.30:849][576]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:03:30
+[2018.12.08-21.03.30:849][576]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.03.30:849][576]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.03.30:849][576]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-21.03.30:849][576]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-21.03.30:849][576]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-3215.lib
+[2018.12.08-21.03.30:849][576]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3215.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3215.exp
+[2018.12.08-21.03.30:849][576]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-3215.dll
+[2018.12.08-21.03.30:849][576]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3215.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3215.suppressed.exp
+[2018.12.08-21.03.30:849][576]CompilerResultsLog: Total build time: 13.61 seconds (Parallel executor: 11.53 seconds)
+[2018.12.08-21.03.30:849][576]LogMainFrame: MainFrame: Module compiling took 13.867 seconds
+[2018.12.08-21.03.30:897][576]LogClass: EAREAS HotReload.
+[2018.12.08-21.03.30:897][576]LogClass: AI_STATE HotReload.
+[2018.12.08-21.03.30:906][576]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.03.30:909][576]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.03.31:224][576]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.03.31:224][576]Display: HotReload took 14.2s.
+[2018.12.08-21.03.33:267][810]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.03.33:280][810]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.03.33:281][810]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:03:33)
+[2018.12.08-21.03.33:281][810]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.03.33:283][810]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002190s)
+[2018.12.08-21.03.33:283][810]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.03.33:283][810]LogPlayLevel: PIE: World Init took: (0.000623s)
+[2018.12.08-21.03.33:284][810]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002940s)
+[2018.12.08-21.03.33:355][810]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.03.33:368][810]LogInit: FAudioDevice initialized.
+[2018.12.08-21.03.33:398][810]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.03.33:400][810]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.03.33
+[2018.12.08-21.03.33:400][810]LogWorld: Bringing up level for play took: 0.000912
+[2018.12.08-21.03.33:413][810]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.781
+[2018.12.08-21.03.38:803][456]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.03.39:654][558]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.03.39:685][558]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.03.39:713][558]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.03.39:759][561]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2018.12.08-21.03.47:942][713]Candidate modules for hot reload:
+[2018.12.08-21.03.47:942][713]  TGP_Project
+[2018.12.08-21.03.47:942][713]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,3999 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.03.47:943][713]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.04.01:440][329]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:04:01
+[2018.12.08-21.04.01:440][329]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.04.01:440][329]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.04.01:440][329]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-21.04.01:440][329]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-21.04.01:440][329]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-3999.lib
+[2018.12.08-21.04.01:440][329]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3999.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3999.exp
+[2018.12.08-21.04.01:440][329]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-3999.dll
+[2018.12.08-21.04.01:440][329]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3999.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3999.suppressed.exp
+[2018.12.08-21.04.01:440][329]CompilerResultsLog: Total build time: 13.25 seconds (Parallel executor: 11.19 seconds)
+[2018.12.08-21.04.01:440][329]LogMainFrame: MainFrame: Module compiling took 13.501 seconds
+[2018.12.08-21.04.01:484][329]LogClass: EAREAS HotReload.
+[2018.12.08-21.04.01:484][329]LogClass: AI_STATE HotReload.
+[2018.12.08-21.04.01:493][329]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.04.01:496][329]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.04.01:805][329]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.04.01:805][329]Display: HotReload took 13.9s.
+[2018.12.08-21.04.14:095][795]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.04.14:109][795]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.04.14:109][795]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:04:14)
+[2018.12.08-21.04.14:109][795]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.04.14:111][795]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001938s)
+[2018.12.08-21.04.14:112][795]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.04.14:112][795]LogPlayLevel: PIE: World Init took: (0.000655s)
+[2018.12.08-21.04.14:112][795]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002715s)
+[2018.12.08-21.04.14:188][795]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.04.14:201][795]LogInit: FAudioDevice initialized.
+[2018.12.08-21.04.14:227][795]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.04.14:228][795]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.04.14
+[2018.12.08-21.04.14:228][795]LogWorld: Bringing up level for play took: 0.001007
+[2018.12.08-21.04.14:241][795]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.047
+[2018.12.08-21.04.39:666][845]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.04.39:699][845]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.04.39:731][845]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.04.39:770][847]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2018.12.08-21.05.03:451][991]LogHotReload: New module detected: UE4Editor-TGP_Project-6213.dll
+[2018.12.08-21.05.04:476][995]LogHotReload: Starting Hot-Reload from IDE
+[2018.12.08-21.05.04:579][995]LogClass: EAREAS HotReload.
+[2018.12.08-21.05.04:579][995]LogClass: AI_STATE HotReload.
+[2018.12.08-21.05.04:589][995]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.05.04:592][995]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.05.05:101][995]LogContentBrowser: Native class hierarchy populated in 0.0154 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.05.05:105][995]Display: HotReload took  0.6s.
+[2018.12.08-21.05.10:698][ 12]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-21.05.12:139][166]Candidate modules for hot reload:
+[2018.12.08-21.05.12:139][166]  TGP_Project
+[2018.12.08-21.05.12:139][166]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,6667 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.05.12:141][166]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.05.19:612][ 62]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:05:19
+[2018.12.08-21.05.19:612][ 62]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.05.19:612][ 62]CompilerResultsLog: Creating makefile for hot reloading TGP_ProjectEditor (modules to compile have changed)
+[2018.12.08-21.05.19:612][ 62]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.05.19:612][ 62]CompilerResultsLog: Using Visual Studio 2017 14.14.26428 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.08-21.05.19:612][ 62]CompilerResultsLog: Target is up to date
+[2018.12.08-21.05.19:612][ 62]CompilerResultsLog: Total build time: 7.23 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.12.08-21.05.19:612][ 62]LogMainFrame: MainFrame: Module compiling took 7.477 seconds
+[2018.12.08-21.05.19:905][ 62]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.05.19:906][ 62]Display: HotReload took  7.8s.
+[2018.12.08-21.05.20:586][132]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.05.20:600][132]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.05.20:601][132]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:05:20)
+[2018.12.08-21.05.20:601][132]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.05.20:603][132]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002585s)
+[2018.12.08-21.05.20:604][132]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.05.20:604][132]LogPlayLevel: PIE: World Init took: (0.000631s)
+[2018.12.08-21.05.20:604][132]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.003317s)
+[2018.12.08-21.05.20:690][132]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.05.20:703][132]LogInit: FAudioDevice initialized.
+[2018.12.08-21.05.20:733][132]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.05.20:734][132]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.05.20
+[2018.12.08-21.05.20:735][132]LogWorld: Bringing up level for play took: 0.001003
+[2018.12.08-21.05.20:748][132]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.553
+[2018.12.08-21.05.34:792][812]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.05.34:829][812]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.05.34:857][812]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.05.34:895][816]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2018.12.08-21.10.08:240][707]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.08-21.10.09:149][793]Candidate modules for hot reload:
+[2018.12.08-21.10.09:149][793]  TGP_Project
+[2018.12.08-21.10.09:149][793]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,7649 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.10.09:150][793]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.10.22:990][171]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:10:22
+[2018.12.08-21.10.22:990][171]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.10.22:990][171]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.10.22:990][171]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-21.10.22:990][171]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-21.10.22:990][171]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-7649.lib
+[2018.12.08-21.10.22:990][171]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7649.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7649.exp
+[2018.12.08-21.10.22:990][171]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-7649.dll
+[2018.12.08-21.10.22:990][171]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7649.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7649.suppressed.exp
+[2018.12.08-21.10.22:990][171]CompilerResultsLog: Total build time: 13.58 seconds (Parallel executor: 11.52 seconds)
+[2018.12.08-21.10.22:990][171]LogMainFrame: MainFrame: Module compiling took 13.844 seconds
+[2018.12.08-21.10.23:042][171]LogClass: EAREAS HotReload.
+[2018.12.08-21.10.23:042][171]LogClass: AI_STATE HotReload.
+[2018.12.08-21.10.23:051][171]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.10.23:054][171]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.10.23:376][171]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.10.23:376][171]Display: HotReload took 14.2s.
+[2018.12.08-21.10.25:748][446]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.10.25:761][446]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.10.25:762][446]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:10:25)
+[2018.12.08-21.10.25:762][446]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.10.25:764][446]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001993s)
+[2018.12.08-21.10.25:764][446]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.10.25:764][446]LogPlayLevel: PIE: World Init took: (0.000629s)
+[2018.12.08-21.10.25:764][446]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002719s)
+[2018.12.08-21.10.25:840][446]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.10.25:853][446]LogInit: FAudioDevice initialized.
+[2018.12.08-21.10.25:880][446]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.10.25:881][446]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.10.25
+[2018.12.08-21.10.25:882][446]LogWorld: Bringing up level for play took: 0.000983
+[2018.12.08-21.10.25:894][446]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.3
+[2018.12.08-21.10.59:019][408]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.10.59:086][416]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.10.59:125][416]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.10.59:158][416]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.10.59:189][417]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2018.12.08-21.12.18:642][450]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/BasicProjectle.BasicProjectle
+[2018.12.08-21.12.20:182][574]LogRenderer: Reallocating scene render targets to support 1208x744 Format 10 NumSamples 1 (Frame:1).
+[2018.12.08-21.12.31:460][819]BlueprintLog: New page: Compile BasicProjectle
+[2018.12.08-21.12.32:639][912]LogSlate: Window 'BasicProjectle*' being destroyed
+[2018.12.08-21.12.33:806][ 45]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BasicProjectle" FILE="D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/BasicProjectle.uasset" SILENT=true
+[2018.12.08-21.12.33:831][ 45]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/BasicProjectle0BD9ABF34EB493131C9E83B1CD04F637.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/BasicProjectle.uasset'
+[2018.12.08-21.12.34:661][144]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.12.34:678][144]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.12.34:678][144]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:12:34)
+[2018.12.08-21.12.34:678][144]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.12.34:680][144]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001981s)
+[2018.12.08-21.12.34:681][144]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.12.34:681][144]LogPlayLevel: PIE: World Init took: (0.000636s)
+[2018.12.08-21.12.34:681][144]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002743s)
+[2018.12.08-21.12.34:724][144]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.12.34:737][144]LogInit: FAudioDevice initialized.
+[2018.12.08-21.12.34:768][144]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.12.34:769][144]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.12.34
+[2018.12.08-21.12.34:770][144]LogWorld: Bringing up level for play took: 0.000947
+[2018.12.08-21.12.34:782][144]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.588
+[2018.12.08-21.12.36:972][402]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.12.55:165][578]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.12.58:459][963]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.13.13:084][708]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.13:243][727]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.13:268][730]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.15:402][986]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.15:819][ 36]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.16:694][141]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.16:859][158]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.17:001][175]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.17:184][197]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.17:351][217]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.17:494][234]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.17:776][268]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.17:918][285]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.18:918][405]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.13.18:968][411]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.13.19:003][411]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.13.19:034][411]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.13.19:073][415]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2018.12.08-21.13.30:326][759]BlueprintLog: New page: Compile BasicProjectle
+[2018.12.08-21.13.31:876][917]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.13.31:893][917]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.13.31:893][917]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:13:31)
+[2018.12.08-21.13.31:893][917]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.13.31:895][917]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001969s)
+[2018.12.08-21.13.31:896][917]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.13.31:896][917]LogPlayLevel: PIE: World Init took: (0.000531s)
+[2018.12.08-21.13.31:896][917]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002612s)
+[2018.12.08-21.13.31:939][917]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.13.31:952][917]LogInit: FAudioDevice initialized.
+[2018.12.08-21.13.31:978][917]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.13.31:979][917]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.13.31
+[2018.12.08-21.13.31:980][917]LogWorld: Bringing up level for play took: 0.000892
+[2018.12.08-21.13.31:992][917]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.202
+[2018.12.08-21.13.32:437][970]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.33:621][112]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.13.33:653][112]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.13.33:682][112]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.13.33:724][116]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2018.12.08-21.13.34:057][156]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.13.43:771][291]BlueprintLog: New page: Compile BasicProjectle
+[2018.12.08-21.13.44:735][382]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.13.44:751][382]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.13.44:751][382]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:13:44)
+[2018.12.08-21.13.44:751][382]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.13.44:753][382]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001927s)
+[2018.12.08-21.13.44:754][382]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.13.44:754][382]LogPlayLevel: PIE: World Init took: (0.000563s)
+[2018.12.08-21.13.44:754][382]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002608s)
+[2018.12.08-21.13.44:799][382]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.13.44:811][382]LogInit: FAudioDevice initialized.
+[2018.12.08-21.13.44:817][382]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.13.44:845][382]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.13.44:846][382]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.13.44
+[2018.12.08-21.13.44:847][382]LogWorld: Bringing up level for play took: 0.000986
+[2018.12.08-21.13.44:860][382]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.666
+[2018.12.08-21.13.44:872][382]LogRenderer: Reallocating scene render targets to support 1292x756 Format 10 NumSamples 1 (Frame:1).
+[2018.12.08-21.13.46:713][600]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.46:887][621]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.13.47:055][641]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.13.47:070][641]LogSlate: Window 'TGP_Project Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2018.12.08-21.13.47:098][641]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.13.47:160][644]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2018.12.08-21.14.04:470][705]BlueprintLog: New page: Compile BasicProjectle
+[2018.12.08-21.14.04:831][721]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BasicProjectle" FILE="D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/BasicProjectle.uasset" SILENT=true
+[2018.12.08-21.14.04:854][721]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/BasicProjectleBCD9F18A4B368738DA67AB8FF37A6778.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/BasicProjectle.uasset'
+[2018.12.08-21.14.05:420][788]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.14.05:437][788]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.14.05:437][788]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:14:05)
+[2018.12.08-21.14.05:437][788]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.14.05:439][788]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001923s)
+[2018.12.08-21.14.05:440][788]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.14.05:440][788]LogPlayLevel: PIE: World Init took: (0.000598s)
+[2018.12.08-21.14.05:440][788]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002621s)
+[2018.12.08-21.14.05:483][788]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.14.05:495][788]LogInit: FAudioDevice initialized.
+[2018.12.08-21.14.05:502][788]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.14.05:536][788]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.14.05:537][788]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.14.05
+[2018.12.08-21.14.05:538][788]LogWorld: Bringing up level for play took: 0.000972
+[2018.12.08-21.14.05:551][788]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.643
+[2018.12.08-21.14.05:790][812]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.14.06:190][860]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.14.08:825][176]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.14.08:840][176]LogSlate: Window 'TGP_Project Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2018.12.08-21.14.08:874][176]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.14.08:928][178]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2018.12.08-21.14.34:211][384]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BaseLevel' took 0.031
+[2018.12.08-21.14.34:213][384]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/PlayerCharacter] ([1] browsable assets)...
+[2018.12.08-21.14.34:213][384]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PlayerCharacter]
+[2018.12.08-21.14.34:235][384]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/PlayerCharacter_Auto21D2AF7B041C94071DC20C4A1D7022465.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Blueprints/PlayerCharacter_Auto2.uasset'
+[2018.12.08-21.14.34:236][384]LogFileHelpers: Auto-saving content packages took 0.025
+[2018.12.08-21.15.30:641][703]BlueprintLog: New page: Compile BasicProjectle
+[2018.12.08-21.15.33:503][845]Candidate modules for hot reload:
+[2018.12.08-21.15.33:503][845]  TGP_Project
+[2018.12.08-21.15.33:503][845]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,3603 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.15.33:578][845]Warning: Starting HotReload took  0.1s.
+[2018.12.08-21.15.52:612][127]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:15:52
+[2018.12.08-21.15.52:612][127]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.15.52:612][127]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.15.52:612][127]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-21.15.52:612][127]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-21.15.52:612][127]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-3603.lib
+[2018.12.08-21.15.52:612][127]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3603.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3603.exp
+[2018.12.08-21.15.52:612][127]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-3603.dll
+[2018.12.08-21.15.52:612][127]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3603.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-3603.suppressed.exp
+[2018.12.08-21.15.52:612][127]CompilerResultsLog: Total build time: 16.46 seconds (Parallel executor: 13.56 seconds)
+[2018.12.08-21.15.52:612][127]LogMainFrame: MainFrame: Module compiling took 19.112 seconds
+[2018.12.08-21.15.52:663][127]LogClass: EAREAS HotReload.
+[2018.12.08-21.15.52:663][127]LogClass: AI_STATE HotReload.
+[2018.12.08-21.15.52:672][127]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.15.52:676][127]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.15.52:999][127]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.15.52:999][127]Display: HotReload took 19.6s.
+[2018.12.08-21.16.01:744][170]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.16.01:761][170]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.16.01:761][170]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:16:01)
+[2018.12.08-21.16.01:761][170]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.16.01:764][170]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002219s)
+[2018.12.08-21.16.01:764][170]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.16.01:764][170]LogPlayLevel: PIE: World Init took: (0.000737s)
+[2018.12.08-21.16.01:764][170]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.003066s)
+[2018.12.08-21.16.01:830][170]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.16.01:843][170]LogInit: FAudioDevice initialized.
+[2018.12.08-21.16.01:872][170]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.16.01:873][170]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.16.01
+[2018.12.08-21.16.01:873][170]LogWorld: Bringing up level for play took: 0.000937
+[2018.12.08-21.16.01:885][170]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.309
+[2018.12.08-21.16.02:148][201]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.02:548][249]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.07:721][866]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.16.07:759][866]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.16.07:791][866]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.16.07:823][869]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2018.12.08-21.16.17:494][  2]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.16.17:559][  9]Candidate modules for hot reload:
+[2018.12.08-21.16.17:559][  9]  TGP_Project
+[2018.12.08-21.16.17:559][  9]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,4212 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.16.17:561][  9]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.16.31:707][701]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:16:31
+[2018.12.08-21.16.31:707][701]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.16.31:707][701]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.16.31:707][701]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.08-21.16.31:707][701]CompilerResultsLog:   [1/3] BasePlayer.cpp
+[2018.12.08-21.16.31:707][701]CompilerResultsLog:   [2/3] UE4Editor-TGP_Project-4212.lib
+[2018.12.08-21.16.31:707][701]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4212.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4212.exp
+[2018.12.08-21.16.31:707][701]CompilerResultsLog:   [3/3] UE4Editor-TGP_Project-4212.dll
+[2018.12.08-21.16.31:707][701]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4212.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-4212.suppressed.exp
+[2018.12.08-21.16.31:707][701]CompilerResultsLog: Total build time: 13.89 seconds (Parallel executor: 11.76 seconds)
+[2018.12.08-21.16.31:707][701]LogMainFrame: MainFrame: Module compiling took 14.151 seconds
+[2018.12.08-21.16.31:766][701]LogClass: EAREAS HotReload.
+[2018.12.08-21.16.31:766][701]LogClass: AI_STATE HotReload.
+[2018.12.08-21.16.31:775][701]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0003 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.16.31:779][701]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.16.32:108][701]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.16.32:108][701]Display: HotReload took 14.6s.
+[2018.12.08-21.16.34:108][929]Candidate modules for hot reload:
+[2018.12.08-21.16.34:108][929]  TGP_Project
+[2018.12.08-21.16.34:108][929]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,4382 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.16.34:110][929]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.16.36:401][204]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:16:36
+[2018.12.08-21.16.36:401][204]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.16.36:401][204]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.16.36:401][204]CompilerResultsLog: Target is up to date
+[2018.12.08-21.16.36:401][204]CompilerResultsLog: Total build time: 2.03 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.12.08-21.16.36:401][204]LogMainFrame: MainFrame: Module compiling took 2.297 seconds
+[2018.12.08-21.16.36:703][204]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.16.36:703][204]Display: HotReload took  2.6s.
+[2018.12.08-21.16.39:479][527]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.16.39:497][527]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.16.39:497][527]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:16:39)
+[2018.12.08-21.16.39:497][527]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.16.39:499][527]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002249s)
+[2018.12.08-21.16.39:500][527]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.16.39:500][527]LogPlayLevel: PIE: World Init took: (0.000596s)
+[2018.12.08-21.16.39:500][527]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002961s)
+[2018.12.08-21.16.39:591][527]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.16.39:603][527]LogInit: FAudioDevice initialized.
+[2018.12.08-21.16.39:634][527]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.16.39:635][527]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.16.39
+[2018.12.08-21.16.39:635][527]LogWorld: Bringing up level for play took: 0.000861
+[2018.12.08-21.16.39:648][527]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.546
+[2018.12.08-21.16.42:191][827]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.42:564][872]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.42:739][893]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.42:924][915]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.43:113][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.43:539][989]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.43:731][ 12]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.16.45:065][172]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.16.45:101][172]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.16.45:134][172]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.16.45:172][175]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2018.12.08-21.16.46:139][291]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.17.10:774][931]BlueprintLog: New page: Compile BasicProjectle
+[2018.12.08-21.17.14:798][377]Candidate modules for hot reload:
+[2018.12.08-21.17.14:798][377]  TGP_Project
+[2018.12.08-21.17.14:798][377]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,7312 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.17.14:800][377]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.17.43:969][853]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:17:43
+[2018.12.08-21.17.43:969][853]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.17.43:969][853]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.17.43:969][853]CompilerResultsLog: Parsing headers for TGP_ProjectEditor
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   Running UnrealHeaderTool "D:\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.12.08-21.17.43:969][853]CompilerResultsLog: Reflection code generated for TGP_ProjectEditor in 10.5654687 seconds
+[2018.12.08-21.17.43:969][853]CompilerResultsLog: Building 7 actions with 4 processes...
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   [1/7] ProjectileBase.cpp
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   [2/7] WeaponBase.cpp
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   [3/7] ProjectileBase.gen.cpp
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   [4/7] BasePlayer.cpp
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   [5/7] BaseCharacter.cpp
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   [6/7] UE4Editor-TGP_Project-7312.lib
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7312.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7312.exp
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:   [7/7] UE4Editor-TGP_Project-7312.dll
+[2018.12.08-21.17.43:969][853]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7312.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-7312.suppressed.exp
+[2018.12.08-21.17.43:970][853]CompilerResultsLog: Total build time: 28.92 seconds (Parallel executor: 16.14 seconds)
+[2018.12.08-21.17.43:970][853]LogMainFrame: MainFrame: Module compiling took 29.175 seconds
+[2018.12.08-21.17.44:029][853]LogClass: EAREAS HotReload.
+[2018.12.08-21.17.44:029][853]LogClass: AI_STATE HotReload.
+[2018.12.08-21.17.44:039][853]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.17.44:043][853]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.17.44:377][853]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.17.44:378][853]Display: HotReload took 29.6s.
+[2018.12.08-21.17.45:521][974]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.17.45:539][974]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.17.45:539][974]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:17:45)
+[2018.12.08-21.17.45:539][974]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.17.45:541][974]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002013s)
+[2018.12.08-21.17.45:542][974]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.17.45:542][974]LogPlayLevel: PIE: World Init took: (0.000616s)
+[2018.12.08-21.17.45:542][974]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002753s)
+[2018.12.08-21.17.45:620][974]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.17.45:633][974]LogInit: FAudioDevice initialized.
+[2018.12.08-21.17.45:662][974]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.17.45:663][974]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.17.45
+[2018.12.08-21.17.45:664][974]LogWorld: Bringing up level for play took: 0.000891
+[2018.12.08-21.17.45:677][974]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.517
+[2018.12.08-21.17.47:741][221]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.08-21.18.25:813][778]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.18.25:872][785]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.18.25:913][785]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.18.25:949][785]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.18.25:982][787]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2018.12.08-21.18.42:416][112]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.08-21.18.42:434][112]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.08-21.18.42:434][112]PIE: New page: PIE session: BaseLevel (8 Dec 2018 21:18:42)
+[2018.12.08-21.18.42:434][112]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.08-21.18.42:437][112]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002100s)
+[2018.12.08-21.18.42:437][112]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.08-21.18.42:437][112]LogPlayLevel: PIE: World Init took: (0.000591s)
+[2018.12.08-21.18.42:437][112]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.002823s)
+[2018.12.08-21.18.42:484][112]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.12.08-21.18.42:497][112]LogInit: FAudioDevice initialized.
+[2018.12.08-21.18.42:527][112]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.08-21.18.42:528][112]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.08-21.18.42
+[2018.12.08-21.18.42:528][112]LogWorld: Bringing up level for play took: 0.000989
+[2018.12.08-21.18.42:541][112]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 0.346
+[2018.12.08-21.18.44:326][319]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2018.12.08-21.18.44:378][319]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2018.12.08-21.18.49:929][912]LogEditorViewport: Clicking on Actor (LMB): PlayerCharacter_C (PlayerCharacter)
+[2018.12.08-21.18.56:657][664]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.08-21.18.56:763][673]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.18.56:795][673]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.08-21.18.56:827][673]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.08-21.18.56:845][674]LogPlayLevel: Display: Destroying online subsystem :Context_30
+[2018.12.08-21.20.52:259][153]Candidate modules for hot reload:
+[2018.12.08-21.20.52:259][153]  TGP_Project
+[2018.12.08-21.20.52:259][153]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TGP_Project,9125 Win64 Development -TargetType=Editor -Project="D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" -canskiplink "D:/Documents/GitHub/TGP_PairProject/TGP_Project/TGP_Project.uproject" ]
+[2018.12.08-21.20.52:261][153]Warning: Starting HotReload took  0.0s.
+[2018.12.08-21.21.24:669][995]CompilerResultsLog: New page: Compilation - 8 Dec 2018 21:21:24
+[2018.12.08-21.21.24:669][995]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.12.08-21.21.24:669][995]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.08-21.21.24:669][995]CompilerResultsLog: Parsing headers for TGP_ProjectEditor
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   Running UnrealHeaderTool "D:\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.12.08-21.21.24:669][995]CompilerResultsLog: Reflection code generated for TGP_ProjectEditor in 10.4815806 seconds
+[2018.12.08-21.21.24:669][995]CompilerResultsLog: Building 7 actions with 4 processes...
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   [1/7] WeaponBase.cpp
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   [2/7] ProjectileBase.cpp
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   [3/7] ProjectileBase.gen.cpp
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   [4/7] BasePlayer.cpp
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   [5/7] BaseCharacter.cpp
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   [6/7] UE4Editor-TGP_Project-9125.lib
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9125.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9125.exp
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:   [7/7] UE4Editor-TGP_Project-9125.dll
+[2018.12.08-21.21.24:669][995]CompilerResultsLog:      Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9125.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project-9125.suppressed.exp
+[2018.12.08-21.21.24:669][995]CompilerResultsLog: Total build time: 31.56 seconds (Parallel executor: 18.76 seconds)
+[2018.12.08-21.21.24:669][995]LogMainFrame: MainFrame: Module compiling took 32.413 seconds
+[2018.12.08-21.21.24:729][995]LogClass: EAREAS HotReload.
+[2018.12.08-21.21.24:729][995]LogClass: AI_STATE HotReload.
+[2018.12.08-21.21.24:734][995]LogHotReload: Re-instancing BaseCharacter after hot-reload.
+[2018.12.08-21.21.24:911][995]LogHotReload: Re-instancing BasePlayer after hot-reload.
+[2018.12.08-21.21.25:237][995]LogContentBrowser: Native class hierarchy updated for 'TGP_Project' in 0.0004 seconds. Added 13 classes and 3 folders.
+[2018.12.08-21.21.25:241][995]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2018.12.08-21.21.25:578][995]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2586 classes and 608 folders.
+[2018.12.08-21.21.25:578][995]Display: HotReload took 33.3s.
+[2018.12.08-21.25.40:614][554]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BaseLevel' took 0.067
+[2018.12.08-21.25.40:615][554]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/PlayerCharacter] ([1] browsable assets)...
+[2018.12.08-21.25.40:615][554]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PlayerCharacter]
+[2018.12.08-21.25.40:634][554]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/PlayerCharacter_Auto3EE4681E24D2EBE0D4BBA2C9C343CCB89.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Blueprints/PlayerCharacter_Auto3.uasset'
+[2018.12.08-21.25.40:635][554]LogFileHelpers: Auto-saving content packages took 0.021
+[2018.12.08-21.35.41:105][265]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/BaseLevel" FILE="D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Levels/BaseLevel_Auto4.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.12.08-21.35.41:335][265]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/BaseLevel_Auto42E6E7E3849048F77C2EB52B8EA65F672.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Levels/BaseLevel_Auto4.umap'
+[2018.12.08-21.35.41:339][265]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BaseLevel' took 0.290
+[2018.12.08-21.35.41:339][265]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.290
+[2018.12.08-21.35.41:341][265]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/PlayerCharacter] ([1] browsable assets)...
+[2018.12.08-21.35.41:341][265]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/PlayerCharacter]
+[2018.12.08-21.35.41:360][265]LogSavePackage: Moving 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/PlayerCharacter_Auto44A2F6B9541F25E52112688AA389649FE.tmp' to 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Autosaves/Game/Blueprints/PlayerCharacter_Auto4.uasset'
+[2018.12.08-21.35.41:361][265]LogFileHelpers: Auto-saving content packages took 0.021
+[2018.12.08-23.04.24:350][487]LogHotReload: New module detected: UE4Editor-TGP_Project-4664.dll
+[2018.12.08-23.04.25:367][491]LogHotReload: Starting Hot-Reload from IDE
+[2018.12.08-23.04.25:534][491]LogClass: Could not find existing class BaseCharacter in package /Script/TGP_Project for HotReload, assuming new class
+[2018.12.08-23.04.25:534][491]LogClass: Function Collision is new.
+[2018.12.08-23.04.25:534][491]LogClass: Function FlipFlipbook is new.
+[2018.12.08-23.04.25:534][491]LogClass: Function SwitchFlipbook is new.
+[2018.12.08-23.04.25:534][491]LogClass: Could not find existing class BasePlayer in package /Script/TGP_Project for HotReload, assuming new class
+[2018.12.08-23.04.25:549][491]LogClass: Could not find existing class WeaponBase in package /Script/TGP_Project for HotReload, assuming new class
+[2018.12.08-23.04.25:549][491]LogClass: EAREAS HotReload.
+[2018.12.08-23.04.25:549][491]LogClass: AI_STATE HotReload.
+[2018.12.08-23.04.25:554][491]LogWindows: Windows GetLastError: The operation completed successfully. (0)

@@ -57,7 +57,24 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABasePlayer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABasePlayer)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO___orthoWidth() { return STRUCT_OFFSET(ABasePlayer, _orthoWidth); } \
+	FORCEINLINE static uint32 __PPO___orthoWidthMax() { return STRUCT_OFFSET(ABasePlayer, _orthoWidthMax); } \
+	FORCEINLINE static uint32 __PPO___orthoWidthMin() { return STRUCT_OFFSET(ABasePlayer, _orthoWidthMin); } \
+	FORCEINLINE static uint32 __PPO___zoomSpeed() { return STRUCT_OFFSET(ABasePlayer, _zoomSpeed); } \
+	FORCEINLINE static uint32 __PPO___panSpeed() { return STRUCT_OFFSET(ABasePlayer, _panSpeed); } \
+	FORCEINLINE static uint32 __PPO___panSpeedMin() { return STRUCT_OFFSET(ABasePlayer, _panSpeedMin); } \
+	FORCEINLINE static uint32 __PPO___panSpeedMax() { return STRUCT_OFFSET(ABasePlayer, _panSpeedMax); } \
+	FORCEINLINE static uint32 __PPO___panResetSpeed() { return STRUCT_OFFSET(ABasePlayer, _panResetSpeed); } \
+	FORCEINLINE static uint32 __PPO___panMaxDistance() { return STRUCT_OFFSET(ABasePlayer, _panMaxDistance); } \
+	FORCEINLINE static uint32 __PPO___mousePosinNormal() { return STRUCT_OFFSET(ABasePlayer, _mousePosinNormal); } \
+	FORCEINLINE static uint32 __PPO___sneakSpeed() { return STRUCT_OFFSET(ABasePlayer, _sneakSpeed); } \
+	FORCEINLINE static uint32 __PPO___isSneaking() { return STRUCT_OFFSET(ABasePlayer, _isSneaking); } \
+	FORCEINLINE static uint32 __PPO___sprintSpeed() { return STRUCT_OFFSET(ABasePlayer, _sprintSpeed); } \
+	FORCEINLINE static uint32 __PPO___sprintTimer() { return STRUCT_OFFSET(ABasePlayer, _sprintTimer); } \
+	FORCEINLINE static uint32 __PPO___inRestictedArea() { return STRUCT_OFFSET(ABasePlayer, _inRestictedArea); }
+
+
 #define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_18_PROLOG
 #define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

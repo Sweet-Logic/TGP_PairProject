@@ -7,6 +7,7 @@
 #include "WeaponBase.generated.h"
 
 class AProjectileBase;
+class UPaperFlipbookComponent;
 
 UCLASS()
 class TGP_PROJECT_API AWeaponBase : public AActor
@@ -17,21 +18,24 @@ public:
 	// Sets default values for this actor's properties
 	AWeaponBase();
 
+	UPROPERTY(VisibleAnywhere)
+		UPaperFlipbookComponent* _sprite;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-
-		void Fire(FVector Dir);
 
 	int _ammo = 10;
 
 	FVector2D _dir = {0,0};
 
 	UPROPERTY(EditAnywhere)
-		AProjectileBase* _projectile;
+		TSubclassOf<AProjectileBase> _projectile;
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	void Use(FVector Dir);
+
 };
