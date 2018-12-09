@@ -13,9 +13,47 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TGP_PROJECT_BasePlayer_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS_NO_PURE_DECLS
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
+	{ \
+		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetIsPlayerInRestrictedArea(Z_Param_newIsInRestrictedArea); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIsPlayerInRestrictedArea) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
+		P_NATIVE_END; \
+	}
+
+
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
+	{ \
+		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetIsPlayerInRestrictedArea(Z_Param_newIsInRestrictedArea); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIsPlayerInRestrictedArea) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
+		P_NATIVE_END; \
+	}
+
+
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABasePlayer(); \
 	friend struct Z_Construct_UClass_ABasePlayer_Statics; \
@@ -24,7 +62,7 @@ public: \
 	DECLARE_SERIALIZER(ABasePlayer)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesABasePlayer(); \
 	friend struct Z_Construct_UClass_ABasePlayer_Statics; \
@@ -33,7 +71,7 @@ public: \
 	DECLARE_SERIALIZER(ABasePlayer)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_STANDARD_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABasePlayer(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABasePlayer) \
@@ -46,7 +84,7 @@ private: \
 public:
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_ENHANCED_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABasePlayer(ABasePlayer&&); \
@@ -57,26 +95,43 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABasePlayer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABasePlayer)
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_PRIVATE_PROPERTY_OFFSET
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_17_PROLOG
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_GENERATED_BODY_LEGACY \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO___orthoWidth() { return STRUCT_OFFSET(ABasePlayer, _orthoWidth); } \
+	FORCEINLINE static uint32 __PPO___orthoWidthMax() { return STRUCT_OFFSET(ABasePlayer, _orthoWidthMax); } \
+	FORCEINLINE static uint32 __PPO___orthoWidthMin() { return STRUCT_OFFSET(ABasePlayer, _orthoWidthMin); } \
+	FORCEINLINE static uint32 __PPO___zoomSpeed() { return STRUCT_OFFSET(ABasePlayer, _zoomSpeed); } \
+	FORCEINLINE static uint32 __PPO___panSpeed() { return STRUCT_OFFSET(ABasePlayer, _panSpeed); } \
+	FORCEINLINE static uint32 __PPO___panSpeedMin() { return STRUCT_OFFSET(ABasePlayer, _panSpeedMin); } \
+	FORCEINLINE static uint32 __PPO___panSpeedMax() { return STRUCT_OFFSET(ABasePlayer, _panSpeedMax); } \
+	FORCEINLINE static uint32 __PPO___panResetSpeed() { return STRUCT_OFFSET(ABasePlayer, _panResetSpeed); } \
+	FORCEINLINE static uint32 __PPO___panMaxDistance() { return STRUCT_OFFSET(ABasePlayer, _panMaxDistance); } \
+	FORCEINLINE static uint32 __PPO___mousePosinNormal() { return STRUCT_OFFSET(ABasePlayer, _mousePosinNormal); } \
+	FORCEINLINE static uint32 __PPO___sneakSpeed() { return STRUCT_OFFSET(ABasePlayer, _sneakSpeed); } \
+	FORCEINLINE static uint32 __PPO___isSneaking() { return STRUCT_OFFSET(ABasePlayer, _isSneaking); } \
+	FORCEINLINE static uint32 __PPO___sprintSpeed() { return STRUCT_OFFSET(ABasePlayer, _sprintSpeed); } \
+	FORCEINLINE static uint32 __PPO___sprintTimer() { return STRUCT_OFFSET(ABasePlayer, _sprintTimer); } \
+	FORCEINLINE static uint32 __PPO___inRestictedArea() { return STRUCT_OFFSET(ABasePlayer, _inRestictedArea); }
+
+
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_18_PROLOG
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_STANDARD_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_GENERATED_BODY \
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_INCLASS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_20_ENHANCED_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

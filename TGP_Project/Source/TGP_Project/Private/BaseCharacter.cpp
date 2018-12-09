@@ -7,6 +7,7 @@
 #include "Paper2D/Classes/PaperSprite.h"
 #include "Components/InputComponent.h"
 #include "Components/BoxComponent.h"
+#include "WeaponBase.h"
 #include "Engine.h"
 
 
@@ -18,33 +19,37 @@ ABaseCharacter::ABaseCharacter()
 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-	Sprite = CreateDefaultSubobject<UPaperFlipbookComponent>(TEXT("Sprite"));
-	Sprite->SetupAttachment(RootComponent);
-	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, -90));
+	//RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
+	//GetSprite() = CreateDefaultSubobject<UPaperFlipbookComponent>(TEXT("Sprite"));
+	//Sprite->SetupAttachment(RootComponent);
+
+	//GetSprite()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(-90, 0, 90));
+
 	//Sprite->CollisionSource
 	//Sprite->SetFlipbook(DefaultFlipbook);
-	CurrentMovementSpeed = WalkSpeed;
 
-	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
-	BoxComponent->SetupAttachment(RootComponent);
+	_currentMovementSpeed = _walkSpeed;
 
-	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &ABaseCharacter::Collision);
+	_boxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
+	_boxComponent->SetupAttachment(RootComponent);
+
+	_boxComponent->OnComponentBeginOverlap.AddDynamic(this, &ABaseCharacter::Collision);
 
 }
 // Called when the game starts or when spawned
 void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	Sprite->SetFlipbook(WalikingFlipBook);
+	GetSprite()->SetFlipbook(_walikingFlipBook);
 	//Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(X, Y, Z));
 
 
-	Sprite->Play();
+	GetSprite()->Play();
 
-	FVector2D size = WalikingFlipBook->GetSpriteAtFrame(0)->GetSourceSize();
+	FVector2D size = _walikingFlipBook->GetSpriteAtFrame(0)->GetSourceSize();
 
-	BoxComponent->SetBoxExtent(FVector(size.X, size.X, 1.0f));
+	_boxComponent->SetBoxExtent(FVector(size.X, size.X, 1.0f));
+	GetSprite()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 0, 90));
 
 
 }
@@ -52,7 +57,7 @@ void ABaseCharacter::BeginPlay()
 void ABaseCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	//GetSprite()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0.0f, 0.0f, 90.0f));
 }
 // Called to bind functionality to input
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
@@ -62,40 +67,40 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 
 void ABaseCharacter::EnableMovement()
 {
-	canMove = true;
+	_canMove = true;
 }
 
 void ABaseCharacter::StopMovement()
 {
-	canMove = false;
+	_canMove = false;
 
 }
 
 void ABaseCharacter::MoveUp(float AxisValue)
 {
-	canMove = true;
-	if (canMove)
+	_canMove = true;
+	if (_canMove)
 	{
-		MovementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+		_movementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
 	}
 }
 
 void ABaseCharacter::MoveRight(float AxisValue)
 {
-	if (canMove)
+	if (_canMove)
 	{
-		MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+		_movementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
 	}
 }
 
 void ABaseCharacter::SwitchFlipbook(UPaperFlipbook * newFlipbook)
 {
-	Sprite->SetFlipbook(newFlipbook);
+	GetSprite()->SetFlipbook(newFlipbook);
 }
 
 void ABaseCharacter::FlipFlipbook()
 {
-	Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, 90));
+	GetSprite()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 90, 90));
 }
 
 UFUNCTION()

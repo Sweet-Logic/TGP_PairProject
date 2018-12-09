@@ -9,6 +9,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
+class AWeaponBase;
 
 /**
  * 
@@ -22,8 +23,71 @@ class TGP_PROJECT_API ABasePlayer : public ABaseCharacter
 public:
 	ABasePlayer();
 
+
 protected:
 	virtual void BeginPlay() override;
+
+
+	float _score = 10000;
+
+	
+	UCameraComponent* _camera;
+	USpringArmComponent* _springArm;
+
+	// Camera Settings
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _orthoWidth = 512;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _orthoWidthMax = 768;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _orthoWidthMin = 256;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _zoomSpeed = 2.0f;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _panSpeed = 0.0f;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _panSpeedMin = 0.0f;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _panSpeedMax = 5.0f;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _panResetSpeed = 5.0f;
+	UPROPERTY(EditAnywhere, Category = "Camera Settings")
+		float _panMaxDistance = 200.0f;
+	
+	// Mouse Variables
+	FVector2D _mousePosition = FVector2D();
+	FVector _mouseWorld = FVector();
+	FVector _mouseWorldDir = FVector();
+	FVector2D _viewportSize = FVector2D();
+	FVector _playerToMouseDirection = FVector();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerMusicSkill)
+		FVector2D _mousePosinNormal = FVector2D();
+
+	// Panning Variables
+	FVector _panInputVec = FVector();
+
+	//Stealth Variables
+	UPROPERTY(EditAnywhere, Category = "Stealth Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
+		float _sneakSpeed = 50.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Stealth Settings")
+		bool _isSneaking = false;
+
+
+	// Movement Variables
+	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
+		float _sprintSpeed = 120.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement Settings")
+		float _sprintTimer = 3.0f; // time in seconds
+
+	// Score Variables
+	float _hiddenMultiplier = 1.0f; // donno, higher the value the easier it is for enimies to detect the player.
+	
+	//Stealth Variables
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Areas")
+		bool _inRestictedArea = false;
 
 public:
 	virtual void Tick(float deltaSeconds) override;
@@ -31,58 +95,15 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 
-	//UPROPERTY(EditAnywhere)
-		UCameraComponent* Camera;
 
-	//UPROPERTY(EditAnywhere)
-		USpringArmComponent* SpringArm;
 
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float OrthoWidth = 512;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float OrthoWidthMax = 768;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float OrthoWidthMin = 256;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float ZoomSpeed = 2.0f;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanSpeed = 0.0f;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanSpeedMin = 0.0f;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanSpeedMax = 5.0f;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanResetSpeed = 5.0f;
-	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float PanMaxDistance = 200.0f;
 
-	FVector2D MousePosition = FVector2D();
-	FVector MouseWorld = FVector();
-	FVector MouseWorldDir = FVector();
-	FVector2D ViewportSize = FVector2D();
-	FVector2D MousePosinNormal = FVector2D();
+	//Weapon
+	void UpdateWeaponPosition();
 
-	FVector PanInputVec = FVector();
-	UPROPERTY(EditAnywhere, Category = "Stealth Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
-		float SneakSpeed = 50.0f;
-	UPROPERTY(EditAnywhere, Category = "Stealth Settings")
-		bool bSneaking = false;
-
-	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
-		float SprintSpeed = 120.0f;
-	UPROPERTY(EditAnywhere, Category = "Movement Settings")
-		float SprintTimer = 3.0f; // time in seconds
-
-	float HiddenMultiplier = 1.0f; // donno, higher the value the easier it is for enimies to detect the player.
-
+	//Movement
 	void HandleMovement(float DeltaTime);
 
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Areas")
-		bool InRestictedArea = false;
-
-
-	float Score = 10000;
 
 	//Axis Mapping
 	void HandlePanning(float DeltaTime);
@@ -107,5 +128,19 @@ public:
 
 	void Roll();
 
+	void PutAwayWeapon();
+
+	void PullOutWeapon();
+
+
 	void SprintRelease();
+
+	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
+		bool GetIsPlayerInRestrictedArea() { return _inRestictedArea; }
+	
+	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
+		void SetIsPlayerInRestrictedArea(bool newIsInRestrictedArea) { _inRestictedArea = newIsInRestrictedArea; }
+
+	
+
 };

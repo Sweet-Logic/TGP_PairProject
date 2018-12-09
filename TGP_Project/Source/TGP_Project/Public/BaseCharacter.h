@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Paper2D/Classes/PaperCharacter.h"
+#include "WeaponBase.h"
 #include "BaseCharacter.generated.h"
 
 class UPaperFlipbook;
@@ -14,11 +15,14 @@ class USceneComponent;
 class UArrowComponent;
 class UBoxComponent;
 
+class AWeaponBase;
+
+class UChildActorComponent;
 /**
  * 
  */
 UCLASS()
-class TGP_PROJECT_API ABaseCharacter : public APawn
+class TGP_PROJECT_API ABaseCharacter : public APaperCharacter
 {
 	GENERATED_BODY()
 
@@ -28,28 +32,70 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-	bool canMove = true;
+	//Components
+	UPROPERTY(VisibleAnywhere)
+		UBoxComponent* _boxComponent;
+	//UPROPERTY(VisibleAnywhere)
+	//UPaperFlipbookComponent* Sprite;
+
+	UPROPERTY(VisibleAnywhere)
+		UArrowComponent* _direction;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Component")
+		AWeaponBase* _currentWeapon;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon")
+		TArray<TSubclassOf<AWeaponBase>> _weaponInventory;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon")
+		TSubclassOf<AWeaponBase> _defaultGun;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon")
+		TSubclassOf<AWeaponBase> _defaultMelee;
+
+
+	//Character Status
+	bool _isAlive = true;
+
+	//Weapon
+	bool _hasWeaponDrawn = false;
+
+	float _weaponOffset = 20.0f;
+
+	//UPROPERTY(EditAnywhere, Category = "Movement Settings")
+	FVector2D _movementInput;
+
+	//Sprite Settings
+	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
+		UPaperFlipbook* _idleFlipbook;
+	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
+		UPaperFlipbook* _walikingFlipBook;
+	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
+		float _playRate;
+	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
+		uint32 _loopFlipbook;
+
+	//Movement Settings
+	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "200.0", UIMin = "0.0", UIMax = "200.0"))
+		float _walkSpeed = 80.0f;
+
+	float _currentMovementSpeed;
+	bool _canMove = true;
+
+	//Debug values
+	UPROPERTY(EditAnywhere, Category = "Debug")
+		float _x = 0.0f;
+	UPROPERTY(EditAnywhere, Category = "Debug")
+		float _y = 0.0f;
+	UPROPERTY(EditAnywhere, Category = "Debug")
+		float _z = 0.0f;
 public:
 	virtual void Tick(float deltaSeconds) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
-	//Components
-	UPROPERTY(VisibleAnywhere)
-		UBoxComponent* BoxComponent;
-	UPROPERTY(VisibleAnywhere)
-		UPaperFlipbookComponent* Sprite;
-	UPROPERTY(VisibleAnywhere)
-		UArrowComponent* direction;
+	
 
-	//Sprite Settings
-	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
-		UPaperFlipbook* IdleFlipbook;
-	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
-		UPaperFlipbook* WalikingFlipBook;
-	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
-		float playRate;
-	UPROPERTY(EditAnywhere, Category = "Sprite Settings")
-		uint32 loopFlipbook;
+	
 
 	UFUNCTION(BlueprintCallable, Category = "FlippingFlipbooks")
 		void SwitchFlipbook(UPaperFlipbook* newFlipbook);
@@ -65,29 +111,22 @@ public:
 			bool bFromSweep,
 			const FHitResult &SweepResult);
 
-	//UPROPERTY(EditAnywhere, Category = "Movement Settings")
-	FVector2D MovementInput;
 
-	//Movement Settings
-	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "200.0", UIMin = "0.0", UIMax = "200.0"))
-		float WalkSpeed = 80.0f;
-
-
-	float CurrentMovementSpeed;
-
-	UPROPERTY(EditAnywhere, Category = "Movement Settings")
-		float X = 0.0f;
-	UPROPERTY(EditAnywhere, Category = "Movement Settings")
-		float Y = 0.0f;
-	UPROPERTY(EditAnywhere, Category = "Movement Settings")
-		float Z = 0.0f;
-	
 	void EnableMovement();
 
 	void StopMovement();
-	
+
 	void MoveUp(float value);
 	void MoveRight(float value);
 
-	bool IsAlive = true;
+	
+	UFUNCTION(BlueprintCallable, Category = "CharacterState")
+		bool IsCharacterAlive() const {	return _isAlive;}
+	
+	UFUNCTION(BlueprintCallable, Category = "WeaponVisibility")
+		bool GetIsWeaponDrawn() { return _hasWeaponDrawn; }
+
+	UFUNCTION(BlueprintCallable, Category = "WeaponVisibility")
+		void SetIsWeaponDrawn(bool newHasWeaponDrawn) { _hasWeaponDrawn = newHasWeaponDrawn; }
+
 };

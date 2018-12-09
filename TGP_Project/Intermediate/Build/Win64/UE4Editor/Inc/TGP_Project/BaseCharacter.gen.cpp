@@ -15,17 +15,21 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 // Cross Module References
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
-	ENGINE_API UClass* Z_Construct_UClass_APawn();
+	PAPER2D_API UClass* Z_Construct_UClass_APaperCharacter();
 	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_Collision();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_FlipFlipbook();
+	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn();
+	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive();
+	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_SwitchFlipbook();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbook_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	TGP_PROJECT_API UClass* Z_Construct_UClass_AWeaponBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
-	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbookComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
 	void ABaseCharacter::StaticRegisterNativesABaseCharacter()
@@ -34,6 +38,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Collision", &ABaseCharacter::execCollision },
 			{ "FlipFlipbook", &ABaseCharacter::execFlipFlipbook },
+			{ "GetIsWeaponDrawn", &ABaseCharacter::execGetIsWeaponDrawn },
+			{ "IsCharacterAlive", &ABaseCharacter::execIsCharacterAlive },
+			{ "SetIsWeaponDrawn", &ABaseCharacter::execSetIsWeaponDrawn },
 			{ "SwitchFlipbook", &ABaseCharacter::execSwitchFlipbook },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
@@ -142,6 +149,120 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics
+	{
+		struct BaseCharacter_eventGetIsWeaponDrawn_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((BaseCharacter_eventGetIsWeaponDrawn_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(BaseCharacter_eventGetIsWeaponDrawn_Parms), &Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::Function_MetaDataParams[] = {
+		{ "Category", "WeaponVisibility" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, "GetIsWeaponDrawn", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(BaseCharacter_eventGetIsWeaponDrawn_Parms), Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics
+	{
+		struct BaseCharacter_eventIsCharacterAlive_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((BaseCharacter_eventIsCharacterAlive_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(BaseCharacter_eventIsCharacterAlive_Parms), &Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::Function_MetaDataParams[] = {
+		{ "Category", "CharacterState" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, "IsCharacterAlive", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x54020401, sizeof(BaseCharacter_eventIsCharacterAlive_Parms), Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics
+	{
+		struct BaseCharacter_eventSetIsWeaponDrawn_Parms
+		{
+			bool newHasWeaponDrawn;
+		};
+		static void NewProp_newHasWeaponDrawn_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_newHasWeaponDrawn;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::NewProp_newHasWeaponDrawn_SetBit(void* Obj)
+	{
+		((BaseCharacter_eventSetIsWeaponDrawn_Parms*)Obj)->newHasWeaponDrawn = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::NewProp_newHasWeaponDrawn = { UE4CodeGen_Private::EPropertyClass::Bool, "newHasWeaponDrawn", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(BaseCharacter_eventSetIsWeaponDrawn_Parms), &Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::NewProp_newHasWeaponDrawn_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::NewProp_newHasWeaponDrawn,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::Function_MetaDataParams[] = {
+		{ "Category", "WeaponVisibility" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, "SetIsWeaponDrawn", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(BaseCharacter_eventSetIsWeaponDrawn_Parms), Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseCharacter_SwitchFlipbook_Statics
 	{
 		struct BaseCharacter_eventSwitchFlipbook_Parms
@@ -187,60 +308,76 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Z_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__z_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Z;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__z;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Y_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__y_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Y;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__y;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_X_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__x_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_X;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__x;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WalkSpeed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__walkSpeed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_WalkSpeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__walkSpeed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_loopFlipbook_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__loopFlipbook_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUInt32PropertyParams NewProp_loopFlipbook;
+		static const UE4CodeGen_Private::FUInt32PropertyParams NewProp__loopFlipbook;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_playRate_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__playRate_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_playRate;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__playRate;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WalikingFlipBook_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__walikingFlipBook_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WalikingFlipBook;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__walikingFlipBook;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IdleFlipbook_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__idleFlipbook_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_IdleFlipbook;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__idleFlipbook;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_direction_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__defaultMelee_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_direction;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp__defaultMelee;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Sprite_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__defaultGun_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Sprite;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp__defaultGun;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxComponent_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__weaponInventory_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BoxComponent;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp__weaponInventory;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp__weaponInventory_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__currentWeapon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__currentWeapon;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__direction_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__direction;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__boxComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__boxComponent;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ABaseCharacter_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_APawn,
+		(UObject* (*)())Z_Construct_UClass_APaperCharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_TGP_Project,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseCharacter_Collision, "Collision" }, // 1599360745
 		{ &Z_Construct_UFunction_ABaseCharacter_FlipFlipbook, "FlipFlipbook" }, // 3896178746
+		{ &Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn, "GetIsWeaponDrawn" }, // 3554905307
+		{ &Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive, "IsCharacterAlive" }, // 3960536171
+		{ &Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn, "SetIsWeaponDrawn" }, // 2882821219
 		{ &Z_Construct_UFunction_ABaseCharacter_SwitchFlipbook, "SwitchFlipbook" }, // 3355348744
 	};
 #if WITH_METADATA
@@ -251,28 +388,29 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Z_MetaData[] = {
-		{ "Category", "Movement Settings" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__z_MetaData[] = {
+		{ "Category", "Debug" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Z = { UE4CodeGen_Private::EPropertyClass::Float, "Z", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, Z), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Z_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Z_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__z = { UE4CodeGen_Private::EPropertyClass::Float, "_z", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _z), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__z_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__z_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Y_MetaData[] = {
-		{ "Category", "Movement Settings" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__y_MetaData[] = {
+		{ "Category", "Debug" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Y = { UE4CodeGen_Private::EPropertyClass::Float, "Y", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, Y), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Y_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Y_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__y = { UE4CodeGen_Private::EPropertyClass::Float, "_y", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _y), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__y_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__y_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_X_MetaData[] = {
-		{ "Category", "Movement Settings" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x_MetaData[] = {
+		{ "Category", "Debug" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+		{ "ToolTip", "Debug values" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_X = { UE4CodeGen_Private::EPropertyClass::Float, "X", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, X), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_X_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_X_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x = { UE4CodeGen_Private::EPropertyClass::Float, "_x", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _x), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkSpeed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walkSpeed_MetaData[] = {
 		{ "Category", "Movement Settings" },
 		{ "ClampMax", "200.0" },
 		{ "ClampMin", "0.0" },
@@ -282,73 +420,99 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		{ "UIMin", "0.0" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "WalkSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, WalkSpeed), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walkSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "_walkSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _walkSpeed), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walkSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walkSpeed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_loopFlipbook_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__loopFlipbook_MetaData[] = {
 		{ "Category", "Sprite Settings" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUInt32PropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_loopFlipbook = { UE4CodeGen_Private::EPropertyClass::UInt32, "loopFlipbook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, loopFlipbook), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_loopFlipbook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_loopFlipbook_MetaData)) };
+	const UE4CodeGen_Private::FUInt32PropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__loopFlipbook = { UE4CodeGen_Private::EPropertyClass::UInt32, "_loopFlipbook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _loopFlipbook), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__loopFlipbook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__loopFlipbook_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__playRate_MetaData[] = {
 		{ "Category", "Sprite Settings" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate = { UE4CodeGen_Private::EPropertyClass::Float, "playRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, playRate), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__playRate = { UE4CodeGen_Private::EPropertyClass::Float, "_playRate", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _playRate), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__playRate_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__playRate_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walikingFlipBook_MetaData[] = {
 		{ "Category", "Sprite Settings" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook = { UE4CodeGen_Private::EPropertyClass::Object, "WalikingFlipBook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, WalikingFlipBook), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walikingFlipBook = { UE4CodeGen_Private::EPropertyClass::Object, "_walikingFlipBook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _walikingFlipBook), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walikingFlipBook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walikingFlipBook_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_IdleFlipbook_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__idleFlipbook_MetaData[] = {
 		{ "Category", "Sprite Settings" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 		{ "ToolTip", "Sprite Settings" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_IdleFlipbook = { UE4CodeGen_Private::EPropertyClass::Object, "IdleFlipbook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, IdleFlipbook), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_IdleFlipbook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_IdleFlipbook_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__idleFlipbook = { UE4CodeGen_Private::EPropertyClass::Object, "_idleFlipbook", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _idleFlipbook), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__idleFlipbook_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__idleFlipbook_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_direction_MetaData[] = {
-		{ "Category", "BaseCharacter" },
-		{ "EditInline", "true" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultMelee_MetaData[] = {
+		{ "Category", "Weapon" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_direction = { UE4CodeGen_Private::EPropertyClass::Object, "direction", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, direction), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_direction_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_direction_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultMelee = { UE4CodeGen_Private::EPropertyClass::Class, "_defaultMelee", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _defaultMelee), Z_Construct_UClass_AWeaponBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultMelee_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultMelee_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Sprite_MetaData[] = {
-		{ "Category", "BaseCharacter" },
-		{ "EditInline", "true" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultGun_MetaData[] = {
+		{ "Category", "Weapon" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Sprite = { UE4CodeGen_Private::EPropertyClass::Object, "Sprite", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, Sprite), Z_Construct_UClass_UPaperFlipbookComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Sprite_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Sprite_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultGun = { UE4CodeGen_Private::EPropertyClass::Class, "_defaultGun", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _defaultGun), Z_Construct_UClass_AWeaponBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultGun_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultGun_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_BoxComponent_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__weaponInventory_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__weaponInventory = { UE4CodeGen_Private::EPropertyClass::Array, "_weaponInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0024080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _weaponInventory), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__weaponInventory_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__weaponInventory_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__weaponInventory_Inner = { UE4CodeGen_Private::EPropertyClass::Class, "_weaponInventory", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0004000000000000, 1, nullptr, 0, Z_Construct_UClass_AWeaponBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__currentWeapon_MetaData[] = {
+		{ "Category", "Weapon Component" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__currentWeapon = { UE4CodeGen_Private::EPropertyClass::Object, "_currentWeapon", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _currentWeapon), Z_Construct_UClass_AWeaponBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__currentWeapon_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__currentWeapon_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction_MetaData[] = {
+		{ "Category", "BaseCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+		{ "ToolTip", "UPROPERTY(VisibleAnywhere)\nUPaperFlipbookComponent* Sprite;" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction = { UE4CodeGen_Private::EPropertyClass::Object, "_direction", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _direction), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__boxComponent_MetaData[] = {
 		{ "Category", "BaseCharacter" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
 		{ "ToolTip", "Components" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_BoxComponent = { UE4CodeGen_Private::EPropertyClass::Object, "BoxComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, BoxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_BoxComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_BoxComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__boxComponent = { UE4CodeGen_Private::EPropertyClass::Object, "_boxComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _boxComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__boxComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__boxComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCharacter_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Z,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Y,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_X,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalkSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_loopFlipbook,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_playRate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WalikingFlipBook,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_IdleFlipbook,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_direction,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_Sprite,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_BoxComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__z,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__y,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walkSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__loopFlipbook,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__playRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walikingFlipBook,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__idleFlipbook,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultMelee,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__defaultGun,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__weaponInventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__weaponInventory_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__currentWeapon,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__boxComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseCharacter>::IsAbstract,
@@ -373,7 +537,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 3648871335);
+	IMPLEMENT_CLASS(ABaseCharacter, 2471261705);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseCharacter(Z_Construct_UClass_ABaseCharacter, &ABaseCharacter::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
