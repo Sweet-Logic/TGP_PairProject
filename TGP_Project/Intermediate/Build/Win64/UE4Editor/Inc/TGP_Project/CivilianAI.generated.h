@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TGP_PROJECT_CivilianAI_generated_h
 
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_RPC_WRAPPERS
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_RPC_WRAPPERS_NO_PURE_DECLS
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_INCLASS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_RPC_WRAPPERS
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_RPC_WRAPPERS_NO_PURE_DECLS
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACivilianAI(); \
 	friend struct Z_Construct_UClass_ACivilianAI_Statics; \
@@ -24,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(ACivilianAI)
 
 
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_INCLASS \
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_INCLASS \
 private: \
 	static void StaticRegisterNativesACivilianAI(); \
 	friend struct Z_Construct_UClass_ACivilianAI_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(ACivilianAI)
 
 
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_STANDARD_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACivilianAI(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACivilianAI) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_ENHANCED_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACivilianAI(ACivilianAI&&); \
@@ -57,38 +57,38 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACivilianAI); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACivilianAI)
 
 
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_PRIVATE_PROPERTY_OFFSET \
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO___randomTarget() { return STRUCT_OFFSET(ACivilianAI, _randomTarget); } \
 	FORCEINLINE static uint32 __PPO___moveDelay() { return STRUCT_OFFSET(ACivilianAI, _moveDelay); } \
 	FORCEINLINE static uint32 __PPO___maxMoveRadius() { return STRUCT_OFFSET(ACivilianAI, _maxMoveRadius); } \
 	FORCEINLINE static uint32 __PPO___civHidingSpots() { return STRUCT_OFFSET(ACivilianAI, _civHidingSpots); }
 
 
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_7_PROLOG
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_GENERATED_BODY_LEGACY \
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_7_PROLOG
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_RPC_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_INCLASS \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_STANDARD_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_INCLASS \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_GENERATED_BODY \
+#define TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_INCLASS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Private_CivilianAI_h_10_ENHANCED_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_INCLASS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_CivilianAI_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID TGP_Project_Source_TGP_Project_Private_CivilianAI_h
+#define CURRENT_FILE_ID TGP_Project_Source_TGP_Project_Public_CivilianAI_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

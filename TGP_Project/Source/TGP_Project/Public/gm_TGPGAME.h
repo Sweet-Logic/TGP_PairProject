@@ -18,9 +18,7 @@ class TGP_PROJECT_API Agm_TGPGAME : public AGameModeBase
 {
 	GENERATED_BODY()
 
-	
 	float civilianCount = 10;
-
 
 	TArray<AActor> CivilianSpawn;
 
@@ -28,14 +26,10 @@ class TGP_PROJECT_API Agm_TGPGAME : public AGameModeBase
 
 	TArray<AActor> TargetSpawn;
 
-
 	UPROPERTY(EditAnywhere)
 		ABaseCharacter* Civilian;
 	UPROPERTY(EditAnywhere)
 		ABaseCharacter* BodyGuard;
 	UPROPERTY(EditAnywhere)
 		ABaseCharacter* Target;
-
-	
-	
 };

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "TGP_Project/Private/CivilianAI.h"
+#include "TGP_Project/Public/CivilianAI.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -62,14 +62,14 @@ void EmptyLinkFunctionForGeneratedCodeCivilianAI() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACivilianAI_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "CivilianAI.h" },
-		{ "ModuleRelativePath", "Private/CivilianAI.h" },
+		{ "ModuleRelativePath", "Public/CivilianAI.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACivilianAI_Statics::NewProp__civHidingSpots_MetaData[] = {
 		{ "Category", "AI" },
 		{ "EditCondition", "_patrol" },
-		{ "ModuleRelativePath", "Private/CivilianAI.h" },
+		{ "ModuleRelativePath", "Public/CivilianAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACivilianAI_Statics::NewProp__civHidingSpots = { UE4CodeGen_Private::EPropertyClass::Array, "_civHidingSpots", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(ACivilianAI, _civHidingSpots), METADATA_PARAMS(Z_Construct_UClass_ACivilianAI_Statics::NewProp__civHidingSpots_MetaData, ARRAY_COUNT(Z_Construct_UClass_ACivilianAI_Statics::NewProp__civHidingSpots_MetaData)) };
@@ -77,21 +77,21 @@ void EmptyLinkFunctionForGeneratedCodeCivilianAI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACivilianAI_Statics::NewProp__maxMoveRadius_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Private/CivilianAI.h" },
+		{ "ModuleRelativePath", "Public/CivilianAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ACivilianAI_Statics::NewProp__maxMoveRadius = { UE4CodeGen_Private::EPropertyClass::Int, "_maxMoveRadius", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(ACivilianAI, _maxMoveRadius), METADATA_PARAMS(Z_Construct_UClass_ACivilianAI_Statics::NewProp__maxMoveRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_ACivilianAI_Statics::NewProp__maxMoveRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACivilianAI_Statics::NewProp__moveDelay_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Private/CivilianAI.h" },
+		{ "ModuleRelativePath", "Public/CivilianAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACivilianAI_Statics::NewProp__moveDelay = { UE4CodeGen_Private::EPropertyClass::Float, "_moveDelay", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(ACivilianAI, _moveDelay), METADATA_PARAMS(Z_Construct_UClass_ACivilianAI_Statics::NewProp__moveDelay_MetaData, ARRAY_COUNT(Z_Construct_UClass_ACivilianAI_Statics::NewProp__moveDelay_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACivilianAI_Statics::NewProp__randomTarget_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Private/CivilianAI.h" },
+		{ "ModuleRelativePath", "Public/CivilianAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACivilianAI_Statics::NewProp__randomTarget = { UE4CodeGen_Private::EPropertyClass::Struct, "_randomTarget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000020001, 1, nullptr, STRUCT_OFFSET(ACivilianAI, _randomTarget), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ACivilianAI_Statics::NewProp__randomTarget_MetaData, ARRAY_COUNT(Z_Construct_UClass_ACivilianAI_Statics::NewProp__randomTarget_MetaData)) };
@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeCivilianAI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACivilianAI, 4250049303);
+	IMPLEMENT_CLASS(ACivilianAI, 1324406134);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ACivilianAI(Z_Construct_UClass_ACivilianAI, &ACivilianAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ACivilianAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ACivilianAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

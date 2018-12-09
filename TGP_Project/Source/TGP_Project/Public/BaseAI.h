@@ -40,6 +40,8 @@ protected:
 	void MoveToActor(AActor* target);
 	void MoveToLocation(FVector target);
 
+	void RotateTowards(FVector location);
+
 	UFUNCTION()
 		void ResetOrientation();
 
@@ -55,6 +57,8 @@ protected:
 	FTimerHandle _timerResetRot;
 
 	AI_STATE _state;
+
+	FVector _target;
 
 	UPROPERTY(EditInstanceOnly, Category = "AI")
 	float _minDistanceToTarget;

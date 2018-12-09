@@ -1,4 +1,6 @@
 #include "CivilianAI.h"
+#include "BasePlayer.h"
+#include "BodyGuardAI.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Actor.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
@@ -67,7 +69,15 @@ void ACivilianAI::OnPawnSeen(APawn * instigator)
 {
 	Super::OnPawnSeen(instigator);
 	//if gun on display
-	if (instigator)
+
+	//player check
+	ABasePlayer* player = Cast<ABasePlayer>(instigator);
+
+	//bodyguard check
+	ABodyGuardAI* bodyguard = Cast<ABodyGuardAI>(instigator);
+
+	//if either has gun out. if statement not finished
+	if (player || bodyguard)
 	{
 		_state = AI_STATE::ALERTED;
 		
@@ -94,6 +104,8 @@ void ACivilianAI::OnNoiseHeard(APawn * instigator, const FVector & location, flo
 	{
 		_state = AI_STATE::SUSPICIOUS;
 	}
+
+	//if gameover come out of hiding
 }
 
 FVector ACivilianAI::GetRandomTarget(float x, float y, float width, float height)

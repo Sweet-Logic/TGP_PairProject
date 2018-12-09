@@ -107,7 +107,5 @@ public:
 
 	void Roll();
 
-
 	void SprintRelease();
-
 };

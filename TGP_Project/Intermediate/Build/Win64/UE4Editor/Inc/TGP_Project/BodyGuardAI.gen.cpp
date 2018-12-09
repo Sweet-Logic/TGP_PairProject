@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "TGP_Project/Private/BodyGuardAI.h"
+#include "TGP_Project/Public/BodyGuardAI.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -58,13 +58,13 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABodyGuardAI_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "BodyGuardAI.h" },
-		{ "ModuleRelativePath", "Private/BodyGuardAI.h" },
+		{ "ModuleRelativePath", "Public/BodyGuardAI.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__post_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Private/BodyGuardAI.h" },
+		{ "ModuleRelativePath", "Public/BodyGuardAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__post = { UE4CodeGen_Private::EPropertyClass::Object, "_post", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(ABodyGuardAI, _post), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__post_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__post_MetaData)) };
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__waypoints_MetaData[] = {
 		{ "Category", "AI" },
 		{ "EditCondition", "_patrol" },
-		{ "ModuleRelativePath", "Private/BodyGuardAI.h" },
+		{ "ModuleRelativePath", "Public/BodyGuardAI.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__waypoints = { UE4CodeGen_Private::EPropertyClass::Array, "_waypoints", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(ABodyGuardAI, _waypoints), METADATA_PARAMS(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__waypoints_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__waypoints_MetaData)) };
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__patrol_MetaData[] = {
 		{ "Category", "AI" },
-		{ "ModuleRelativePath", "Private/BodyGuardAI.h" },
+		{ "ModuleRelativePath", "Public/BodyGuardAI.h" },
 	};
 #endif
 	void Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__patrol_SetBit(void* Obj)
@@ -117,7 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABodyGuardAI, 578841526);
+	IMPLEMENT_CLASS(ABodyGuardAI, 2370004890);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABodyGuardAI(Z_Construct_UClass_ABodyGuardAI, &ABodyGuardAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABodyGuardAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABodyGuardAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

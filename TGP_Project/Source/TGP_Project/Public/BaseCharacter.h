@@ -40,8 +40,6 @@ public:
 		UPaperFlipbookComponent* Sprite;
 	UPROPERTY(VisibleAnywhere)
 		UArrowComponent* direction;
-	
-	
 
 	//Sprite Settings
 	UPROPERTY(EditAnywhere, Category = "Sprite Settings")

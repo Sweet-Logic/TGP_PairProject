@@ -18,7 +18,7 @@ ABaseAI::ABaseAI()
 
 	_state = AI_STATE::IDLE;
 
-	_minDistanceToTarget = 10.0f;
+	_minDistanceToTarget = 100.0f;
 }
 
 // Called when the game starts or when spawned
@@ -66,6 +66,18 @@ void ABaseAI::MoveToLocation(FVector target)
 	{
 		UAIBlueprintHelperLibrary::SimpleMoveToLocation(controller, target);
 	}
+}
+
+void ABaseAI::RotateTowards(FVector location)
+{
+	FVector Direction = location - GetActorLocation();
+	Direction.Normalize();
+
+	FRotator  NewLookAt = FRotationMatrix::MakeFromX(Direction).Rotator();
+	NewLookAt.Pitch = 0.0f;
+	NewLookAt.Roll = 0.0f;
+
+	SetActorRotation(NewLookAt);
 }
 
 void ABaseAI::ResetOrientation()

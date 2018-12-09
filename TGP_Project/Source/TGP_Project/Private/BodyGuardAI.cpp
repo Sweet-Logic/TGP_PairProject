@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BodyGuardAI.h"
+#include "BasePlayer.h"
 #include "Engine/TargetPoint.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "Kismet/GameplayStatics.h"
@@ -55,6 +56,11 @@ void ABodyGuardAI::Tick(float DeltaTime)
 		}
 	}
 
+	if (_state == AI_STATE::SUSPICIOUS)
+	{
+		MoveToLocation(_target);
+	}
+
 	/*
 	AFPSGameMode* GM = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode());
 	if (GM && GM->GetGameFinished())
@@ -103,6 +109,13 @@ void ABodyGuardAI::OnPawnSeen(APawn * instigator)
 		//GM->CompleteMission(instigator, false);
 	}
 
+	ABasePlayer* player = Cast<ABasePlayer>(instigator);
+	if (player)
+	{
+		//if player holding gun or if player in restricted area or entrance
+		//
+	}
+
 	DrawDebugSphere(GetWorld(), instigator->GetActorLocation(), 32.0f, 12, FColor::Red, false, 10.0f);
 
 	SetAIState(AI_STATE::ALERTED);
@@ -110,7 +123,7 @@ void ABodyGuardAI::OnPawnSeen(APawn * instigator)
 	AController* controller = GetController();
 	if (controller)
 	{
-		controller->StopMovement();
+		//controller->StopMovement();
 	}
 }
 
@@ -120,23 +133,11 @@ void ABodyGuardAI::OnNoiseHeard(APawn * instigator, const FVector & location, fl
 
 	DrawDebugSphere(GetWorld(), location, 32.0f, 12, FColor::Green, false, 10.0f);
 
-	FVector Direction = location - GetActorLocation();
-	Direction.Normalize();
-
-	FRotator  NewLookAt = FRotationMatrix::MakeFromX(Direction).Rotator();
-	NewLookAt.Pitch = 0.0f;
-	NewLookAt.Roll = 0.0f;
-
-	SetActorRotation(NewLookAt);
+	RotateTowards(location);
 
 	//GetWorldTimerManager().ClearTimer(_timerResetRot);
 	//GetWorldTimerManager().SetTimer(_timerResetRot, this, &ABodyGuardAI::ResetOrientation, 3.0f);
 
 	SetAIState(AI_STATE::SUSPICIOUS);
-
-	AController* controller = GetController();
-	if (controller)
-	{
-		controller->StopMovement();
-	}
+	_target = location;
 }
