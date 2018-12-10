@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeWeaponBase() {}
 	TGP_PROJECT_API UClass* Z_Construct_UClass_AWeaponBase();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_TGP_Project();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_AProjectileBase_NoRegister();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbookComponent_NoRegister();
@@ -34,6 +35,10 @@ void EmptyLinkFunctionForGeneratedCodeWeaponBase() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__gunShot_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__gunShot;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__projectile_MetaData[];
 #endif
@@ -57,6 +62,13 @@ void EmptyLinkFunctionForGeneratedCodeWeaponBase() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponBase_Statics::NewProp__gunShot_MetaData[] = {
+		{ "Category", "Sounds" },
+		{ "ModuleRelativePath", "Public/WeaponBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeaponBase_Statics::NewProp__gunShot = { UE4CodeGen_Private::EPropertyClass::Object, "_gunShot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(AWeaponBase, _gunShot), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeaponBase_Statics::NewProp__gunShot_MetaData, ARRAY_COUNT(Z_Construct_UClass_AWeaponBase_Statics::NewProp__gunShot_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponBase_Statics::NewProp__projectile_MetaData[] = {
 		{ "Category", "WeaponBase" },
 		{ "ModuleRelativePath", "Public/WeaponBase.h" },
@@ -72,6 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeWeaponBase() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeaponBase_Statics::NewProp__sprite = { UE4CodeGen_Private::EPropertyClass::Object, "_sprite", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AWeaponBase, _sprite), Z_Construct_UClass_UPaperFlipbookComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeaponBase_Statics::NewProp__sprite_MetaData, ARRAY_COUNT(Z_Construct_UClass_AWeaponBase_Statics::NewProp__sprite_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeaponBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponBase_Statics::NewProp__gunShot,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponBase_Statics::NewProp__projectile,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponBase_Statics::NewProp__sprite,
 	};
@@ -98,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeWeaponBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeaponBase, 2208613839);
+	IMPLEMENT_CLASS(AWeaponBase, 4189743941);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWeaponBase(Z_Construct_UClass_AWeaponBase, &AWeaponBase::StaticClass, TEXT("/Script/TGP_Project"), TEXT("AWeaponBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWeaponBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

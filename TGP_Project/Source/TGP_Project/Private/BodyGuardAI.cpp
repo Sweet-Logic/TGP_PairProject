@@ -11,6 +11,9 @@ ABodyGuardAI::ABodyGuardAI()
 {
 	_allAreasPass = true;
 	_patrol = false;
+
+	_minDistanceToHostile = 200.0f;
+	_warningTimeLimit = 5.0f;
 }
 
 // Called when the game starts or when spawned
@@ -26,11 +29,14 @@ void ABodyGuardAI::BeginPlay()
 
 void ABodyGuardAI::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
+	Super ::Tick(DeltaTime);
 
 	//move back to guard post
 	if (_state == AI_STATE::IDLE)
 	{
+		_sawSuspicious = false;
+		_heardSuspicious = false;
+
 		if (_patrol)
 		{
 			float distanceToWaypoint = (GetActorLocation() - _currentWaypoint->GetActorLocation()).Size();
@@ -59,6 +65,54 @@ void ABodyGuardAI::Tick(float DeltaTime)
 	if (_state == AI_STATE::SUSPICIOUS)
 	{
 		MoveToLocation(_target);
+		if (_heardSuspicious)
+		{
+			_warningTimeCount -= DeltaTime;
+
+			if (_warningTimeCount <= _warningTimeLimit)
+			{
+				_warningTimeCount = 0;
+				_state = AI_STATE::IDLE;
+			}
+		}
+
+		if (_sawSuspicious)
+		{
+			_warningTimeCount += DeltaTime;
+
+			if (_warningTimeCount >= _warningTimeLimit)
+			{
+				_warningTimeCount = 0;
+				_state = AI_STATE::ALERTED;
+			}
+		}
+	}
+
+	if (_state == AI_STATE::ALERTED)
+	{
+		float distanceToWaypoint = (GetActorLocation() - _hostileTarget->GetActorLocation()).Size();
+
+		if (distanceToWaypoint > _minDistanceToHostile)
+		{
+			MoveToActor(_hostileTarget);
+		}
+		else
+		{
+			AController* controller = GetController();
+			if (controller)
+			{
+				controller->StopMovement();
+			}
+
+			FVector tempDir = FVector(FVector2D((_hostileTarget->GetActorLocation() - GetActorLocation()).X,
+												(_hostileTarget->GetActorLocation() - GetActorLocation()).Y), 0.0f);
+			tempDir.Normalize();
+
+			AWeaponBase* WeaponRef = Cast<AWeaponBase>(_currentWeapon);
+			WeaponRef->Use(tempDir);
+
+			//fire the weapon
+		}
 	}
 
 	/*
@@ -109,19 +163,49 @@ void ABodyGuardAI::OnPawnSeen(APawn * instigator)
 		//GM->CompleteMission(instigator, false);
 	}
 
+	//player check
 	ABasePlayer* player = Cast<ABasePlayer>(instigator);
 	if (player)
 	{
+		if (!player->IsCharacterAlive())
+		{
+			//end game
+			SetIsWeaponDrawn(false);
+
+		}
+
 		//if player holding gun or if player in restricted area or entrance
-		//
+		if (player->GetIsWeaponDrawn())
+		{
+			SetIsWeaponDrawn(true);
+
+			DrawDebugSphere(GetWorld(), instigator->GetActorLocation(), 32.0f, 12, FColor::Red, false, 10.0f);
+			SetAIState(AI_STATE::ALERTED);
+			_hostileTarget = player;
+		}
+
+		if (player->GetIsPlayerInRestrictedArea())
+		{
+			SetAIState(AI_STATE::SUSPICIOUS);
+			_target = player->GetActorLocation();
+			_sawSuspicious = true;
+		}
 	}
 
-	DrawDebugSphere(GetWorld(), instigator->GetActorLocation(), 32.0f, 12, FColor::Red, false, 10.0f);
+	//bodyguard check
+	ABodyGuardAI* bodyguard = Cast<ABodyGuardAI>(instigator);
+	if (bodyguard)
+	{
+		if (bodyguard->IsCharacterAlive())
+		{
+			//end game
+			SetIsWeaponDrawn(true);
 
-	SetAIState(AI_STATE::ALERTED);
-
-	AController* controller = GetController();
-	if (controller)
+			//alert other bodyguards nearby
+		}
+	}
+	//AController* controller = GetController();
+	//if (controller)
 	{
 		//controller->StopMovement();
 	}
@@ -140,4 +224,11 @@ void ABodyGuardAI::OnNoiseHeard(APawn * instigator, const FVector & location, fl
 
 	SetAIState(AI_STATE::SUSPICIOUS);
 	_target = location;
+	_heardSuspicious = true;
+	_warningTimeCount = _warningTimeLimit * 0.7f;
+}
+
+void ABodyGuardAI::AlertOthers()
+{
+	UGameplayStatics::PlaySound2D(this, _alertingOthers);
 }

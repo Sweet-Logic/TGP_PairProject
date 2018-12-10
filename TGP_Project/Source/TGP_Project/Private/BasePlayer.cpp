@@ -17,8 +17,6 @@
 #include "WeaponBase.h"
 //#include "UnrealString.h"
 
-
-
 ABasePlayer::ABasePlayer()
 {
 	//RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
@@ -41,7 +39,6 @@ ABasePlayer::ABasePlayer()
 void ABasePlayer::BeginPlay()
 {
 	Super::BeginPlay();
-
 
 	_camera->SetOrthoWidth(_orthoWidth);
 

@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseAI_NoRegister();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseAI();
-	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseAI_OnNoiseHeard();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
@@ -253,6 +253,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_mapX;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__minDistanceToHostile_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__minDistanceToHostile;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__minDistanceToTarget_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__minDistanceToTarget;
@@ -265,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ABaseAI_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_ACharacter,
+		(UObject* (*)())Z_Construct_UClass_ABaseCharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_TGP_Project,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseAI_Statics::FuncInfo[] = {
@@ -310,6 +314,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX = { UE4CodeGen_Private::EPropertyClass::Float, "mapX", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseAI, mapX), METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToHostile_MetaData[] = {
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "Public/BaseAI.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToHostile = { UE4CodeGen_Private::EPropertyClass::Float, "_minDistanceToHostile", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, STRUCT_OFFSET(ABaseAI, _minDistanceToHostile), METADATA_PARAMS(Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToHostile_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToHostile_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToTarget_MetaData[] = {
 		{ "Category", "AI" },
 		{ "ModuleRelativePath", "Public/BaseAI.h" },
@@ -329,6 +340,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAI_Statics::NewProp_mapWidth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAI_Statics::NewProp_mapY,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAI_Statics::NewProp_mapX,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToHostile,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAI_Statics::NewProp__minDistanceToTarget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAI_Statics::NewProp__sensor,
 	};
@@ -355,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseAI, 3268075106);
+	IMPLEMENT_CLASS(ABaseAI, 2363281183);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseAI(Z_Construct_UClass_ABaseAI, &ABaseAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

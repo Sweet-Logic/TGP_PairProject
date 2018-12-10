@@ -10,10 +10,6 @@
 #include "WeaponBase.h"
 #include "Engine.h"
 
-
-
-
-
 ABaseCharacter::ABaseCharacter()
 {
 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -50,8 +46,6 @@ void ABaseCharacter::BeginPlay()
 
 	_boxComponent->SetBoxExtent(FVector(size.X, size.X, 1.0f));
 	GetSprite()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 0, 90));
-
-
 }
 // Called every frame
 void ABaseCharacter::Tick(float DeltaTime)

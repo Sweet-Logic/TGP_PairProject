@@ -25,13 +25,16 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-
 	int _ammo = 10;
 
 	FVector2D _dir = {0,0};
 
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<AProjectileBase> _projectile;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Sounds")
+		USoundBase* _gunShot;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

@@ -28,6 +28,11 @@ protected:
 
 	virtual void OnNoiseHeard(APawn* NoiseInstigator, const FVector& location, float volume) override;
 
+	void AlertOthers();
+
+	UPROPERTY(EditDefaultsOnly, Category = "Sounds")
+		USoundBase* _alertingOthers;
+
 	UPROPERTY(EditInstanceOnly, Category = "AI")
 		bool _patrol;
 
@@ -39,4 +44,12 @@ protected:
 
 	AActor* _currentWaypoint;
 	int _currentWaypointValue;
+
+	AActor* _hostileTarget;
+
+	float _warningTimeLimit;
+	float _warningTimeCount;
+
+	bool _sawSuspicious;
+	bool _heardSuspicious;
 };

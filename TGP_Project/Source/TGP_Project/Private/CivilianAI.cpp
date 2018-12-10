@@ -68,7 +68,6 @@ void ACivilianAI::Tick(float deltaTime)
 void ACivilianAI::OnPawnSeen(APawn * instigator)
 {
 	Super::OnPawnSeen(instigator);
-	//if gun on display
 
 	//player check
 	ABasePlayer* player = Cast<ABasePlayer>(instigator);
@@ -77,10 +76,25 @@ void ACivilianAI::OnPawnSeen(APawn * instigator)
 	ABodyGuardAI* bodyguard = Cast<ABodyGuardAI>(instigator);
 
 	//if either has gun out. if statement not finished
-	if (player || bodyguard)
+	if (player)
 	{
-		_state = AI_STATE::ALERTED;
-		
+		//do similar thing for bodyguard
+		if (player->GetIsWeaponDrawn())
+		{
+			_state = AI_STATE::ALERTED;
+		}
+	}
+	if (bodyguard)
+	{
+		//bodyguards weapon is drawn
+		//if()
+		{
+			//_state = AI_STATE::ALERTED;
+		}
+	}
+
+	if (_state == AI_STATE::ALERTED)
+	{
 		float currentClosest = 10000.0f;
 		for (int i = 0; i < _civHidingSpots.Num(); i++)
 		{

@@ -94,16 +94,11 @@ public:
 
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
-
-
-
-
 	//Weapon
 	void UpdateWeaponPosition();
 
 	//Movement
 	void HandleMovement(float DeltaTime);
-
 
 	//Axis Mapping
 	void HandlePanning(float DeltaTime);
@@ -113,7 +108,6 @@ public:
 	void PanCameraX(float value);
 
 	void PanCameraY(float value);
-
 
 	//Action Mapping
 	void Interact();
@@ -132,7 +126,6 @@ public:
 
 	void PullOutWeapon();
 
-
 	void SprintRelease();
 
 	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
@@ -140,7 +133,4 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
 		void SetIsPlayerInRestrictedArea(bool newIsInRestrictedArea) { _inRestictedArea = newIsInRestrictedArea; }
-
-	
-
 };

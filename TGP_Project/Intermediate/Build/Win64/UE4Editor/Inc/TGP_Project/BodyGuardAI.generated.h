@@ -58,6 +58,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABodyGuardAI); \
 
 
 #define TGP_Project_Source_TGP_Project_Public_BodyGuardAI_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO___alertingOthers() { return STRUCT_OFFSET(ABodyGuardAI, _alertingOthers); } \
 	FORCEINLINE static uint32 __PPO___patrol() { return STRUCT_OFFSET(ABodyGuardAI, _patrol); } \
 	FORCEINLINE static uint32 __PPO___waypoints() { return STRUCT_OFFSET(ABodyGuardAI, _waypoints); } \
 	FORCEINLINE static uint32 __PPO___post() { return STRUCT_OFFSET(ABodyGuardAI, _post); }

@@ -58,7 +58,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWeaponBase); \
 
 
 #define TGP_Project_Source_TGP_Project_Public_WeaponBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO___projectile() { return STRUCT_OFFSET(AWeaponBase, _projectile); }
+	FORCEINLINE static uint32 __PPO___projectile() { return STRUCT_OFFSET(AWeaponBase, _projectile); } \
+	FORCEINLINE static uint32 __PPO___gunShot() { return STRUCT_OFFSET(AWeaponBase, _gunShot); }
 
 
 #define TGP_Project_Source_TGP_Project_Public_WeaponBase_h_12_PROLOG

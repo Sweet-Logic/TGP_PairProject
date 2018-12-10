@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseAI();
 	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
 	void ABodyGuardAI::StaticRegisterNativesABodyGuardAI()
 	{
@@ -46,6 +47,10 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 #endif
 		static void NewProp__patrol_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp__patrol;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__alertingOthers_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__alertingOthers;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -88,11 +93,19 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 		((ABodyGuardAI*)Obj)->_patrol = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__patrol = { UE4CodeGen_Private::EPropertyClass::Bool, "_patrol", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000801, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ABodyGuardAI), &Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__patrol_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__patrol_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__patrol_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__alertingOthers_MetaData[] = {
+		{ "Category", "Sounds" },
+		{ "ModuleRelativePath", "Public/BodyGuardAI.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__alertingOthers = { UE4CodeGen_Private::EPropertyClass::Object, "_alertingOthers", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000010001, 1, nullptr, STRUCT_OFFSET(ABodyGuardAI, _alertingOthers), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__alertingOthers_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__alertingOthers_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABodyGuardAI_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__post,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__waypoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__waypoints_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__patrol,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABodyGuardAI_Statics::NewProp__alertingOthers,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABodyGuardAI_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABodyGuardAI>::IsAbstract,
@@ -117,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABodyGuardAI, 2370004890);
+	IMPLEMENT_CLASS(ABodyGuardAI, 2438379062);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABodyGuardAI(Z_Construct_UClass_ABodyGuardAI, &ABodyGuardAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABodyGuardAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABodyGuardAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

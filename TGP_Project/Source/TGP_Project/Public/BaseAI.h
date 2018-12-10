@@ -2,7 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "BaseCharacter.h"
 #include "BaseAI.generated.h"
 
 UENUM(BlueprintType)
@@ -16,7 +16,7 @@ enum class AI_STATE : uint8
 class UPawnSensingComponent;
 
 UCLASS()
-class TGP_PROJECT_API ABaseAI : public ACharacter
+class TGP_PROJECT_API ABaseAI : public ABaseCharacter
 {
 	GENERATED_BODY()
 
@@ -61,19 +61,22 @@ protected:
 	FVector _target;
 
 	UPROPERTY(EditInstanceOnly, Category = "AI")
-	float _minDistanceToTarget;
+		float _minDistanceToTarget;
+
+	UPROPERTY(EditInstanceOnly, Category = "AI")
+		float _minDistanceToHostile;
 
 	bool _allAreasPass;
 
 	UPROPERTY(EditAnywhere, Category = "MapBoundries")
-	float mapX;
+		float mapX;
 
 	UPROPERTY(EditAnywhere, Category = "MapBoundries")
-	float mapY;
+		float mapY;
 
 	UPROPERTY(EditAnywhere, Category = "MapBoundries")
-	float mapWidth;
+		float mapWidth;
 
 	UPROPERTY(EditAnywhere, Category = "MapBoundries")
-	float mapHeight;
+		float mapHeight;
 };

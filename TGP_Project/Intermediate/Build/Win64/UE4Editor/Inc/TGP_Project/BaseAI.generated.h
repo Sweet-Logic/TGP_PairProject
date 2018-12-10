@@ -91,7 +91,7 @@ private: \
 	static void StaticRegisterNativesABaseAI(); \
 	friend struct Z_Construct_UClass_ABaseAI_Statics; \
 public: \
-	DECLARE_CLASS(ABaseAI, ACharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
+	DECLARE_CLASS(ABaseAI, ABaseCharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
 	DECLARE_SERIALIZER(ABaseAI)
 
 
@@ -100,7 +100,7 @@ private: \
 	static void StaticRegisterNativesABaseAI(); \
 	friend struct Z_Construct_UClass_ABaseAI_Statics; \
 public: \
-	DECLARE_CLASS(ABaseAI, ACharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
+	DECLARE_CLASS(ABaseAI, ABaseCharacter, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/TGP_Project"), NO_API) \
 	DECLARE_SERIALIZER(ABaseAI)
 
 
@@ -131,6 +131,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseAI); \
 #define TGP_Project_Source_TGP_Project_Public_BaseAI_h_21_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO___sensor() { return STRUCT_OFFSET(ABaseAI, _sensor); } \
 	FORCEINLINE static uint32 __PPO___minDistanceToTarget() { return STRUCT_OFFSET(ABaseAI, _minDistanceToTarget); } \
+	FORCEINLINE static uint32 __PPO___minDistanceToHostile() { return STRUCT_OFFSET(ABaseAI, _minDistanceToHostile); } \
 	FORCEINLINE static uint32 __PPO__mapX() { return STRUCT_OFFSET(ABaseAI, mapX); } \
 	FORCEINLINE static uint32 __PPO__mapY() { return STRUCT_OFFSET(ABaseAI, mapY); } \
 	FORCEINLINE static uint32 __PPO__mapWidth() { return STRUCT_OFFSET(ABaseAI, mapWidth); } \

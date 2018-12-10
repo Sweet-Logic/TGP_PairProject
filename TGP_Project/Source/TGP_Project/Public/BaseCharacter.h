@@ -53,11 +53,11 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon")
 		TSubclassOf<AWeaponBase> _defaultMelee;
 
-
 	//Character Status
 	bool _isAlive = true;
 
 	//Weapon
+	UPROPERTY(EditAnywhere, Category = "Weapon")
 	bool _hasWeaponDrawn = false;
 
 	float _weaponOffset = 20.0f;
@@ -93,9 +93,6 @@ public:
 	virtual void Tick(float deltaSeconds) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
-	
-
-	
 
 	UFUNCTION(BlueprintCallable, Category = "FlippingFlipbooks")
 		void SwitchFlipbook(UPaperFlipbook* newFlipbook);

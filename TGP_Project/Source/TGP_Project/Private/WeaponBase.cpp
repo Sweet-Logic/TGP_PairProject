@@ -2,6 +2,7 @@
 
 #include "WeaponBase.h"
 #include "ProjectileBase.h"
+#include "Kismet/GameplayStatics.h"
 #include "Runtime/Engine/Classes/Engine/World.h"
 #include "Paper2D/Classes/PaperFlipbookComponent.h"
 
@@ -29,9 +30,7 @@ void AWeaponBase::BeginPlay()
 void AWeaponBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
-
 
 void AWeaponBase::Use(FVector Dir)
 {
@@ -41,4 +40,6 @@ void AWeaponBase::Use(FVector Dir)
 
 	AProjectileBase* bullet = GetWorld()->SpawnActor<AProjectileBase>(_projectile, Location, Rotation);
 	bullet->Initialize(Dir);
+
+	UGameplayStatics::PlaySound2D(this, _gunShot);
 }

@@ -184,6 +184,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
 	FORCEINLINE static uint32 __PPO___weaponInventory() { return STRUCT_OFFSET(ABaseCharacter, _weaponInventory); } \
 	FORCEINLINE static uint32 __PPO___defaultGun() { return STRUCT_OFFSET(ABaseCharacter, _defaultGun); } \
 	FORCEINLINE static uint32 __PPO___defaultMelee() { return STRUCT_OFFSET(ABaseCharacter, _defaultMelee); } \
+	FORCEINLINE static uint32 __PPO___hasWeaponDrawn() { return STRUCT_OFFSET(ABaseCharacter, _hasWeaponDrawn); } \
 	FORCEINLINE static uint32 __PPO___idleFlipbook() { return STRUCT_OFFSET(ABaseCharacter, _idleFlipbook); } \
 	FORCEINLINE static uint32 __PPO___walikingFlipBook() { return STRUCT_OFFSET(ABaseCharacter, _walikingFlipBook); } \
 	FORCEINLINE static uint32 __PPO___playRate() { return STRUCT_OFFSET(ABaseCharacter, _playRate); } \
