@@ -94,6 +94,9 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 
+	void UpdateWeaponPosition(FVector2D dir);
+
+
 	UFUNCTION(BlueprintCallable, Category = "FlippingFlipbooks")
 		void SwitchFlipbook(UPaperFlipbook* newFlipbook);
 

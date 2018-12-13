@@ -24,7 +24,7 @@
 /wd4838
 /we4668
 /I .
-/I D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private
+/I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private
 /I ..\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D
 /I ..\Plugins\2D\Paper2D\Source
 /I ..\Plugins\2D\Paper2D\Source\Paper2D\Classes
@@ -407,22 +407,22 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
-/I D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Inc\TGP_Project
-/I D:\GitHub\TGP_PairProject\TGP_Project\Source
-/I D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public
-/I D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Inc\TGP_Project
+/I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source
+/I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Public
+/I C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.14.26428\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\gm_TGPGAME.cpp"
-/FI"D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\Definitions.TGP_Project.h"
-/Fo"D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\gm_TGPGAME.cpp.obj"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"
+/FI"C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Source\TGP_Project\Private\gm_TGPGAME.cpp"
+/FI"C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\Definitions.TGP_Project.h"
+/Fo"C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\gm_TGPGAME.cpp.obj"
 /TP
 /GR-
 /W4

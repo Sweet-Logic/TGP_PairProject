@@ -6,6 +6,8 @@
 #include "BaseAI.h"
 #include "BodyGuardAI.generated.h"
 
+class AWeaponBase;
+
 UCLASS()
 class TGP_PROJECT_API ABodyGuardAI : public ABaseAI
 {

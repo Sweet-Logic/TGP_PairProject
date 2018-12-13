@@ -106,3 +106,12 @@ void ABaseCharacter::Collision(UPrimitiveComponent* OverlappedComponent,
 	const FHitResult &SweepResult)
 {
 }
+
+void ABaseCharacter::UpdateWeaponPosition(FVector2D dir)
+{
+	FVector temp = FVector(dir.X, dir.Y, 0.0f);
+	if (temp != FVector(0.0f, 0.0f, 0.0f))
+	{
+		_currentWeapon->SetActorRelativeLocation(temp * _weaponOffset);
+	}
+}

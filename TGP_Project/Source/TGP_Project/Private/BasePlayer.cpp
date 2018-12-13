@@ -78,7 +78,7 @@ void ABasePlayer::Tick(float DeltaTime)
 
 	if (_hasWeaponDrawn)
 	{
-		UpdateWeaponPosition();
+		UpdateWeaponPosition(FVector2D(_playerToMouseDirection.X, _playerToMouseDirection.Y));
 	}
 	else
 	{
@@ -180,13 +180,7 @@ void ABasePlayer::PullOutWeapon()
 	_hasWeaponDrawn = true;
 }
 
-void ABasePlayer::UpdateWeaponPosition()
-{
-	if (_playerToMouseDirection != FVector(0.0f, 0.0f, 0.0f))
-	{
-		_currentWeapon->SetActorRelativeLocation(_playerToMouseDirection * _weaponOffset);
-	}
-}
+
 
 void ABasePlayer::Sneak()
 {

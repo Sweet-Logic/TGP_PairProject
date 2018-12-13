@@ -87,9 +87,9 @@ void ACivilianAI::OnPawnSeen(APawn * instigator)
 	if (bodyguard)
 	{
 		//bodyguards weapon is drawn
-		//if()
+		if(bodyguard->GetIsWeaponDrawn())
 		{
-			//_state = AI_STATE::ALERTED;
+			_state = AI_STATE::SUSPICIOUS;
 		}
 	}
 
@@ -98,10 +98,11 @@ void ACivilianAI::OnPawnSeen(APawn * instigator)
 		float currentClosest = 10000.0f;
 		for (int i = 0; i < _civHidingSpots.Num(); i++)
 		{
-			FVector delta = _hidingSpot->GetActorLocation() - _civHidingSpots[i]->GetActorLocation();
-			float distanceToWaypoint = delta.Size();
+			float threatDistToWaypoint = (_civHidingSpots[i]->GetActorLocation() - instigator->GetActorLocation()).Size();
+			float distanceToWaypoint = (_civHidingSpots[i]->GetActorLocation() - GetActorLocation()).Size();
 
-			if (distanceToWaypoint < currentClosest)
+			if (distanceToWaypoint < currentClosest &&
+				threatDistToWaypoint > distanceToWaypoint)
 			{
 				currentClosest = distanceToWaypoint;
 				_hidingSpot = _civHidingSpots[i];

@@ -95,7 +95,6 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 	//Weapon
-	void UpdateWeaponPosition();
 
 	//Movement
 	void HandleMovement(float DeltaTime);

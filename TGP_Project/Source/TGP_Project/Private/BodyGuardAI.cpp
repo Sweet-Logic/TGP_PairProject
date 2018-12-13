@@ -6,6 +6,9 @@
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "DrawDebugHelpers.h"
+#include "WeaponBase.h"
+
+#include "Runtime/Engine/Classes/GameFramework/Actor.h"
 
 ABodyGuardAI::ABodyGuardAI()
 {
@@ -20,6 +23,15 @@ ABodyGuardAI::ABodyGuardAI()
 void ABodyGuardAI::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	FVector Location = GetActorLocation();
+	FRotator Rotation = FRotator(-90.0f, 0.0f, 90.0f);
+
+	
+
+	_currentWeapon = GetWorld()->SpawnActor<AWeaponBase>(_defaultGun, Location, Rotation);
+
+	_currentWeapon->AttachToComponent(RootComponent, FAttachmentTransformRules::SnapToTargetIncludingScale, FName(TEXT("EquipedWeapon")));
 
 	if (_patrol)
 	{
@@ -30,6 +42,7 @@ void ABodyGuardAI::BeginPlay()
 void ABodyGuardAI::Tick(float DeltaTime)
 {
 	Super ::Tick(DeltaTime);
+
 
 	//move back to guard post
 	if (_state == AI_STATE::IDLE)
@@ -65,17 +78,6 @@ void ABodyGuardAI::Tick(float DeltaTime)
 	if (_state == AI_STATE::SUSPICIOUS)
 	{
 		MoveToLocation(_target);
-		if (_heardSuspicious)
-		{
-			_warningTimeCount -= DeltaTime;
-
-			if (_warningTimeCount <= _warningTimeLimit)
-			{
-				_warningTimeCount = 0;
-				_state = AI_STATE::IDLE;
-			}
-		}
-
 		if (_sawSuspicious)
 		{
 			_warningTimeCount += DeltaTime;
@@ -84,6 +86,22 @@ void ABodyGuardAI::Tick(float DeltaTime)
 			{
 				_warningTimeCount = 0;
 				_state = AI_STATE::ALERTED;
+				_sawSuspicious = false;
+			}
+			else if (_warningTimeCount <= 0.0f)
+			{
+				_warningTimeCount = 0;
+				_state = AI_STATE::IDLE;
+			}
+		}
+		else if (_heardSuspicious)
+		{
+			_warningTimeCount -= DeltaTime;
+
+			if (_warningTimeCount <= 0.0f)
+			{
+				_warningTimeCount = 0;
+				_state = AI_STATE::IDLE;
 			}
 		}
 	}
@@ -107,6 +125,8 @@ void ABodyGuardAI::Tick(float DeltaTime)
 			FVector tempDir = FVector(FVector2D((_hostileTarget->GetActorLocation() - GetActorLocation()).X,
 												(_hostileTarget->GetActorLocation() - GetActorLocation()).Y), 0.0f);
 			tempDir.Normalize();
+			UpdateWeaponPosition(FVector2D(tempDir.X, tempDir.Y));
+
 
 			AWeaponBase* WeaponRef = Cast<AWeaponBase>(_currentWeapon);
 			WeaponRef->Use(tempDir);
@@ -196,7 +216,7 @@ void ABodyGuardAI::OnPawnSeen(APawn * instigator)
 	ABodyGuardAI* bodyguard = Cast<ABodyGuardAI>(instigator);
 	if (bodyguard)
 	{
-		if (bodyguard->IsCharacterAlive())
+		if (!bodyguard->IsCharacterAlive())
 		{
 			//end game
 			SetIsWeaponDrawn(true);
