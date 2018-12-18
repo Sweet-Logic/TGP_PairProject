@@ -55,6 +55,7 @@ void ABaseAI::MoveToActor(AActor* target)
 	AController* controller = GetController();
 	if (controller && target)
 	{
+		
 		UAIBlueprintHelperLibrary::SimpleMoveToActor(controller, target);
 	}
 }

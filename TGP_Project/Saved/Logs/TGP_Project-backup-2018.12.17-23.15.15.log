@@ -1,0 +1,1479 @@
+﻿Log file open, 12/17/18 22:52:27
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: TGP_Project
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.279962
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapEmulator
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.137s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.20-CL-4369336
+LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
+LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
+LogInit: Net CL: 4212847
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz, GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Sep 17 2018 12:26:19
+LogInit: Compiled with Visual C++: 19.13.26129.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.20
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 20
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 24
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 26
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
+LogStreaming: Display: Took  0.002s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.12.17-22.52.27:495][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.17-22.52.27:495][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.12.17-22.52.27:507][  0]LogHAL: Display: Platform has ~ 16 GB [17009229824 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.12.17-22.52.27:507][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2018.12.17-22.52.27:507][  0]LogInit: Going up to parent DeviceProfile []
+[2018.12.17-22.52.27:507][  0]LogInit: Computer: GROUNDZERO
+[2018.12.17-22.52.27:508][  0]LogInit: User: TDSSK
+[2018.12.17-22.52.27:508][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.12.17-22.52.27:508][  0]LogInit: High frequency timer resolution =3.222657 MHz
+[2018.12.17-22.52.27:508][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2018.12.17-22.52.27:508][  0]LogMemory: Platform Memory Stats for Windows
+[2018.12.17-22.52.27:508][  0]LogMemory: Process Physical Memory: 102.66 MB used, 102.66 MB peak
+[2018.12.17-22.52.27:508][  0]LogMemory: Process Virtual Memory: 92.32 MB used, 92.32 MB peak
+[2018.12.17-22.52.27:508][  0]LogMemory: Physical Memory: 13519.80 MB used,  2701.46 MB free, 16221.27 MB total
+[2018.12.17-22.52.27:508][  0]LogMemory: Virtual Memory: 532.47 MB used,  2701.46 MB free, 134217728.00 MB total
+[2018.12.17-22.52.27:620][  0]LogInit: Using OS detected language (en-GB).
+[2018.12.17-22.52.27:620][  0]LogInit: Using OS detected locale (en-GB).
+[2018.12.17-22.52.27:621][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2018.12.17-22.52.28:008][  0]LogStreaming: Display: Took  0.388s to InitEngineTextLocalization.
+[2018.12.17-22.52.28:008][  0]LogInit: Setting process to per monitor DPI aware
+[2018.12.17-22.52.28:070][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.12.17-22.52.28:070][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.12.17-22.52.28:338][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.17-22.52.28:338][  0]LogD3D11RHI: D3D11 adapters:
+[2018.12.17-22.52.28:437][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2018.12.17-22.52.28:437][  0]LogD3D11RHI:       6052/0/8110 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.12.17-22.52.28:451][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.12.17-22.52.28:451][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2018.12.17-22.52.28:458][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.12.17-22.52.28:458][  0]LogD3D11RHI:       0/0/8110 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.12.17-22.52.28:458][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.12.17-22.52.28:477][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.12.17-22.52.28:478][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2018.12.17-22.52.28:478][  0]LogWindows: EnumDisplayDevices:
+[2018.12.17-22.52.28:478][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2018.12.17-22.52.28:478][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2018.12.17-22.52.28:479][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2018.12.17-22.52.28:479][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2018.12.17-22.52.28:480][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.17-22.52.28:480][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.17-22.52.28:481][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.17-22.52.28:481][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2018.12.17-22.52.28:481][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2018.12.17-22.52.28:481][  0]LogD3D11RHI:   Driver Version: 397.64 (internal:24.21.13.9764, unified:397.64)
+[2018.12.17-22.52.28:481][  0]LogD3D11RHI:      Driver Date: 5-7-2018
+[2018.12.17-22.52.28:482][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2018.12.17-22.52.28:545][  0]LogD3D11RHI: Async texture creation enabled
+[2018.12.17-22.52.28:628][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.12.17-22.52.28:631][  0]LogShaderCompilers: Guid format shader working directory is -2 characters bigger than the processId version (D:/Documents/GitHub/TGP_PairProject/TGP_Project/Intermediate/Shaders/WorkingDirectory/24928/).
+[2018.12.17-22.52.28:631][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/TDSSK/AppData/Local/Temp/UnrealShaderWorkingDir/956C7CF14FAEEDF97609EBA24504012A/'.
+[2018.12.17-22.52.28:942][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.12.17-22.52.28:960][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.12.17-22.52.28:977][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.12.17-22.52.28:994][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.12.17-22.52.29:012][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.12.17-22.52.29:030][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.12.17-22.52.29:049][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.12.17-22.52.29:066][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.12.17-22.52.29:076][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:158][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:159][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.17-22.52.29:163][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.12.17-22.52.29:235][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.17-22.52.29:235][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.17-22.52.29:275][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.17-22.52.29:275][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.17-22.52.29:291][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.12.17-22.52.29:306][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.12.17-22.52.29:322][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.12.17-22.52.29:339][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.12.17-22.52.29:350][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.17-22.52.29:350][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.12.17-22.52.29:480][  0]LogXGEController: Cleaning working directory: C:/Users/TDSSK/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.12.17-22.52.29:481][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.12.17-22.52.29:481][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.12.17-22.52.29:481][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.12.17-22.52.30:394][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.12.17-22.52.30:482][  0]LogDerivedDataCache: Loaded boot cache 0.09s 71MB C:/Users/TDSSK/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.12.17-22.52.30:483][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/TDSSK/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2018.12.17-22.52.30:483][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Documents/GitHub/TGP_PairProject/TGP_Project/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.12.17-22.52.30:483][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.12.17-22.52.30:483][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Documents/GitHub/TGP_PairProject/TGP_Project/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.17-22.52.30:483][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.12.17-22.52.30:496][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.12.17-22.52.30:509][  0]LogDerivedDataCache: Using Local data cache path C:/Users/TDSSK/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.12.17-22.52.30:509][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.12.17-22.52.30:509][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.12.17-22.52.30:529][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.12.17-22.52.30:531][  0]LogSlate: Using FreeType 2.6.0
+[2018.12.17-22.52.30:531][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.12.17-22.52.30:632][  0]LogAssetRegistry: FAssetRegistry took 0.0283 seconds to start up
+[2018.12.17-22.52.30:972][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.17-22.52.31:147][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.12.17-22.52.31:158][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.12.17-22.52.31:158][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.12.17-22.52.31:158][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.12.17-22.52.31:158][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.12.17-22.52.31:176][  0]LogNetVersion: TGP_Project 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 95638710)
+[2018.12.17-22.52.31:800][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.089970 seconds
+[2018.12.17-22.52.31:807][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2018.12.17-22.52.31:807][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
+[2018.12.17-22.52.31:807][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.12.17-22.52.33:195][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.12.17-22.52.33:211][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.12.17-22.52.33:411][  0]SourceControl: Source control is disabled
+[2018.12.17-22.52.33:411][  0]SourceControl: Source control is disabled
+[2018.12.17-22.52.33:415][  0]SourceControl: Source control is disabled
+[2018.12.17-22.52.33:418][  0]SourceControl: Source control is disabled
+[2018.12.17-22.52.33:656][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.12.17-22.52.33:889][  0]LogOcInput: OculusInput pre-init called
+[2018.12.17-22.52.33:961][  0]LogEngine: Initializing Engine...
+[2018.12.17-22.52.33:962][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.17-22.52.33:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.17-22.52.33:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.17-22.52.33:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.17-22.52.33:964][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.17-22.52.34:185][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.12.17-22.52.34:209][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.12.17-22.52.34:393][  0]LogInit: XAudio2 using 'Headphones (3- SteelSeries Arctis 7 Game)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.17-22.52.34:448][  0]LogInit: FAudioDevice initialized.
+[2018.12.17-22.52.34:448][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.12.17-22.52.34:734][  0]LogDerivedDataCache: Saved boot cache 0.29s 71MB C:/Users/TDSSK/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.12.17-22.52.34:746][  0]LogInit: Texture streaming: Enabled
+[2018.12.17-22.52.34:777][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.12.17-22.52.34:793][  0]LogInit: Transaction tracking system initialized
+[2018.12.17-22.52.34:843][  0]BlueprintLog: New page: Editor Load
+[2018.12.17-22.52.34:994][  0]LocalizationService: Localization service is disabled
+[2018.12.17-22.52.35:331][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.12.17-22.52.35:331][  0]LogCook: Display: Mobile HDR setting 1
+[2018.12.17-22.52.35:332][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.12.17-22.52.35:332][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.17-22.52.35:332][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.17-22.52.35:332][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.17-22.52.35:332][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.17-22.52.35:570][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/' took 0.01s
+[2018.12.17-22.52.35:570][  0]SourceControl: Source control is disabled
+[2018.12.17-22.52.35:570][  0]Cmd: MAP LOAD FILE="D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/Levels/BaseLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.12.17-22.52.35:571][  0]LightingResults: New page: Lighting Build
+[2018.12.17-22.52.35:576][  0]MapCheck: New page: Map Check
+[2018.12.17-22.52.35:576][  0]LightingResults: New page: Lighting Build
+[2018.12.17-22.52.35:720][  0]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.17-22.52.35:728][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.12.17-22.52.35:750][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.12.17-22.52.35:902][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 151.012ms to complete.
+[2018.12.17-22.52.35:902][  0]LogFileHelpers: Loading map 'BaseLevel' took 0.331
+[2018.12.17-22.52.36:018][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.52.36:030][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.52.36:041][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.52.36:050][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.52.36:061][  0]LogCollectionManager: Loaded 0 collections in 0.002874 seconds
+[2018.12.17-22.52.36:109][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Saved/Collections/' took 0.01s
+[2018.12.17-22.52.36:109][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/Developers/TDSSK/Collections/' took 0.01s
+[2018.12.17-22.52.36:109][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/Collections/' took 0.02s
+[2018.12.17-22.52.36:109][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.12.17-22.52.36:119][  0]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2585 classes and 606 folders.
+[2018.12.17-22.52.36:128][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.12.17-22.52.36:204][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.12.17-22.52.36:213][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2018.12.17-22.52.36:275][  0]LogSlate: Took 0.000679 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.12.17-22.52.36:280][  0]LogSlate: Took 0.000663 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.12.17-22.52.36:286][  0]LogSlate: Took 0.000664 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.12.17-22.52.36:370][  0]LogRenderer: Reallocating scene render targets to support 1208x600 Format 10 NumSamples 1 (Frame:1).
+[2018.12.17-22.52.36:429][  0]LogSlate: Took 0.000698 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.17-22.52.36:606][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2018.12.17-22.52.36:606][  0]LogLoad: (Engine Initialization) Total time: 11.48 seconds
+[2018.12.17-22.52.36:606][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.12.17-22.52.36:617][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.12.17-22.52.36:670][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.12.17-22.52.36:704][  1]LogFileCache: Retrieving MD5 hashes for directory 'D:/Documents/GitHub/TGP_PairProject/TGP_Project/Content/' took 0.07s
+[2018.12.17-22.52.36:715][  1]LogAssetRegistry: Asset discovery search completed in 6.1062 seconds
+[2018.12.17-22.52.36:718][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.12.17-22.52.36:719][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.001167 seconds (updated 0 objects)
+[2018.12.17-22.53.08:030][744]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.17-22.53.09:275][890]LogSlate: Took 0.000241 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.17-22.53.09:323][890]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/BP_Civilian.BP_Civilian
+[2018.12.17-22.53.11:729][890]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 116 classes and 0 folders.
+[2018.12.17-22.53.37:700][473]BlueprintLog: New page: Compile BP_Civilian
+[2018.12.17-22.53.39:294][566]LogSlate: Window 'BP_Civilian*' being destroyed
+[2018.12.17-22.53.40:395][695]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.17-22.53.40:412][695]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.17-22.53.40:427][695]PIE: New page: PIE session: BaseLevel (17 Dec 2018 22:53:40)
+[2018.12.17-22.53.40:427][695]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.17-22.53.40:430][695]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002688s)
+[2018.12.17-22.53.40:430][695]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.17-22.53.40:430][695]LogPlayLevel: PIE: World Init took: (0.000753s)
+[2018.12.17-22.53.40:431][695]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.003979s)
+[2018.12.17-22.53.40:486][695]LogInit: XAudio2 using 'Headphones (3- SteelSeries Arctis 7 Game)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.17-22.53.40:534][695]LogInit: FAudioDevice initialized.
+[2018.12.17-22.53.40:584][695]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.17-22.53.40:586][695]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.17-22.53.40
+[2018.12.17-22.53.40:587][695]LogWorld: Bringing up level for play took: 0.001935
+[2018.12.17-22.53.40:609][695]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 10 classes and 0 folders.
+[2018.12.17-22.53.40:610][695]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel 1.01
+[2018.12.17-22.53.45:303][135]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2018.12.17-22.53.46:006][135]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.17-22.53.55:195][175]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.17-22.53.55:247][181]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.53.55:283][181]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.17-22.53.55:310][181]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.53.55:352][185]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2018.12.17-22.54.05:031][320]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.17-22.54.05:497][370]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.17-22.54.06:076][438]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.17-22.54.13:358][306]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.17-22.54.15:145][509]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.17-22.54.17:440][771]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.17-22.54.45:633][781]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.17-22.54.48:217][ 35]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.17-22.54.48:616][ 79]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.17-22.54.48:708][ 79]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.17-22.54.48:709][ 79]PIE: New page: PIE session: BaseLevel (17 Dec 2018 22:54:48)
+[2018.12.17-22.54.48:709][ 79]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BaseLevel
+[2018.12.17-22.54.48:712][ 79]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002678s)
+[2018.12.17-22.54.48:712][ 79]LogAIModule: Creating AISystem for world BaseLevel
+[2018.12.17-22.54.48:712][ 79]LogPlayLevel: PIE: World Init took: (0.000715s)
+[2018.12.17-22.54.48:713][ 79]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BaseLevel.BaseLevel to /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel (0.004031s)
+[2018.12.17-22.54.48:771][ 79]LogInit: XAudio2 using 'Headphones (3- SteelSeries Arctis 7 Game)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.17-22.54.48:826][ 79]LogInit: FAudioDevice initialized.
+[2018.12.17-22.54.48:878][ 79]LogLoad: Game class is 'GM_GAME_C'
+[2018.12.17-22.54.48:879][ 79]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BaseLevel.BaseLevel up for play (max tick rate 0) at 2018.12.17-22.54.48
+[2018.12.17-22.54.48:880][ 79]LogWorld: Bringing up level for play took: 0.001389
+[2018.12.17-22.54.48:896][ 79]PIE: Play in editor start time for /Game/Levels/UEDPIE_0_BaseLevel -0.703
+[2018.12.17-22.54.53:475][580]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.53:487][581]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.54:295][676]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.54:822][735]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.55:595][794]LogCharacterMovement: BP_Bodyguard_2 is stuck and failed to move! Velocity: X=22.87 Y=-15.43 Z=0.00 Location: X=2123.30 Y=-924.33 Z=110.28 Normal: X=0.11 Y=0.99 Z=0.00 PenetrationDepth:16.951 Actor:ScatterBullet_C_202 Component:Sphere BoneName:None (0 other events since notify)
+[2018.12.17-22.54.56:692][869]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:705][870]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:707][870]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:721][871]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:721][871]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:736][872]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:750][873]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:765][874]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:779][875]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:793][876]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:807][877]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:822][878]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:837][879]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:851][880]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:867][881]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:867][881]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:882][882]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:899][883]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:914][884]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:929][885]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:944][886]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:959][887]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:973][888]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.56:987][889]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:002][890]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:016][891]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:031][892]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:046][893]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:061][894]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:075][895]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:088][896]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:090][896]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:105][897]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:105][897]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:120][898]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:134][899]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:149][900]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:163][901]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:164][901]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:178][902]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:194][903]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:208][904]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:223][905]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:236][906]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:238][906]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:255][907]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:255][907]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:272][908]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:286][909]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:301][910]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:316][911]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:328][912]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:330][912]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:345][913]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:345][913]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:359][914]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:360][914]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:375][915]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:389][916]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:391][916]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:406][917]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:406][917]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:420][918]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:435][919]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:448][920]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:450][920]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:464][921]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:465][921]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:479][922]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:492][923]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:494][923]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:494][923]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:509][924]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:509][924]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:523][925]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:535][926]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:538][926]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:552][927]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:553][927]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:565][928]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:568][928]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:579][929]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:583][929]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:583][929]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:598][930]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:598][930]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:629][932]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:640][933]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:644][933]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:655][934]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:660][934]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:660][934]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:672][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:672][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:672][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:673][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:676][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:677][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:687][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:688][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:691][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:691][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:692][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:692][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:692][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:692][936]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:704][937]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:704][937]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:704][937]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:707][937]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:708][937]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:708][937]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:719][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:722][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:723][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:723][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:723][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:733][939]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:738][939]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:738][939]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:749][940]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:753][940]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:753][940]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:753][940]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:764][941]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:768][941]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:768][941]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:782][942]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:782][942]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:793][943]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:798][943]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:808][944]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:812][944]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:812][944]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:822][945]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:827][945]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:827][945]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:842][946]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:842][946]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:852][947]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:858][947]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:873][948]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:873][948]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:884][949]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:889][949]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:899][950]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:899][950]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:899][950]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:903][950]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:904][950]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:904][950]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:913][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:913][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:913][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:914][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:914][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:914][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:914][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:928][952]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:928][952]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:942][953]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:943][953]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:957][954]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:960][954]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:971][955]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:971][955]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:972][955]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:986][956]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.57:986][956]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:001][957]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:001][957]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:016][958]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:066][961]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:076][962]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:076][962]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:097][963]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:105][964]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:120][965]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:120][965]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:135][966]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:135][966]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:150][967]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:156][967]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:170][968]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:179][969]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:194][970]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:210][971]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:225][972]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:225][972]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:225][972]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:226][972]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:241][973]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:257][974]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:272][975]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:287][976]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:307][977]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:307][977]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:321][978]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:335][979]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:344][980]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:344][980]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:359][981]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:502][990]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:604][997]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:613][998]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:720][  5]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:726][  5]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:734][  6]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:850][ 14]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:851][ 14]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:872][ 15]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:881][ 16]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.58:947][ 20]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.59:090][ 30]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.59:165][ 35]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.59:361][ 48]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.59:776][ 78]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.59:804][ 80]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.59:880][ 86]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.54.59:952][ 92]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:034][ 99]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:035][ 99]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:105][105]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:123][107]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:127][107]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:165][111]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:190][113]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:253][119]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:259][120]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:309][125]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:321][126]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:359][130]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:387][133]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:405][135]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:423][137]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:487][144]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:626][160]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:634][161]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:777][178]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.00:887][191]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.02:444][378]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.02:503][385]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.02:569][393]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.02:627][400]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:545][665]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:581][667]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:613][669]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:613][669]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:635][670]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:670][672]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:682][673]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:687][673]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:705][674]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:741][676]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:760][677]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:763][677]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:779][678]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:798][679]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:834][681]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:836][681]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:852][682]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:875][683]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:889][684]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:910][685]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:926][686]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:944][687]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:946][687]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:962][688]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:982][689]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.05:997][690]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:023][691]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:046][692]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:050][692]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:066][693]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:084][694]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:090][694]LogCharacterMovement: BP_Bodyguard_2 is stuck and failed to move! Velocity: X=-27.40 Y=-25.40 Z=0.00 Location: X=2184.28 Y=-828.17 Z=110.15 Normal: X=-0.61 Y=0.79 Z=0.00 PenetrationDepth:21.622 Actor:BasicBullet_C_1664 Component:Sphere BoneName:None (2 other events since notify)
+[2018.12.17-22.55.06:098][695]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:121][696]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:141][697]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:159][698]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:164][698]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:180][699]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:201][700]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:206][700]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:220][701]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:245][702]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:260][703]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:284][704]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:299][705]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:299][705]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:325][706]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:340][707]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:360][708]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:364][708]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:380][709]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:398][710]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:402][710]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:423][711]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:443][712]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:447][712]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:464][713]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:483][714]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:488][714]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:507][715]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:525][716]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:531][716]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:545][717]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:568][718]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:572][718]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:588][719]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:611][720]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:632][721]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:636][721]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:653][722]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:674][723]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:678][723]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:694][724]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:694][724]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:719][725]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:731][726]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:733][726]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:754][727]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:755][727]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:797][729]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:798][729]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:818][730]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:822][730]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:837][731]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:856][732]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:861][732]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:861][732]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:875][733]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:875][733]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:880][733]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:880][733]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:899][734]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:899][734]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:913][735]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:919][735]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:932][736]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:937][736]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:938][736]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:951][737]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:951][737]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:956][737]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:956][737]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:975][738]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:990][739]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.06:997][739]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:011][740]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:012][740]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:017][740]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:029][741]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:031][741]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:036][741]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:050][742]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:055][742]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:056][742]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:077][743]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:089][744]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:089][744]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:097][744]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:108][745]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:113][745]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:127][746]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:128][746]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:135][746]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:152][747]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:155][747]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:166][748]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:175][748]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:187][749]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:187][749]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:196][749]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:208][750]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:215][750]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:218][750]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:230][751]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:240][751]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:251][752]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:261][752]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:272][753]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:303][754]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:313][755]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:315][755]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:325][755]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:336][756]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:336][756]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:346][756]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:358][757]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:368][757]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:378][758]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:390][758]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:402][759]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:402][759]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:412][759]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:424][760]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:431][760]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:446][761]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:456][761]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:467][762]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:477][762]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:489][763]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:499][763]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:511][764]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:522][764]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:534][765]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:556][766]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:562][766]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:567][766]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:578][767]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:582][767]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:590][767]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:602][768]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:610][768]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:626][769]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:633][769]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:648][770]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:669][771]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:676][771]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:690][772]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:697][772]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:712][773]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:719][773]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:734][774]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:735][774]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:757][775]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:763][775]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:764][775]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:779][776]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:786][776]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:802][777]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:826][778]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:833][778]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:848][779]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:854][779]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:855][779]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:869][780]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:869][780]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:878][780]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:900][781]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:902][781]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:925][782]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:947][783]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:949][783]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:970][784]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:972][784]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:972][784]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:995][785]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.07:996][785]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:016][786]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:017][786]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:020][786]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:020][786]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:044][787]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:066][788]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:067][788]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:067][788]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:067][788]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:090][789]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:091][789]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:114][790]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:116][790]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:137][791]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:137][791]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:161][792]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:161][792]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:163][792]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:182][793]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:185][793]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:206][794]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:208][794]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:210][794]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:232][795]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:232][795]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:254][796]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:254][796]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:259][796]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:278][797]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:301][798]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:301][798]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:305][798]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:319][799]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:326][799]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:326][799]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:330][799]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:334][799]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:350][800]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:351][800]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:355][800]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:359][800]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:374][801]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:375][801]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:379][801]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:398][802]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:399][802]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:403][802]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:406][802]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:416][803]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:426][803]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:430][803]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:431][803]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:434][803]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:452][804]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:452][804]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:456][804]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:476][805]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:476][805]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:480][805]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:482][805]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:482][805]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:500][806]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:500][806]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:501][806]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:504][806]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:524][807]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:528][807]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:531][807]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:548][808]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:551][808]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:551][808]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:553][808]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:575][809]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:577][809]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:596][810]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:599][810]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:599][810]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:600][810]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:601][810]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:616][811]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:622][811]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:625][811]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:627][811]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:627][811]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:649][812]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:652][812]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:672][813]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:674][813]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:674][813]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:677][813]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:677][813]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:695][814]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:697][814]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:700][814]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:700][814]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:721][815]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:742][816]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:744][816]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:766][817]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:768][817]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:791][818]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:812][819]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:814][819]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:836][820]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:838][820]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:859][821]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:861][821]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:864][821]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:882][822]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:885][822]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:887][822]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:905][823]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:910][823]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:910][823]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:933][824]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:951][825]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:955][825]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:972][826]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:977][826]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:978][826]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.08:995][827]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:000][827]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:000][827]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:022][828]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:022][828]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:040][829]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:045][829]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:045][829]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:061][830]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:066][830]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:089][831]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:089][831]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:106][832]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:111][832]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:111][832]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:128][833]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:133][833]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:133][833]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:150][834]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:155][834]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:156][834]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:177][835]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:194][836]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:199][836]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:221][837]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:222][837]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:240][838]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:244][838]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:245][838]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:266][839]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:267][839]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:282][840]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:287][840]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:288][840]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:289][840]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:304][841]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:309][841]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:310][841]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:310][841]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:310][841]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:325][842]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:328][842]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:331][842]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:333][842]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:349][843]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:352][843]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:367][844]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:369][844]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:372][844]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:373][844]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:373][844]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:388][845]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:393][845]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:393][845]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:410][846]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:413][846]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:413][846]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:428][847]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:430][847]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:434][847]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:448][848]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:451][848]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:454][848]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:455][848]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:455][848]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:471][849]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:472][849]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:476][849]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:476][849]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:492][850]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:496][850]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:496][850]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:498][850]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:510][851]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:513][851]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:518][851]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:518][851]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:534][852]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:538][852]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:557][853]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:557][853]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:557][853]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:571][854]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:574][854]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:574][854]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:579][854]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:579][854]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:592][855]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:595][855]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:599][855]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:599][855]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:612][856]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:618][856]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:620][856]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:620][856]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:639][857]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:642][857]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:642][857]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:654][858]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:657][858]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:662][858]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:662][858]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:674][859]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:679][859]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:682][859]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:682][859]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:698][860]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:699][860]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:701][860]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:701][860]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:701][860]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:713][861]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:714][861]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:714][861]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:718][861]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:732][862]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:733][862]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:734][862]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:750][863]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:752][863]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:752][863]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:756][863]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:770][864]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:771][864]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:771][864]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:776][864]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:791][865]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:792][865]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:795][865]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:810][866]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:811][866]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:811][866]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:815][866]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:830][867]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:835][867]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:849][868]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:850][868]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:850][868]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:855][868]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:858][868]LogCharacterMovement: BP_Bodyguard_2 is stuck and failed to move! Velocity: X=-14.65 Y=37.33 Z=0.00 Location: X=2181.22 Y=-825.90 Z=110.15 Normal: X=0.99 Y=0.17 Z=0.00 PenetrationDepth:3.109 Actor:BasicBullet_C_2441 Component:Sphere BoneName:None (12 other events since notify)
+[2018.12.17-22.55.09:869][869]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:870][869]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:871][869]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:875][869]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:889][870]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:890][870]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:891][870]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:908][871]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:909][871]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:925][872]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:931][872]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:944][873]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:946][873]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:946][873]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:950][873]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:963][874]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:964][874]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:969][874]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:983][875]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:983][875]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.09:988][875]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:002][876]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:004][876]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:008][876]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:021][877]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:023][877]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:025][877]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:041][878]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:043][878]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:044][878]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:060][879]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:061][879]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:064][879]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:083][880]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:083][880]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:099][881]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:100][881]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:103][881]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:103][881]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:118][882]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:120][882]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:122][882]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:123][882]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:138][883]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:139][883]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:142][883]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:158][884]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:158][884]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:161][884]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:177][885]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:177][885]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:180][885]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:181][885]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:196][886]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:199][886]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:215][887]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:215][887]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:218][887]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:233][888]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:234][888]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:237][888]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:254][889]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:256][889]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:270][890]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:272][890]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:275][890]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:291][891]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:291][891]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:294][891]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:309][892]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:312][892]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:312][892]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:316][892]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:328][893]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:329][893]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:346][894]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:346][894]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:353][894]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:365][895]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:365][895]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:368][895]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:385][896]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:389][896]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:391][896]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:401][897]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:401][897]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:403][897]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:407][897]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:421][898]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:425][898]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:427][898]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:438][899]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:439][899]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:446][899]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:456][900]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:458][900]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:462][900]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:464][900]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:465][900]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:475][901]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:475][901]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:481][901]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:484][901]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:484][901]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:494][902]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:495][902]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:495][902]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:497][902]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:501][902]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:513][903]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:513][903]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:515][903]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:519][903]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:531][904]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:533][904]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:534][904]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:549][905]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:550][905]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:563][906]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:564][906]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:565][906]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:579][907]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:581][907]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:582][907]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:597][908]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:598][908]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:612][909]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:612][909]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:614][909]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:614][909]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:615][909]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:629][910]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:630][910]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:631][910]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:632][910]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:646][911]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:646][911]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:648][911]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:662][912]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:662][912]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:664][912]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:679][913]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:680][913]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:682][913]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:697][914]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:697][914]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:699][914]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:713][915]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:713][915]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:715][915]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:715][915]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:729][916]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:732][916]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:733][916]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:747][917]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:747][917]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:748][917]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:762][918]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:762][918]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:763][918]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:764][918]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:778][919]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:778][919]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:793][920]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:808][921]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:811][921]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:812][921]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:823][922]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:824][922]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:825][922]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:826][922]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:840][923]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:840][923]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:842][923]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:855][924]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:857][924]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:870][925]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:872][925]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:872][925]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:886][926]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:888][926]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:888][926]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:902][927]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:902][927]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:905][927]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:917][928]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:918][928]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:920][928]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:933][929]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:936][929]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:948][930]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:948][930]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:950][930]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:963][931]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:965][931]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:965][931]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:978][932]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:980][932]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:993][933]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:995][933]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.10:995][933]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:009][934]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:010][934]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:023][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:025][935]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:054][937]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:068][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:068][938]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:083][939]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:097][940]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:098][940]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:112][941]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:140][943]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:154][944]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:168][945]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:168][945]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:181][946]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:196][947]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:197][947]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:211][948]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:253][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:254][951]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:268][952]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:281][953]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:282][953]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:297][954]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:297][954]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:311][955]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:330][956]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:339][957]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:352][958]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:352][958]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:358][958]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:365][959]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:366][959]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:379][960]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:405][962]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:418][963]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:419][963]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:432][964]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:432][964]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:445][965]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:459][966]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:460][966]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:473][967]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:486][968]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:500][969]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:514][970]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:514][970]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:528][971]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:555][973]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:567][974]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:580][975]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:593][976]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:607][977]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:620][978]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:620][978]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:633][979]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:645][980]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:658][981]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.11:991][  8]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:014][ 10]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:027][ 11]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:038][ 12]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:051][ 13]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:079][ 14]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:091][ 15]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:102][ 16]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:114][ 17]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:126][ 18]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:138][ 19]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:150][ 20]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:162][ 21]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:174][ 22]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:186][ 23]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:210][ 25]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:223][ 26]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:235][ 27]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:246][ 28]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:258][ 29]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:270][ 30]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:282][ 31]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:294][ 32]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:318][ 34]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:329][ 35]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:341][ 36]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:353][ 37]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:364][ 38]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:376][ 39]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:399][ 41]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:410][ 42]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:421][ 43]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:432][ 44]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:455][ 46]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:466][ 47]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:477][ 48]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:489][ 49]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:510][ 51]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:521][ 52]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:533][ 53]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:554][ 55]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:565][ 56]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:576][ 57]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:597][ 59]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:609][ 60]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:630][ 62]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:642][ 63]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:662][ 65]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:673][ 66]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:683][ 67]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:704][ 69]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:715][ 70]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:726][ 71]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:749][ 73]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:760][ 74]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:780][ 76]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:791][ 77]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:801][ 78]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:811][ 79]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:832][ 81]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:842][ 82]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:862][ 84]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:872][ 85]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:882][ 86]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:901][ 88]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:911][ 89]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:921][ 90]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:942][ 92]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:952][ 93]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:971][ 95]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.12:980][ 96]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:000][ 98]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:010][ 99]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:029][101]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:039][102]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:058][104]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:078][106]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:087][107]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:095][108]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:114][110]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:124][111]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:144][113]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:153][114]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:163][115]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:173][116]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:191][118]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:200][119]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:210][120]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:219][121]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:239][123]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:247][124]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:257][125]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:266][126]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:276][127]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:294][129]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:304][130]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:313][131]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:323][132]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.13:332][133]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.17:253][601]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.17:253][601]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.17:262][602]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.17:270][603]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.20:680][ 12]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.21:597][122]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.21:822][149]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.21:972][167]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.25:615][604]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.25:640][607]LogBlueprintUserMessages: [EntranceToRestictedArea_2] yeet
+[2018.12.17-22.55.26:291][685]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.17-22.55.26:359][693]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.55.26:433][693]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.17-22.55.26:466][693]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.17-22.55.26:521][694]LogPlayLevel: Display: Destroying online subsystem :Context_6

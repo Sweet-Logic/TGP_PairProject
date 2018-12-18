@@ -7,7 +7,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "DrawDebugHelpers.h"
 #include "WeaponBase.h"
-
+#include "Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h"
+#include "Runtime/Engine/Classes/Engine/World.h"
 #include "Runtime/Engine/Classes/GameFramework/Actor.h"
 
 ABodyGuardAI::ABodyGuardAI()
@@ -17,6 +18,8 @@ ABodyGuardAI::ABodyGuardAI()
 
 	_minDistanceToHostile = 200.0f;
 	_warningTimeLimit = 5.0f;
+
+	GetCharacterMovement()->MaxWalkSpeed = 100.0f;
 }
 
 // Called when the game starts or when spawned

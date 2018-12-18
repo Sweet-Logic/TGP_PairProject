@@ -1,9 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Building 3 actions with 8 processes...
-    [1/3] BodyGuardAI.cpp
-    [2/3] UE4Editor-TGP_Project.lib
-       Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.exp
-    [3/3] UE4Editor-TGP_Project.dll
-       Creating library C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object C:\Users\m013603g\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
+  Target is up to date
   Deploying TGP_ProjectEditor Win64 Development...
-  Total build time: 4.50 seconds (Parallel executor: 3.00 seconds)
+  Total build time: 3.06 seconds (NoActionsToExecute executor: 0.00 seconds)
