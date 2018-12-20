@@ -16,6 +16,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	virtual void Shot() override;
+
+	void SetTarget();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay();
@@ -40,4 +44,6 @@ protected:
 		TArray<AActor*> _civHidingSpots;
 
 	AActor* _hidingSpot;
+
+	bool _target;
 };

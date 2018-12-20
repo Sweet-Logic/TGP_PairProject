@@ -1,4 +1,9 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Target is up to date
+  Building 3 actions with 4 processes...
+    [1/3] CivilianAI.cpp
+    [2/3] UE4Editor-TGP_Project.lib
+       Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.exp
+    [3/3] UE4Editor-TGP_Project.dll
+       Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
   Deploying TGP_ProjectEditor Win64 Development...
-  Total build time: 3.06 seconds (NoActionsToExecute executor: 0.00 seconds)
+  Total build time: 5.27 seconds (Parallel executor: 2.71 seconds)

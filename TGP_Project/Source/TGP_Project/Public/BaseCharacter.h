@@ -35,8 +35,6 @@ protected:
 	//Components
 	UPROPERTY(VisibleAnywhere)
 		UBoxComponent* _boxComponent;
-	//UPROPERTY(VisibleAnywhere)
-	//UPaperFlipbookComponent* Sprite;
 
 	UPROPERTY(VisibleAnywhere)
 		UArrowComponent* _direction;
@@ -128,5 +126,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "WeaponVisibility")
 		void SetIsWeaponDrawn(bool newHasWeaponDrawn) { _hasWeaponDrawn = newHasWeaponDrawn; }
+
+	virtual void Shot();
 
 };

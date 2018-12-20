@@ -7,7 +7,7 @@
 #include  "BaseCharacter.h"
 #include "gm_TGPGAME.generated.h"
 
-enum GameState
+enum CurrentGameState
 {
 	GS_PAUSED = 0,
 	GS_END,
@@ -39,28 +39,26 @@ class TGP_PROJECT_API Agm_TGPGAME : public AGameModeBase
 		ABaseCharacter* Target;
 
 	bool _gameOver = false;
-	bool _vipKilled = false;
-	bool _playerDied = false;
-	bool _playerNeverDetected = true;
 
-	int32 _civilianKillCount = 0;
-	int32 _bodyGuardKillCount = 0;
-	int32 _timesPlayerDetected = 0;
 	int32 _civilianCount = 0;
 
 
 	//Start of the game, then calls Event begin play in all actors in the world.
 	void StartPlay() override;
 
-	//When the game ends. not when going back to main menu.
-	void GameEnd();
 
+
+	//void OnGameEnd_Implementation();
 	//Donno if needed, could just have a spawn point for target and build the levels witht them.
 	void ChooseVIP();
 
 	//Sets the current state of the game. might move in to GameState class
-	void SetGameState(GameState newState);
+	void SetGameState();
 
+
+	
+
+public:
 	//Called everytime a Cilivian is killed by the player.
 	void CivKilled();
 
@@ -70,6 +68,33 @@ class TGP_PROJECT_API Agm_TGPGAME : public AGameModeBase
 	//Called everytime the player is detected.
 	void PlayerDetected();
 
+	void TargetKilled();
+
+	bool IsGameOver();
+
+	//When the game ends. Show Score? or Go to MainMenu
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+		void PlayerDied();
+
+	//When the game ends. Show Score? or Go to MainMenu
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+		void PlayerCompleteLevel();
+
 	//For going to the main menu from pause or end of game.
-	void SwitchToMainMenu();
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+		void SwitchToMainMenu();
+
+	UPROPERTY(BlueprintReadOnly)
+		bool _vipKilled = false;
+	UPROPERTY(BlueprintReadOnly)
+		bool _playerDied = false;
+	UPROPERTY(BlueprintReadOnly)
+		bool _playerNeverDetected = true;
+
+	UPROPERTY(BlueprintReadOnly)
+		int32 _civilianKillCount = 0;
+	UPROPERTY(BlueprintReadOnly)
+		int32 _bodyGuardKillCount = 0;
+	UPROPERTY(BlueprintReadOnly)
+		int32 _timesPlayerDetected = 0;
 };

@@ -501,7 +501,6 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		{ "Category", "BaseCharacter" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
-		{ "ToolTip", "UPROPERTY(VisibleAnywhere)\nUPaperFlipbookComponent* Sprite;" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction = { UE4CodeGen_Private::EPropertyClass::Object, "_direction", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _direction), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__direction_MetaData)) };
@@ -555,7 +554,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 2509171683);
+	IMPLEMENT_CLASS(ABaseCharacter, 2466286154);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseCharacter(Z_Construct_UClass_ABaseCharacter, &ABaseCharacter::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

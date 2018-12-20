@@ -5,7 +5,7 @@
 #include "EngineUtils.h"
 #include "CivilianAI.h"
 #include "Engine.h"
-
+#include "random"
 
 void Agm_TGPGAME::StartPlay()
 {
@@ -13,10 +13,6 @@ void Agm_TGPGAME::StartPlay()
 	AGameModeBase::StartPlay();
 }
 
-void Agm_TGPGAME::GameEnd()
-{
-
-}
 
 void Agm_TGPGAME::ChooseVIP()
 {
@@ -25,15 +21,24 @@ void Agm_TGPGAME::ChooseVIP()
 	for (TActorIterator<ACivilianAI> ActorIt(GetWorld()); ActorIt; ++ActorIt)
 	{
 		currentCivil = *ActorIt;
+		
+
+		
+		float chance = rand();
 		if (currentCivil != nullptr)
 		{
+			if (!targetSelected)
+			{
+				targetSelected = true;
+				Target = currentCivil;
+			}
+
 			_civilianCount++;
 		}
 	}
 
-	if (!targetSelected && currentCivil != nullptr)
+	if (targetSelected && Target != nullptr)
 	{
-		Target = currentCivil;
 	}
 	else
 	{
@@ -42,6 +47,31 @@ void Agm_TGPGAME::ChooseVIP()
 	}
 }
 
-void Agm_TGPGAME::SetGameState(GameState GameEnd)
+void Agm_TGPGAME::SetGameState()
 {
+}
+
+void Agm_TGPGAME::CivKilled()
+{
+	_civilianKillCount++;
+	if (Target->IsCharacterAlive())
+	{
+		PlayerCompleteLevel();
+	}
+}
+
+void Agm_TGPGAME::BodyGaurdKilled()
+{
+	_bodyGuardKillCount++;
+}
+
+void Agm_TGPGAME::PlayerDetected()
+{
+	_timesPlayerDetected++;
+}
+
+
+void Agm_TGPGAME::TargetKilled()
+{
+	PlayerCompleteLevel();
 }

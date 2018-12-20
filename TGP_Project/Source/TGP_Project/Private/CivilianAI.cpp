@@ -3,6 +3,8 @@
 #include "BodyGuardAI.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Actor.h"
+#include "Runtime/Engine/Classes/Engine/World.h"
+#include "gm_TGPGAME.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 
 // Sets default values
@@ -22,47 +24,65 @@ void ACivilianAI::BeginPlay()
 
 	//get a random target
 	_randomTarget = GetRandomTarget(mapX, mapY, mapWidth, mapHeight);
+
+	_hidingSpot = _civHidingSpots[0];
 }
 
 void ACivilianAI::Tick(float deltaTime)
 {
-	if (_state == AI_STATE::IDLE)
+	if (IsCharacterAlive())
 	{
-		float currentTime = deltaTime;
-		if (_moveTimeCounter >= _moveDelay)
+		if (_state == AI_STATE::IDLE)
 		{
-			_moveTimeCounter = 0;
-
-			//get a random target
-			_randomTarget = GetRandomTarget(mapX, mapY, mapWidth, mapHeight);
-		}
-		else
-		{
-			_moveTimeCounter += currentTime;
-		}
-
-		float distanceToWaypoint = (GetActorLocation() - _randomTarget).Size();
-		if (distanceToWaypoint > _minDistanceToTarget)
-		{
-			AController* controller = GetController();
-			if (controller)
+			float currentTime = deltaTime;
+			if (_moveTimeCounter >= _moveDelay)
 			{
-				MoveToLocation(_randomTarget);
+				_moveTimeCounter = 0;
+
+				//get a random target
+				_randomTarget = GetRandomTarget(mapX, mapY, mapWidth, mapHeight);
+			}
+			else
+			{
+				_moveTimeCounter += currentTime;
+			}
+
+			float distanceToWaypoint = (GetActorLocation() - _randomTarget).Size();
+			if (distanceToWaypoint > _minDistanceToTarget)
+			{
+				AController* controller = GetController();
+				if (controller)
+				{
+					MoveToLocation(_randomTarget);
+				}
+			}
+			else
+			{
+				//_randomTarget = GetActorLocation();
 			}
 		}
-		else
+		else if (_state == AI_STATE::ALERTED)
 		{
-			//_randomTarget = GetActorLocation();
+			MoveToLocation(_hidingSpot->GetActorLocation());
+		}
+		else if (_state == AI_STATE::SUSPICIOUS)
+		{
+			this->Controller->StopMovement();
 		}
 	}
-	else if (_state == AI_STATE::ALERTED)
-	{
-		MoveToLocation(_hidingSpot->GetActorLocation());
-	}
-	else if (_state == AI_STATE::SUSPICIOUS)
-	{
-		this->Controller->StopMovement();
-	}
+}
+
+void ACivilianAI::Shot()
+{
+	Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
+
+
+	gameMode->CivKilled();
+}
+
+void ACivilianAI::SetTarget()
+{
+	_target = true;
 }
 
 void ACivilianAI::OnPawnSeen(APawn * instigator)
@@ -95,7 +115,7 @@ void ACivilianAI::OnPawnSeen(APawn * instigator)
 
 	if (_state == AI_STATE::ALERTED)
 	{
-		float currentClosest = 10000.0f;
+		float currentClosest = 100000.0f;
 		for (int i = 0; i < _civHidingSpots.Num(); i++)
 		{
 			float threatDistToWaypoint = (_civHidingSpots[i]->GetActorLocation() - instigator->GetActorLocation()).Size();

@@ -36,9 +36,9 @@ protected:
 
 	// Camera Settings
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float _orthoWidth = 512;
+		float _orthoWidth = 720;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
-		float _orthoWidthMax = 768;
+		float _orthoWidthMax = 1024;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
 		float _orthoWidthMin = 256;
 	UPROPERTY(EditAnywhere, Category = "Camera Settings")
@@ -132,4 +132,6 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
 		void SetIsPlayerInRestrictedArea(bool newIsInRestrictedArea) { _inRestictedArea = newIsInRestrictedArea; }
+
+	virtual void Shot() override;
 };

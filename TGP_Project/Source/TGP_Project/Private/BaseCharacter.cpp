@@ -7,6 +7,7 @@
 #include "Paper2D/Classes/PaperSprite.h"
 #include "Components/InputComponent.h"
 #include "Components/BoxComponent.h"
+#include "ProjectileBase.h"
 #include "WeaponBase.h"
 #include "Engine.h"
 
@@ -42,9 +43,9 @@ void ABaseCharacter::BeginPlay()
 
 	GetSprite()->Play();
 
-	FVector2D size = _walikingFlipBook->GetSpriteAtFrame(0)->GetSourceSize();
+	FVector2D size = FVector2D(5, 15);
 
-	_boxComponent->SetBoxExtent(FVector(size.X, size.X, 1.0f));
+	_boxComponent->SetBoxExtent(FVector(size.X, size.Y, 1.0f));
 	GetSprite()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(0, 0, 90));
 }
 // Called every frame
@@ -87,6 +88,10 @@ void ABaseCharacter::MoveRight(float AxisValue)
 	}
 }
 
+void ABaseCharacter::Shot()
+{
+}
+
 void ABaseCharacter::SwitchFlipbook(UPaperFlipbook * newFlipbook)
 {
 	GetSprite()->SetFlipbook(newFlipbook);
@@ -105,6 +110,18 @@ void ABaseCharacter::Collision(UPrimitiveComponent* OverlappedComponent,
 	bool bFromSweep,
 	const FHitResult &SweepResult)
 {
+	if (OtherActor != nullptr)
+	{
+		AProjectileBase* projectile = Cast<AProjectileBase>(OtherActor);
+		if (projectile != nullptr)
+		{
+			if (OverlappedComponent == _boxComponent)
+			{
+				_isAlive = false;
+				Shot();
+			}
+		}
+	}
 }
 
 void ABaseCharacter::UpdateWeaponPosition(FVector2D dir)

@@ -34,7 +34,7 @@ void AWeaponBase::Tick(float DeltaTime)
 
 void AWeaponBase::Use(FVector Dir)
 {
-	FVector Location = GetActorLocation();
+	FVector Location = GetActorLocation() + (Dir*50);
 
 	FRotator Rotation = FRotator(0.0f, 0.0f, 0.0f);
 

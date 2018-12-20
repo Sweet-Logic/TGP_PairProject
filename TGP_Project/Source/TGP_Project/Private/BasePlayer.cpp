@@ -13,6 +13,8 @@
 #include "../Public/BasePlayer.h"
 #include "Components/BoxComponent.h"
 
+#include "gm_TGPGAME.h"
+
 #include "ProjectileBase.h"
 #include "WeaponBase.h"
 //#include "UnrealString.h"
@@ -326,4 +328,14 @@ void ABasePlayer::HandleMovement(float DeltaTime)
 	{
 		SwitchFlipbook(_idleFlipbook);
 	}
+
+}
+
+void ABasePlayer::Shot()
+{
+	Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
+
+	gameMode->PlayerDied();
+
+	
 }

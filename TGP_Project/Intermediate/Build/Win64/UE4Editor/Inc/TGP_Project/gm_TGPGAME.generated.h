@@ -15,6 +15,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_RPC_WRAPPERS
 #define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_RPC_WRAPPERS_NO_PURE_DECLS
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_EVENT_PARMS
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_CALLBACK_WRAPPERS
 #define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAgm_TGPGAME(); \
@@ -65,12 +67,16 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(Agm_TGPGAME); \
 	FORCEINLINE static uint32 __PPO__Target() { return STRUCT_OFFSET(Agm_TGPGAME, Target); }
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_22_PROLOG
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_22_PROLOG \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_EVENT_PARMS
+
+
 #define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_PRIVATE_PROPERTY_OFFSET \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_CALLBACK_WRAPPERS \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_INCLASS \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_STANDARD_CONSTRUCTORS \
 public: \
@@ -82,6 +88,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_PRIVATE_PROPERTY_OFFSET \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_CALLBACK_WRAPPERS \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_INCLASS_NO_PURE_DECLS \
 	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_25_ENHANCED_CONSTRUCTORS \
 private: \

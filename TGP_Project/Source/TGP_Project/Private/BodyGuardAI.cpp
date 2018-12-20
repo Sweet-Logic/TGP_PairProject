@@ -10,6 +10,7 @@
 #include "Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h"
 #include "Runtime/Engine/Classes/Engine/World.h"
 #include "Runtime/Engine/Classes/GameFramework/Actor.h"
+#include "gm_TGPGAME.h"
 
 ABodyGuardAI::ABodyGuardAI()
 {
@@ -46,109 +47,112 @@ void ABodyGuardAI::Tick(float DeltaTime)
 {
 	Super ::Tick(DeltaTime);
 
-
-	//move back to guard post
-	if (_state == AI_STATE::IDLE)
+	if (IsCharacterAlive())
 	{
-		_sawSuspicious = false;
-		_heardSuspicious = false;
-
-		if (_patrol)
+		//move back to guard post
+		if (_state == AI_STATE::IDLE)
 		{
-			float distanceToWaypoint = (GetActorLocation() - _currentWaypoint->GetActorLocation()).Size();
+			_sawSuspicious = false;
+			_heardSuspicious = false;
 
-			if (distanceToWaypoint < _minDistanceToTarget)
+			if (_patrol)
 			{
-				NextWaypoint();
-			}
+				float distanceToWaypoint = (GetActorLocation() - _currentWaypoint->GetActorLocation()).Size();
 
-			MoveToActor(_currentWaypoint);
-		}
-		else
-		{
-			if (_post)
-			{
-				float distanceToWaypoint = (GetActorLocation() - _post->GetActorLocation()).Size();
-
-				if (distanceToWaypoint > _minDistanceToTarget)
+				if (distanceToWaypoint < _minDistanceToTarget)
 				{
-					MoveToActor(_post);
+					NextWaypoint();
+				}
+
+				MoveToActor(_currentWaypoint);
+			}
+			else
+			{
+				if (_post)
+				{
+					float distanceToWaypoint = (GetActorLocation() - _post->GetActorLocation()).Size();
+
+					if (distanceToWaypoint > _minDistanceToTarget)
+					{
+						MoveToActor(_post);
+					}
 				}
 			}
 		}
-	}
 
-	if (_state == AI_STATE::SUSPICIOUS)
-	{
-		MoveToLocation(_target);
-		if (_sawSuspicious)
+		if (_state == AI_STATE::SUSPICIOUS)
 		{
-			_warningTimeCount += DeltaTime;
+			MoveToLocation(_target);
+			if (_sawSuspicious)
+			{
+				_warningTimeCount += DeltaTime;
 
-			if (_warningTimeCount >= _warningTimeLimit)
-			{
-				_warningTimeCount = 0;
-				_state = AI_STATE::ALERTED;
-				_sawSuspicious = false;
+				if (_warningTimeCount >= _warningTimeLimit)
+				{
+					_warningTimeCount = 0;
+					SetIsWeaponDrawn(true);
+					_state = AI_STATE::ALERTED;
+					_sawSuspicious = false;
+				}
+				else if (_warningTimeCount <= 0.0f)
+				{
+					_warningTimeCount = 0;
+					_state = AI_STATE::IDLE;
+				}
 			}
-			else if (_warningTimeCount <= 0.0f)
+			else if (_heardSuspicious)
 			{
-				_warningTimeCount = 0;
-				_state = AI_STATE::IDLE;
+				_warningTimeCount -= DeltaTime;
+
+				if (_warningTimeCount <= 0.0f)
+				{
+					_warningTimeCount = 0;
+					_state = AI_STATE::IDLE;
+				}
 			}
 		}
-		else if (_heardSuspicious)
-		{
-			_warningTimeCount -= DeltaTime;
 
-			if (_warningTimeCount <= 0.0f)
+		if (_state == AI_STATE::ALERTED)
+		{
+			float distanceToWaypoint = (GetActorLocation() - _hostileTarget->GetActorLocation()).Size();
+
+			if (distanceToWaypoint > _minDistanceToHostile)
 			{
-				_warningTimeCount = 0;
-				_state = AI_STATE::IDLE;
+				MoveToActor(_hostileTarget);
+			}
+			else
+			{
+				AController* controller = GetController();
+				if (controller)
+				{
+					controller->StopMovement();
+				}
+
+				FVector tempDir = FVector(FVector2D((_hostileTarget->GetActorLocation() - GetActorLocation()).X,
+					(_hostileTarget->GetActorLocation() - GetActorLocation()).Y), 0.0f);
+				tempDir.Normalize();
+				UpdateWeaponPosition(FVector2D(tempDir.X, tempDir.Y));
+
+
+				AWeaponBase* WeaponRef = Cast<AWeaponBase>(_currentWeapon);
+				WeaponRef->Use(tempDir);
+
+				//fire the weapon
 			}
 		}
-	}
 
-	if (_state == AI_STATE::ALERTED)
-	{
-		float distanceToWaypoint = (GetActorLocation() - _hostileTarget->GetActorLocation()).Size();
-
-		if (distanceToWaypoint > _minDistanceToHostile)
-		{
-			MoveToActor(_hostileTarget);
-		}
-		else
+		/*
+		AFPSGameMode* GM = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode());
+		if (GM && GM->GetGameFinished())
 		{
 			AController* controller = GetController();
 			if (controller)
 			{
 				controller->StopMovement();
 			}
-
-			FVector tempDir = FVector(FVector2D((_hostileTarget->GetActorLocation() - GetActorLocation()).X,
-												(_hostileTarget->GetActorLocation() - GetActorLocation()).Y), 0.0f);
-			tempDir.Normalize();
-			UpdateWeaponPosition(FVector2D(tempDir.X, tempDir.Y));
-
-
-			AWeaponBase* WeaponRef = Cast<AWeaponBase>(_currentWeapon);
-			WeaponRef->Use(tempDir);
-
-			//fire the weapon
 		}
+		*/
 	}
-
-	/*
-	AFPSGameMode* GM = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode());
-	if (GM && GM->GetGameFinished())
-	{
-		AController* controller = GetController();
-		if (controller)
-		{
-			controller->StopMovement();
-		}
-	}
-	*/
 }
 
 void ABodyGuardAI::NextWaypoint()
@@ -210,7 +214,9 @@ void ABodyGuardAI::OnPawnSeen(APawn * instigator)
 		if (player->GetIsPlayerInRestrictedArea())
 		{
 			SetAIState(AI_STATE::SUSPICIOUS);
+			SetIsWeaponDrawn(false);
 			_target = player->GetActorLocation();
+			_hostileTarget = player;
 			_sawSuspicious = true;
 		}
 	}
@@ -254,4 +260,11 @@ void ABodyGuardAI::OnNoiseHeard(APawn * instigator, const FVector & location, fl
 void ABodyGuardAI::AlertOthers()
 {
 	UGameplayStatics::PlaySound2D(this, _alertingOthers);
+}
+
+void ABodyGuardAI::Shot()
+{
+	Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
+
+	gameMode->BodyGaurdKilled();
 }

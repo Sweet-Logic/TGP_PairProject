@@ -367,7 +367,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAI() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseAI, 2363281183);
+	IMPLEMENT_CLASS(ABaseAI, 1602636176);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseAI(Z_Construct_UClass_ABaseAI, &ABaseAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
