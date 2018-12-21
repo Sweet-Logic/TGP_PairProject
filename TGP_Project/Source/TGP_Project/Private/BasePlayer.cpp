@@ -37,6 +37,7 @@ ABasePlayer::ABasePlayer()
 
 
 }
+
 // Called when the game starts or when spawned
 void ABasePlayer::BeginPlay()
 {
@@ -65,6 +66,7 @@ void ABasePlayer::BeginPlay()
 
 	_defaultCamPos = _springArm->TargetOffset;
 }
+
 // Called every frame
 void ABasePlayer::Tick(float DeltaTime)
 {
@@ -95,14 +97,12 @@ void ABasePlayer::Tick(float DeltaTime)
 	{
 		HandlePanning(DeltaTime);
 	}
-	
-	
-
 
 	if (GEngine)
 	{
 	}
 }
+
 // Called to bind functionality to input
 void ABasePlayer::SetupPlayerInputComponent(UInputComponent* InputComponent)
 {
@@ -182,8 +182,6 @@ void ABasePlayer::PullOutWeapon()
 	_hasWeaponDrawn = true;
 }
 
-
-
 void ABasePlayer::Sneak()
 {
 	if (!_isSneaking)
@@ -220,13 +218,11 @@ void ABasePlayer::Sprint()
 	//Makes it easier for enimies to detect the player.
 }
 
-
 void ABasePlayer::Roll() // not sure if it will be implemented!
 {
 	//Switches animation to Roll animation.
 	//Moves the player faster to a location then stops for a second.
 }
-
 
 void ABasePlayer::SprintRelease()
 {
@@ -236,8 +232,6 @@ void ABasePlayer::SprintRelease()
 	//Reverts the animation
 	//Pauses Timer
 }
-
-
 
 void ABasePlayer::HandlePanning(float DeltaTime)
 {
@@ -297,7 +291,6 @@ void ABasePlayer::HandlePanning(float DeltaTime)
 		_springArm->TargetOffset -= OffsetDir * _panResetSpeed;
 	}
 }
-
 
 void ABasePlayer::HandleMovement(float DeltaTime)
 {

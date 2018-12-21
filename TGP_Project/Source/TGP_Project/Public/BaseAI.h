@@ -27,6 +27,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void StopMovement() override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -65,8 +67,6 @@ protected:
 
 	UPROPERTY(EditInstanceOnly, Category = "AI")
 		float _minDistanceToHostile;
-
-	bool _allAreasPass;
 
 	UPROPERTY(EditAnywhere, Category = "MapBoundries")
 		float mapX;

@@ -11,7 +11,7 @@
 ACivilianAI::ACivilianAI()
 {
 	_allAreasPass = false;
-	_maxMoveRadius = 50.0f;
+	_maxMoveRadius = 500.0f;
 
 	_moveDelay = 3.0f;
 	_moveTimeCounter = 0;
@@ -39,6 +39,8 @@ void ACivilianAI::Tick(float deltaTime)
 			{
 				_moveTimeCounter = 0;
 
+				_moveDelay = rand() % 3 + 2.0f;
+
 				//get a random target
 				_randomTarget = GetRandomTarget(mapX, mapY, mapWidth, mapHeight);
 			}
@@ -56,10 +58,6 @@ void ACivilianAI::Tick(float deltaTime)
 					MoveToLocation(_randomTarget);
 				}
 			}
-			else
-			{
-				//_randomTarget = GetActorLocation();
-			}
 		}
 		else if (_state == AI_STATE::ALERTED)
 		{
@@ -67,7 +65,13 @@ void ACivilianAI::Tick(float deltaTime)
 		}
 		else if (_state == AI_STATE::SUSPICIOUS)
 		{
-			this->Controller->StopMovement();
+			StopMovement();
+		}
+
+		Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
+		if (gameMode && gameMode->IsGameOver())
+		{
+			StopMovement();
 		}
 	}
 }
@@ -75,8 +79,6 @@ void ACivilianAI::Tick(float deltaTime)
 void ACivilianAI::Shot()
 {
 	Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
-
-
 	gameMode->CivKilled();
 }
 
@@ -137,10 +139,14 @@ void ACivilianAI::OnNoiseHeard(APawn * instigator, const FVector & location, flo
 	//if heard gunshot
 	//if ()
 	{
-		_state = AI_STATE::SUSPICIOUS;
+		//_state = AI_STATE::SUSPICIOUS;
 	}
 
-	//if gameover come out of hiding
+	Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
+	if (gameMode->IsGameOver())
+	{
+		_state = AI_STATE::IDLE;
+	}
 }
 
 FVector ACivilianAI::GetRandomTarget(float x, float y, float width, float height)
@@ -148,7 +154,7 @@ FVector ACivilianAI::GetRandomTarget(float x, float y, float width, float height
 	float randX = rand() % _maxMoveRadius - (_maxMoveRadius / 2);
 	float randY = rand() % _maxMoveRadius - (_maxMoveRadius / 2);
 		
-	FVector temp = FVector(randX, randY, GetActorLocation().Z);
+	FVector temp = FVector(GetActorLocation().X + randX, GetActorLocation().Y + randY, GetActorLocation().Z);
 
 	if (temp.X > x && temp.X < x + width &&
 		temp.Y > y && temp.Y < y + height)

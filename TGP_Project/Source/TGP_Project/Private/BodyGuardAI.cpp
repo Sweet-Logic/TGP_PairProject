@@ -2,6 +2,7 @@
 
 #include "BodyGuardAI.h"
 #include "BasePlayer.h"
+#include "RestrictedEntrance.h"
 #include "Engine/TargetPoint.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "Kismet/GameplayStatics.h"
@@ -30,8 +31,6 @@ void ABodyGuardAI::BeginPlay()
 	
 	FVector Location = GetActorLocation();
 	FRotator Rotation = FRotator(-90.0f, 0.0f, 90.0f);
-
-	
 
 	_currentWeapon = GetWorld()->SpawnActor<AWeaponBase>(_defaultGun, Location, Rotation);
 
@@ -75,6 +74,15 @@ void ABodyGuardAI::Tick(float DeltaTime)
 					if (distanceToWaypoint > _minDistanceToTarget)
 					{
 						MoveToActor(_post);
+					}
+					else
+					{
+						ARestrictedEntrance* post = Cast<ARestrictedEntrance>(_post);
+						if (post)
+						{
+							SetActorRotation(post->GetActorRotation());
+						}
+						
 					}
 				}
 			}
@@ -122,11 +130,7 @@ void ABodyGuardAI::Tick(float DeltaTime)
 			}
 			else
 			{
-				AController* controller = GetController();
-				if (controller)
-				{
-					controller->StopMovement();
-				}
+				StopMovement();
 
 				FVector tempDir = FVector(FVector2D((_hostileTarget->GetActorLocation() - GetActorLocation()).X,
 					(_hostileTarget->GetActorLocation() - GetActorLocation()).Y), 0.0f);
@@ -141,17 +145,12 @@ void ABodyGuardAI::Tick(float DeltaTime)
 			}
 		}
 
-		/*
-		AFPSGameMode* GM = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode());
-		if (GM && GM->GetGameFinished())
+		
+		Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
+		if (gameMode && gameMode->IsGameOver())
 		{
-			AController* controller = GetController();
-			if (controller)
-			{
-				controller->StopMovement();
-			}
+			StopMovement();
 		}
-		*/
 	}
 }
 
@@ -232,11 +231,6 @@ void ABodyGuardAI::OnPawnSeen(APawn * instigator)
 
 			//alert other bodyguards nearby
 		}
-	}
-	//AController* controller = GetController();
-	//if (controller)
-	{
-		//controller->StopMovement();
 	}
 }
 

@@ -77,6 +77,11 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "200.0", UIMin = "0.0", UIMax = "200.0"))
 		float _walkSpeed = 80.0f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Areas")
+		bool _inRestictedArea = false;
+
+	bool _allAreasPass;
+
 	float _currentMovementSpeed;
 	bool _canMove = true;
 
@@ -95,7 +100,6 @@ public:
 
 	void UpdateWeaponPosition(FVector2D dir);
 
-
 	UFUNCTION(BlueprintCallable, Category = "FlippingFlipbooks")
 		void SwitchFlipbook(UPaperFlipbook* newFlipbook);
 
@@ -110,15 +114,12 @@ public:
 			bool bFromSweep,
 			const FHitResult &SweepResult);
 
-
 	void EnableMovement();
-
-	void StopMovement();
+	virtual void StopMovement();
 
 	void MoveUp(float value);
 	void MoveRight(float value);
 
-	
 	UFUNCTION(BlueprintCallable, Category = "CharacterState")
 		bool IsCharacterAlive() const {	return _isAlive;}
 	
@@ -130,4 +131,13 @@ public:
 
 	virtual void Shot();
 
+	//Restricted areas
+	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
+		bool GetIsPlayerInRestrictedArea() { return _inRestictedArea; }
+
+	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
+		void SetIsPlayerInRestrictedArea(bool newIsInRestrictedArea) { _inRestictedArea = newIsInRestrictedArea; }
+
+	bool GetAreaPass() { return _allAreasPass; }
+	void SetAreaPass(bool newPass) { _allAreasPass = newPass; }
 };

@@ -21,7 +21,6 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		UBoxComponent* BoxComponent;
 
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -38,7 +37,6 @@ public:
 			bool bFromSweep,
 			const FHitResult &SweepResult);
 
-
 	UFUNCTION()
 		void Exit(AActor* Actor,
 			AActor* OtherActor);
@@ -46,5 +44,4 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "GuardsOnDoor")
 		TArray<ABaseCharacter*> Guards;
-	
 };

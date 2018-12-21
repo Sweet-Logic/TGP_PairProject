@@ -22,8 +22,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_FlipFlipbook();
+	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive();
+	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_ABaseCharacter_SwitchFlipbook();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbook_NoRegister();
@@ -38,8 +40,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Collision", &ABaseCharacter::execCollision },
 			{ "FlipFlipbook", &ABaseCharacter::execFlipFlipbook },
+			{ "GetIsPlayerInRestrictedArea", &ABaseCharacter::execGetIsPlayerInRestrictedArea },
 			{ "GetIsWeaponDrawn", &ABaseCharacter::execGetIsWeaponDrawn },
 			{ "IsCharacterAlive", &ABaseCharacter::execIsCharacterAlive },
+			{ "SetIsPlayerInRestrictedArea", &ABaseCharacter::execSetIsPlayerInRestrictedArea },
 			{ "SetIsWeaponDrawn", &ABaseCharacter::execSetIsWeaponDrawn },
 			{ "SwitchFlipbook", &ABaseCharacter::execSwitchFlipbook },
 		};
@@ -149,6 +153,45 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics
+	{
+		struct BaseCharacter_eventGetIsPlayerInRestrictedArea_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((BaseCharacter_eventGetIsPlayerInRestrictedArea_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(BaseCharacter_eventGetIsPlayerInRestrictedArea_Parms), &Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::Function_MetaDataParams[] = {
+		{ "Category", "RestictedAreas" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+		{ "ToolTip", "Restricted areas" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, "GetIsPlayerInRestrictedArea", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(BaseCharacter_eventGetIsPlayerInRestrictedArea_Parms), Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn_Statics
 	{
 		struct BaseCharacter_eventGetIsWeaponDrawn_Parms
@@ -222,6 +265,44 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics
+	{
+		struct BaseCharacter_eventSetIsPlayerInRestrictedArea_Parms
+		{
+			bool newIsInRestrictedArea;
+		};
+		static void NewProp_newIsInRestrictedArea_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_newIsInRestrictedArea;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::NewProp_newIsInRestrictedArea_SetBit(void* Obj)
+	{
+		((BaseCharacter_eventSetIsPlayerInRestrictedArea_Parms*)Obj)->newIsInRestrictedArea = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::NewProp_newIsInRestrictedArea = { UE4CodeGen_Private::EPropertyClass::Bool, "newIsInRestrictedArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(BaseCharacter_eventSetIsPlayerInRestrictedArea_Parms), &Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::NewProp_newIsInRestrictedArea_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::NewProp_newIsInRestrictedArea,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::Function_MetaDataParams[] = {
+		{ "Category", "RestictedAreas" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, "SetIsPlayerInRestrictedArea", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(BaseCharacter_eventSetIsPlayerInRestrictedArea_Parms), Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -320,6 +401,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__x;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__inRestictedArea_MetaData[];
+#endif
+		static void NewProp__inRestictedArea_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp__inRestictedArea;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__walkSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp__walkSpeed;
@@ -380,8 +466,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseCharacter_Collision, "Collision" }, // 1599360745
 		{ &Z_Construct_UFunction_ABaseCharacter_FlipFlipbook, "FlipFlipbook" }, // 3896178746
+		{ &Z_Construct_UFunction_ABaseCharacter_GetIsPlayerInRestrictedArea, "GetIsPlayerInRestrictedArea" }, // 3751071958
 		{ &Z_Construct_UFunction_ABaseCharacter_GetIsWeaponDrawn, "GetIsWeaponDrawn" }, // 3554905307
 		{ &Z_Construct_UFunction_ABaseCharacter_IsCharacterAlive, "IsCharacterAlive" }, // 3960536171
+		{ &Z_Construct_UFunction_ABaseCharacter_SetIsPlayerInRestrictedArea, "SetIsPlayerInRestrictedArea" }, // 1978510766
 		{ &Z_Construct_UFunction_ABaseCharacter_SetIsWeaponDrawn, "SetIsWeaponDrawn" }, // 2882821219
 		{ &Z_Construct_UFunction_ABaseCharacter_SwitchFlipbook, "SwitchFlipbook" }, // 3355348744
 	};
@@ -414,6 +502,17 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x = { UE4CodeGen_Private::EPropertyClass::Float, "_x", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, _x), METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__inRestictedArea_MetaData[] = {
+		{ "Category", "Areas" },
+		{ "ModuleRelativePath", "Public/BaseCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_ABaseCharacter_Statics::NewProp__inRestictedArea_SetBit(void* Obj)
+	{
+		((ABaseCharacter*)Obj)->_inRestictedArea = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp__inRestictedArea = { UE4CodeGen_Private::EPropertyClass::Bool, "_inRestictedArea", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ABaseCharacter), &Z_Construct_UClass_ABaseCharacter_Statics::NewProp__inRestictedArea_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__inRestictedArea_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp__inRestictedArea_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walkSpeed_MetaData[] = {
 		{ "Category", "Movement Settings" },
@@ -517,6 +616,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__z,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__y,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__x,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__inRestictedArea,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__walkSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__loopFlipbook,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp__playRate,
@@ -554,7 +654,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 2466286154);
+	IMPLEMENT_CLASS(ABaseCharacter, 498751574);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseCharacter(Z_Construct_UClass_ABaseCharacter, &ABaseCharacter::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABaseCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

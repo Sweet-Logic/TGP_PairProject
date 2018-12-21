@@ -93,7 +93,6 @@ void Agm_TGPGAME::PlayerDetected()
 	_timesPlayerDetected++;
 }
 
-
 void Agm_TGPGAME::TargetKilled()
 {
 	PlayerCompleteLevel();

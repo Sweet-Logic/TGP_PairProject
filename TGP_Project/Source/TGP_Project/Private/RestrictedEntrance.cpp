@@ -1,10 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "RestrictedEntrance.h"
-#include "BasePlayer.h"
+#include "BaseCharacter.h"
+#include "BaseAI.h"
 #include "Components/BoxComponent.h"
-
-
 
 // Sets default values
 ARestrictedEntrance::ARestrictedEntrance()
@@ -20,18 +19,13 @@ ARestrictedEntrance::ARestrictedEntrance()
 	OnActorEndOverlap.AddDynamic(this, &ARestrictedEntrance::Exit);
 
 	BoxComponent->SetGenerateOverlapEvents(true);
-
-
 }
 
 // Called when the game starts or when spawned
 void ARestrictedEntrance::BeginPlay()
 {
 	Super::BeginPlay();
-
-
 }
-
 
 void ARestrictedEntrance::Enter(UPrimitiveComponent* OverlappedComponent,
 	AActor* OtherActor,
@@ -42,10 +36,10 @@ void ARestrictedEntrance::Enter(UPrimitiveComponent* OverlappedComponent,
 {
 	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
-		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
+		ABaseCharacter* hitPawn = Cast<ABaseCharacter>(OtherActor);
 
 		if (hitPawn != nullptr)
-		{	
+		{
 			if (OtherComp == hitPawn->GetBoxComponent())
 			{
 				for (int i = 0; i < Guards.Max(); i++)
@@ -56,9 +50,14 @@ void ARestrictedEntrance::Enter(UPrimitiveComponent* OverlappedComponent,
 					}
 				}
 			}
+
+			ABaseAI* hitAI = Cast<ABaseAI>(OtherActor);
+			if (!hitAI->GetAreaPass())
+			{
+				hitAI->StopMovement();
+			}
 		}
 	}
-
 }
 
 void ARestrictedEntrance::Exit(AActor* Actor,
@@ -66,15 +65,13 @@ void ARestrictedEntrance::Exit(AActor* Actor,
 {
 	if (OtherActor && (OtherActor != this))
 	{
-		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
+		ABaseCharacter* hitPawn = Cast<ABaseCharacter>(OtherActor);
 
 		if (hitPawn != nullptr)
 		{
 		}
 	}
-
 }
-
 
 // Called every frame
 void ARestrictedEntrance::Tick(float DeltaTime)
@@ -87,7 +84,4 @@ void ARestrictedEntrance::Tick(float DeltaTime)
 	TArray<AActor*> aActor = tActor.Array();
 
 	int count = aActor.Max();
-
-
 }
-

@@ -18,7 +18,7 @@ ABaseAI::ABaseAI()
 
 	_state = AI_STATE::IDLE;
 
-	_minDistanceToTarget = 100.0f;
+	_minDistanceToTarget = 50.0f;
 }
 
 // Called when the game starts or when spawned
@@ -55,7 +55,6 @@ void ABaseAI::MoveToActor(AActor* target)
 	AController* controller = GetController();
 	if (controller && target)
 	{
-		
 		UAIBlueprintHelperLibrary::SimpleMoveToActor(controller, target);
 	}
 }
@@ -91,6 +90,15 @@ void ABaseAI::ResetOrientation()
 	SetActorRotation(_originalRot);
 
 	SetAIState(AI_STATE::IDLE);
+}
+
+void ABaseAI::StopMovement()
+{
+	AController* controller = GetController();
+	if (controller)
+	{
+		controller->StopMovement();
+	}
 }
 
 void ABaseAI::SetAIState(AI_STATE newState)

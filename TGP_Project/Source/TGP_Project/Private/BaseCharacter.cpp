@@ -40,7 +40,6 @@ void ABaseCharacter::BeginPlay()
 	GetSprite()->SetFlipbook(_walikingFlipBook);
 	//Sprite->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, 0.0f), FRotator(X, Y, Z));
 
-
 	GetSprite()->Play();
 
 	FVector2D size = FVector2D(5, 15);
@@ -68,7 +67,6 @@ void ABaseCharacter::EnableMovement()
 void ABaseCharacter::StopMovement()
 {
 	_canMove = false;
-
 }
 
 void ABaseCharacter::MoveUp(float AxisValue)

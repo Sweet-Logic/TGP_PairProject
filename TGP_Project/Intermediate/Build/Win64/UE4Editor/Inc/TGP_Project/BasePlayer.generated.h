@@ -13,46 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TGP_PROJECT_BasePlayer_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
-	{ \
-		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIsPlayerInRestrictedArea(Z_Param_newIsInRestrictedArea); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetIsPlayerInRestrictedArea) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
-		P_NATIVE_END; \
-	}
-
-
-#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
-	{ \
-		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIsPlayerInRestrictedArea(Z_Param_newIsInRestrictedArea); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetIsPlayerInRestrictedArea) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
-		P_NATIVE_END; \
-	}
-
-
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS
+#define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_RPC_WRAPPERS_NO_PURE_DECLS
 #define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABasePlayer(); \
@@ -109,8 +71,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABasePlayer); \
 	FORCEINLINE static uint32 __PPO___sneakSpeed() { return STRUCT_OFFSET(ABasePlayer, _sneakSpeed); } \
 	FORCEINLINE static uint32 __PPO___isSneaking() { return STRUCT_OFFSET(ABasePlayer, _isSneaking); } \
 	FORCEINLINE static uint32 __PPO___sprintSpeed() { return STRUCT_OFFSET(ABasePlayer, _sprintSpeed); } \
-	FORCEINLINE static uint32 __PPO___sprintTimer() { return STRUCT_OFFSET(ABasePlayer, _sprintTimer); } \
-	FORCEINLINE static uint32 __PPO___inRestictedArea() { return STRUCT_OFFSET(ABasePlayer, _inRestictedArea); }
+	FORCEINLINE static uint32 __PPO___sprintTimer() { return STRUCT_OFFSET(ABasePlayer, _sprintTimer); }
 
 
 #define TGP_Project_Source_TGP_Project_Public_BasePlayer_h_18_PROLOG

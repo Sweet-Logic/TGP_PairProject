@@ -19,6 +19,23 @@ class UPaperFlipbook;
 
 #define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
+	{ \
+		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetIsPlayerInRestrictedArea(Z_Param_newIsInRestrictedArea); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIsPlayerInRestrictedArea) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execSetIsWeaponDrawn) \
 	{ \
 		P_GET_UBOOL(Z_Param_newHasWeaponDrawn); \
@@ -77,6 +94,23 @@ class UPaperFlipbook;
 
 
 #define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
+	{ \
+		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetIsPlayerInRestrictedArea(Z_Param_newIsInRestrictedArea); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetIsPlayerInRestrictedArea) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetIsWeaponDrawn) \
 	{ \
@@ -190,6 +224,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
 	FORCEINLINE static uint32 __PPO___playRate() { return STRUCT_OFFSET(ABaseCharacter, _playRate); } \
 	FORCEINLINE static uint32 __PPO___loopFlipbook() { return STRUCT_OFFSET(ABaseCharacter, _loopFlipbook); } \
 	FORCEINLINE static uint32 __PPO___walkSpeed() { return STRUCT_OFFSET(ABaseCharacter, _walkSpeed); } \
+	FORCEINLINE static uint32 __PPO___inRestictedArea() { return STRUCT_OFFSET(ABaseCharacter, _inRestictedArea); } \
 	FORCEINLINE static uint32 __PPO___x() { return STRUCT_OFFSET(ABaseCharacter, _x); } \
 	FORCEINLINE static uint32 __PPO___y() { return STRUCT_OFFSET(ABaseCharacter, _y); } \
 	FORCEINLINE static uint32 __PPO___z() { return STRUCT_OFFSET(ABaseCharacter, _z); }

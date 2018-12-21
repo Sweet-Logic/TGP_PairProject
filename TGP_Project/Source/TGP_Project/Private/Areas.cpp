@@ -28,10 +28,7 @@ AAreas::AAreas()
 void AAreas::BeginPlay()
 {
 	Super::BeginPlay();
-
-
 }
-
 
 void AAreas::EnterRestictedArea(UPrimitiveComponent* OverlappedComponent,
 	AActor* OtherActor,
@@ -42,7 +39,7 @@ void AAreas::EnterRestictedArea(UPrimitiveComponent* OverlappedComponent,
 {
 	if (OtherActor && (OtherActor != this) && OtherComp)
 	{
-		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
+		ABaseCharacter* hitPawn = Cast<ABaseCharacter>(OtherActor);
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, TEXT("hit"));
 
 		if (hitPawn != nullptr)
@@ -58,7 +55,7 @@ void AAreas::ExitRestictedArea(AActor* Actor,
 {
 	if (OtherActor && (OtherActor != this))
 	{
-		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
+		ABaseCharacter* hitPawn = Cast<ABaseCharacter>(OtherActor);
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, TEXT("help"));
 
 		if (hitPawn != nullptr)
@@ -66,9 +63,7 @@ void AAreas::ExitRestictedArea(AActor* Actor,
 			hitPawn->SetIsPlayerInRestrictedArea(true);
 		}
 	}
-	
 }
-
 
 // Called every frame
 void AAreas::Tick(float DeltaTime)
@@ -82,8 +77,5 @@ void AAreas::Tick(float DeltaTime)
 
 	int count = aActor.Max();
 
-
 	//GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Yellow, FString::FromInt(count));
-
 }
-

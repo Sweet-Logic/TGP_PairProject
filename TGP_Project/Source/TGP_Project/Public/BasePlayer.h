@@ -27,9 +27,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-
 	float _score = 10000;
-
 	
 	UCameraComponent* _camera;
 	USpringArmComponent* _springArm;
@@ -75,7 +73,6 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Stealth Settings")
 		bool _isSneaking = false;
 
-
 	// Movement Variables
 	UPROPERTY(EditAnywhere, Category = "Movement Settings", meta = (ClampMin = "0.0", ClampMax = "120.0", UIMin = "0.0", UIMax = "200.0"))
 		float _sprintSpeed = 120.0f;
@@ -87,8 +84,7 @@ protected:
 	float _hiddenMultiplier = 1.0f; // donno, higher the value the easier it is for enimies to detect the player.
 	
 	//Stealth Variables
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Areas")
-		bool _inRestictedArea = false;
+	
 
 public:
 	virtual void Tick(float deltaSeconds) override;
@@ -125,12 +121,6 @@ public:
 	void PullOutWeapon();
 
 	void SprintRelease();
-
-	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
-		bool GetIsPlayerInRestrictedArea() { return _inRestictedArea; }
-	
-	UFUNCTION(BlueprintCallable, Category = "RestictedAreas")
-		void SetIsPlayerInRestrictedArea(bool newIsInRestrictedArea) { _inRestictedArea = newIsInRestrictedArea; }
 
 	virtual void Shot() override;
 };
