@@ -45,14 +45,15 @@ void ARestrictedEntrance::Enter(UPrimitiveComponent* OverlappedComponent,
 		ABasePlayer* hitPawn = Cast<ABasePlayer>(OtherActor);
 
 		if (hitPawn != nullptr)
-		{
-			for (int i = 0; i < Guards.Max(); i++)
+		{	
+			if (OtherComp == hitPawn->GetBoxComponent())
 			{
-				if (Guards[i]->IsCharacterAlive())
+				for (int i = 0; i < Guards.Max(); i++)
 				{
-					hitPawn->StopMovement();
-
-					
+					if (Guards[i]->IsCharacterAlive())
+					{
+						hitPawn->StopMovement();
+					}
 				}
 			}
 		}

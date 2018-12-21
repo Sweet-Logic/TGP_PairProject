@@ -18,7 +18,7 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_TGP_Project();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_Agm_TGPGAME_PlayerCompleteLevel();
-	TGP_PROJECT_API UFunction* Z_Construct_UFunction_Agm_TGPGAME_PlayerDied();
+	TGP_PROJECT_API UFunction* Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel();
 	TGP_PROJECT_API UFunction* Z_Construct_UFunction_Agm_TGPGAME_SwitchToMainMenu();
 	TGP_PROJECT_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
 // End Cross Module References
@@ -27,10 +27,10 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_Agm_TGPGAME_PlayerCompleteLevel),NULL);
 	}
-	static FName NAME_Agm_TGPGAME_PlayerDied = FName(TEXT("PlayerDied"));
-	void Agm_TGPGAME::PlayerDied()
+	static FName NAME_Agm_TGPGAME_PlayerFailedLevel = FName(TEXT("PlayerFailedLevel"));
+	void Agm_TGPGAME::PlayerFailedLevel()
 	{
-		ProcessEvent(FindFunctionChecked(NAME_Agm_TGPGAME_PlayerDied),NULL);
+		ProcessEvent(FindFunctionChecked(NAME_Agm_TGPGAME_PlayerFailedLevel),NULL);
 	}
 	static FName NAME_Agm_TGPGAME_SwitchToMainMenu = FName(TEXT("SwitchToMainMenu"));
 	void Agm_TGPGAME::SwitchToMainMenu()
@@ -63,7 +63,7 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_Agm_TGPGAME_PlayerDied_Statics
+	struct Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -71,18 +71,17 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_Agm_TGPGAME_PlayerDied_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/gm_TGPGAME.h" },
-		{ "ToolTip", "When the game ends. Show Score? or Go to MainMenu" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_Agm_TGPGAME_PlayerDied_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_Agm_TGPGAME, "PlayerDied", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_Agm_TGPGAME_PlayerDied_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_Agm_TGPGAME_PlayerDied_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_Agm_TGPGAME_PlayerDied()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_Agm_TGPGAME, "PlayerFailedLevel", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x0C020800, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_Agm_TGPGAME_PlayerDied_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -169,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_Agm_TGPGAME_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_Agm_TGPGAME_PlayerCompleteLevel, "PlayerCompleteLevel" }, // 2338257849
-		{ &Z_Construct_UFunction_Agm_TGPGAME_PlayerDied, "PlayerDied" }, // 1031892290
+		{ &Z_Construct_UFunction_Agm_TGPGAME_PlayerFailedLevel, "PlayerFailedLevel" }, // 2570731379
 		{ &Z_Construct_UFunction_Agm_TGPGAME_SwitchToMainMenu, "SwitchToMainMenu" }, // 1668451889
 	};
 #if WITH_METADATA
@@ -289,7 +288,7 @@ void EmptyLinkFunctionForGeneratedCodegm_TGPGAME() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(Agm_TGPGAME, 140146935);
+	IMPLEMENT_CLASS(Agm_TGPGAME, 249758323);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_Agm_TGPGAME(Z_Construct_UClass_Agm_TGPGAME, &Agm_TGPGAME::StaticClass, TEXT("/Script/TGP_Project"), TEXT("Agm_TGPGAME"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(Agm_TGPGAME);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -59,6 +59,9 @@ class TGP_PROJECT_API Agm_TGPGAME : public AGameModeBase
 	
 
 public:
+	void PauseGame();
+	void UnpauseGame();
+
 	//Called everytime a Cilivian is killed by the player.
 	void CivKilled();
 
@@ -73,8 +76,10 @@ public:
 	bool IsGameOver();
 
 	//When the game ends. Show Score? or Go to MainMenu
+	void PlayerKilled();
+
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-		void PlayerDied();
+		void PlayerFailedLevel();
 
 	//When the game ends. Show Score? or Go to MainMenu
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)

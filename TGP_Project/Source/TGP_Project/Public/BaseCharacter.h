@@ -91,6 +91,7 @@ public:
 	virtual void Tick(float deltaSeconds) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
+	UBoxComponent* GetBoxComponent() const { return _boxComponent; }
 
 	void UpdateWeaponPosition(FVector2D dir);
 

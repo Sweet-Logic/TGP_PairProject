@@ -5,7 +5,7 @@
 #include "EngineUtils.h"
 #include "CivilianAI.h"
 #include "Engine.h"
-#include "random"
+#include "TGP_PlayerController.h"
 
 void Agm_TGPGAME::StartPlay()
 {
@@ -51,12 +51,35 @@ void Agm_TGPGAME::SetGameState()
 {
 }
 
+void Agm_TGPGAME::PauseGame()
+{
+	ATGP_PlayerController* const MyPlayer = Cast<ATGP_PlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
+	if (MyPlayer != NULL)
+	{
+		MyPlayer->Pause();
+	}
+}
+
+void Agm_TGPGAME::UnpauseGame()
+{
+	
+	ATGP_PlayerController* const MyPlayer = Cast<ATGP_PlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
+	if (MyPlayer != NULL)
+	{
+		MyPlayer->Unpause();
+	}
+}
+
 void Agm_TGPGAME::CivKilled()
 {
-	_civilianKillCount++;
 	if (Target->IsCharacterAlive())
 	{
 		PlayerCompleteLevel();
+		PauseGame();
+	}
+	else
+	{
+		_civilianKillCount++;
 	}
 }
 
@@ -74,4 +97,17 @@ void Agm_TGPGAME::PlayerDetected()
 void Agm_TGPGAME::TargetKilled()
 {
 	PlayerCompleteLevel();
+	_gameOver = true;
+}
+
+bool Agm_TGPGAME::IsGameOver()
+{
+	return _gameOver;
+}
+
+void Agm_TGPGAME::PlayerKilled()
+{
+	PlayerFailedLevel();
+	PauseGame();
+	_gameOver = true;
 }

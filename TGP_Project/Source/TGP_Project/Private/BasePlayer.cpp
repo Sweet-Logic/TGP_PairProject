@@ -56,6 +56,14 @@ void ABasePlayer::BeginPlay()
 	_currentWeapon->AttachToComponent(RootComponent, FAttachmentTransformRules::SnapToTargetIncludingScale, FName(TEXT("EquipedWeapon")));
 
 	PutAwayWeapon();
+
+	APlayerController* const MyPlayer = Cast<APlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
+	if (MyPlayer != NULL)
+	{
+		MyPlayer->SetTickableWhenPaused(true);
+	}
+
+	_defaultCamPos = _springArm->TargetOffset;
 }
 // Called every frame
 void ABasePlayer::Tick(float DeltaTime)
@@ -81,6 +89,7 @@ void ABasePlayer::Tick(float DeltaTime)
 	if (_hasWeaponDrawn)
 	{
 		UpdateWeaponPosition(FVector2D(_playerToMouseDirection.X, _playerToMouseDirection.Y));
+		_springArm->TargetOffset = _defaultCamPos;
 	}
 	else
 	{
@@ -112,9 +121,6 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	InputComponent->BindAction("SneakAction", IE_Pressed, this, &ABasePlayer::Sneak);
 	InputComponent->BindAction("AttackAction", IE_Pressed, this, &ABasePlayer::Attack);
 	InputComponent->BindAction("InteractAction", IE_Pressed, this, &ABasePlayer::Interact);
-
-
-
 }
 
 void ABasePlayer::ZoomCamera(float value)
@@ -162,12 +168,6 @@ void ABasePlayer::Attack()
 			PullOutWeapon();
 		}
 	}
-
-	
-
-
-	
-
 }
 
 void ABasePlayer::PutAwayWeapon()
@@ -220,10 +220,6 @@ void ABasePlayer::Sprint()
 	//Makes it easier for enimies to detect the player.
 }
 
-void ABasePlayer::Pause()
-{
-	//triggers event in game mode or game state to pause the game but allow the controller to recieve input
-}
 
 void ABasePlayer::Roll() // not sure if it will be implemented!
 {
@@ -335,7 +331,7 @@ void ABasePlayer::Shot()
 {
 	Agm_TGPGAME* gameMode = (Agm_TGPGAME*)GetWorld()->GetAuthGameMode();
 
-	gameMode->PlayerDied();
+	gameMode->PlayerKilled();
 
 	
 }

@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeTGP_Project_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/TGP_Project",
 				PKG_CompiledIn | 0x00000000,
-				0xDB70A150,
-				0x76DE1766,
+				0xC39EFDED,
+				0x874B8744,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

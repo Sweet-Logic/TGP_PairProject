@@ -60,6 +60,7 @@ protected:
 	FVector _mouseWorldDir = FVector();
 	FVector2D _viewportSize = FVector2D();
 	FVector _playerToMouseDirection = FVector();
+	FVector _defaultCamPos = FVector();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerMusicSkill)
 		FVector2D _mousePosinNormal = FVector2D();
@@ -116,8 +117,6 @@ public:
 	void Sneak();
 
 	void Sprint();
-
-	void Pause();
 
 	void Roll();
 
