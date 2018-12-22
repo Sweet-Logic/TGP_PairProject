@@ -129,5 +129,8 @@ public:
 		void SetIsWeaponDrawn(bool newHasWeaponDrawn) { _hasWeaponDrawn = newHasWeaponDrawn; }
 
 	virtual void Shot();
+	
+	UFUNCTION(BlueprintPure, Category = "Weapon")
+		AWeaponBase* GetCurrentWeapon() { return _currentWeapon; }
 
 };

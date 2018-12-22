@@ -34,6 +34,9 @@ ABaseCharacter::ABaseCharacter()
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_PhysicsBody, ECollisionResponse::ECR_Overlap);
 
+	GetCapsuleComponent()->SetCanEverAffectNavigation(false);
+
+
 	_boxComponent->OnComponentBeginOverlap.AddDynamic(this, &ABaseCharacter::Collision);
 
 }

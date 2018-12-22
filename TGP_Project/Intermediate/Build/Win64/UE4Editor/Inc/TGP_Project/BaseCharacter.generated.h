@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AWeaponBase;
 class UPrimitiveComponent;
 class AActor;
 struct FHitResult;
@@ -18,6 +19,14 @@ class UPaperFlipbook;
 #define TGP_PROJECT_BaseCharacter_generated_h
 
 #define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetCurrentWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AWeaponBase**)Z_Param__Result=P_THIS->GetCurrentWeapon(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetIsWeaponDrawn) \
 	{ \
@@ -77,6 +86,14 @@ class UPaperFlipbook;
 
 
 #define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetCurrentWeapon) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AWeaponBase**)Z_Param__Result=P_THIS->GetCurrentWeapon(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetIsWeaponDrawn) \
 	{ \

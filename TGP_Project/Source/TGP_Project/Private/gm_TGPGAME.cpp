@@ -6,6 +6,13 @@
 #include "CivilianAI.h"
 #include "Engine.h"
 #include "TGP_PlayerController.h"
+#include "Paper2D/Classes/PaperFlipbookComponent.h"
+#include "Paper2D/Classes/PaperFlipbook.h"
+#include "Paper2D/Classes/PaperSprite.h"
+#include  "BaseCharacter.h"
+
+
+
 
 void Agm_TGPGAME::StartPlay()
 {
@@ -39,6 +46,7 @@ void Agm_TGPGAME::ChooseVIP()
 
 	if (targetSelected && Target != nullptr)
 	{
+		//Target->GetSprite()->GetFlipbook()->GetSpriteAtFrame(1)->GetSourceTexture();
 	}
 	else
 	{
@@ -72,7 +80,7 @@ void Agm_TGPGAME::UnpauseGame()
 
 void Agm_TGPGAME::CivKilled()
 {
-	if (Target->IsCharacterAlive())
+	if (!Target->IsCharacterAlive())
 	{
 		PlayerCompleteLevel();
 		PauseGame();
