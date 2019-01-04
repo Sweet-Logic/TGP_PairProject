@@ -125,11 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeCivilianAI() {}
 		}
 		return OuterClass;
 	}
-<<<<<<< HEAD
-	IMPLEMENT_CLASS(ACivilianAI, 2909311480);
-=======
-	IMPLEMENT_CLASS(ACivilianAI, 4147582438);
->>>>>>> UI
+	IMPLEMENT_CLASS(ACivilianAI, 503383926);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ACivilianAI(Z_Construct_UClass_ACivilianAI, &ACivilianAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ACivilianAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ACivilianAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

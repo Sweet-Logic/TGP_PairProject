@@ -20,7 +20,6 @@ class UPaperFlipbook;
 
 #define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS \
  \
-<<<<<<< HEAD
 	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
 	{ \
 		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
@@ -35,13 +34,14 @@ class UPaperFlipbook;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
-=======
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetCurrentWeapon) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(AWeaponBase**)Z_Param__Result=P_THIS->GetCurrentWeapon(); \
->>>>>>> UI
 		P_NATIVE_END; \
 	} \
  \
@@ -104,7 +104,6 @@ class UPaperFlipbook;
 
 #define TGP_Project_Source_TGP_Project_Public_BaseCharacter_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-<<<<<<< HEAD
 	DECLARE_FUNCTION(execSetIsPlayerInRestrictedArea) \
 	{ \
 		P_GET_UBOOL(Z_Param_newIsInRestrictedArea); \
@@ -119,13 +118,14 @@ class UPaperFlipbook;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->GetIsPlayerInRestrictedArea(); \
-=======
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetCurrentWeapon) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(AWeaponBase**)Z_Param__Result=P_THIS->GetCurrentWeapon(); \
->>>>>>> UI
 		P_NATIVE_END; \
 	} \
  \
