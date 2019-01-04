@@ -130,7 +130,11 @@ void EmptyLinkFunctionForGeneratedCodeBodyGuardAI() {}
 		}
 		return OuterClass;
 	}
+<<<<<<< HEAD
 	IMPLEMENT_CLASS(ABodyGuardAI, 1768604821);
+=======
+	IMPLEMENT_CLASS(ABodyGuardAI, 859127947);
+>>>>>>> UI
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABodyGuardAI(Z_Construct_UClass_ABodyGuardAI, &ABodyGuardAI::StaticClass, TEXT("/Script/TGP_Project"), TEXT("ABodyGuardAI"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABodyGuardAI);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

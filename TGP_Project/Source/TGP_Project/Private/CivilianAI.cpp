@@ -4,6 +4,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Actor.h"
 #include "Runtime/Engine/Classes/Engine/World.h"
+#include "Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h"
 #include "gm_TGPGAME.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 
@@ -15,6 +16,8 @@ ACivilianAI::ACivilianAI()
 
 	_moveDelay = 3.0f;
 	_moveTimeCounter = 0;
+
+	GetCharacterMovement()->MaxWalkSpeed = 100.0f;
 }
 
 // Called when the game starts or when spawned

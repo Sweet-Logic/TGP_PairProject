@@ -1,4 +1,5 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
+<<<<<<< HEAD
   Building 3 actions with 8 processes...
     [1/3] BodyGuardAI.cpp
     [2/3] UE4Editor-TGP_Project.lib
@@ -7,3 +8,30 @@
        Creating library D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object D:\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
   Deploying TGP_ProjectEditor Win64 Development...
   Total build time: 6.01 seconds (Parallel executor: 3.79 seconds)
+=======
+  Parsing headers for TGP_ProjectEditor
+    Running UnrealHeaderTool "D:\Documents\GitHub\TGP_PairProject\TGP_Project\TGP_Project.uproject" "D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\TGP_ProjectEditor\Development\TGP_ProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for TGP_ProjectEditor in 10.5425622 seconds
+  Building 17 actions with 4 processes...
+    [1/17] WeaponBase.gen.cpp
+    [2/17] CivilianAI.gen.cpp
+    [3/17] BasePlayer.gen.cpp
+    [4/17] BodyGuardAI.gen.cpp
+    [5/17] BaseAI.gen.cpp
+    [6/17] BaseCharacter.gen.cpp
+    [7/17] RestrictedEntrance.cpp
+    [8/17] CivilianAI.cpp
+    [9/17] BodyGuardAI.cpp
+    [10/17] WeaponBase.cpp
+    [11/17] BaseCharacter.cpp
+    [12/17] gm_TGPGAME.cpp
+    [13/17] BaseAI.cpp
+    [14/17] BasePlayer.cpp
+    [15/17] Areas.cpp
+    [16/17] UE4Editor-TGP_Project.lib
+       Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.exp
+    [17/17] UE4Editor-TGP_Project.dll
+       Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
+  Deploying TGP_ProjectEditor Win64 Development...
+  Total build time: 41.13 seconds (Parallel executor: 28.47 seconds)
+>>>>>>> UI

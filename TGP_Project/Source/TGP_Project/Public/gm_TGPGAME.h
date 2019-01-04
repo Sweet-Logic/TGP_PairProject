@@ -4,8 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include  "BaseCharacter.h"
 #include "gm_TGPGAME.generated.h"
+
+class UPaperFlipbookComponent;
 
 enum CurrentGameState
 {
@@ -78,6 +79,9 @@ public:
 	//When the game ends. Show Score? or Go to MainMenu
 	void PlayerKilled();
 
+	UFUNCTION(BlueprintPure)
+		ABaseCharacter* GetLevelTarget() { return Target; };
+
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 		void PlayerFailedLevel();
 
@@ -95,6 +99,10 @@ public:
 		bool _playerDied = false;
 	UPROPERTY(BlueprintReadOnly)
 		bool _playerNeverDetected = true;
+
+
+	UPROPERTY(BlueprintReadOnly)
+		UPaperFlipbookComponent* _targetTexture = nullptr;
 
 	UPROPERTY(BlueprintReadOnly)
 		int32 _civilianKillCount = 0;

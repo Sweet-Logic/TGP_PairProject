@@ -4,7 +4,11 @@
 	<ItemGroup>
 		<None Include="..\..\TGP_Project.uproject" />
 		<Filter Include="Source">
+<<<<<<< HEAD
 			<UniqueIdentifier>{6EA8FB50-C644-4CC1-8667-A557A943DFE0}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{0645971F-3721-4974-818D-BEB65F145C54}</UniqueIdentifier>
+>>>>>>> UI
 		</Filter>
 		<None Include="..\..\Source\TGP_Project.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +17,11 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
+<<<<<<< HEAD
 			<UniqueIdentifier>{7BE1EBE0-DC26-4389-BF7A-15E5FC490CAE}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{177BF7AB-1F70-4280-95DF-C0665D537DF2}</UniqueIdentifier>
+>>>>>>> UI
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +36,11 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\TGP_Project">
+<<<<<<< HEAD
 			<UniqueIdentifier>{D61B35E3-728D-47C0-A4E2-29F539BED9E5}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{4D0D0476-BB95-4232-B6A3-FAFB77B46BA1}</UniqueIdentifier>
+>>>>>>> UI
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\CharacterBase.cpp">
 			<Filter>Source\TGP_Project</Filter>
@@ -52,7 +64,11 @@
 			<Filter>Source\TGP_Project</Filter>
 		</ClInclude >
 		<Filter Include="Source\TGP_Project\Private">
+<<<<<<< HEAD
 			<UniqueIdentifier>{C84FD9A6-5408-492F-AFBC-14F52A4E6964}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{26E4F050-3579-4924-9BC2-25B1916A341C}</UniqueIdentifier>
+>>>>>>> UI
 		</Filter>
 		<ClCompile Include="..\..\Source\TGP_Project\Private\Areas.cpp">
 			<Filter>Source\TGP_Project\Private</Filter>
@@ -94,7 +110,11 @@
 			<Filter>Source\TGP_Project\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\TGP_Project\Public">
+<<<<<<< HEAD
 			<UniqueIdentifier>{C36BA221-0648-442D-AE36-231DCB8AA382}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{9CE4CC8B-A27C-4DFC-969C-05DD4042D9C4}</UniqueIdentifier>
+>>>>>>> UI
 		</Filter>
 		<ClInclude Include="..\..\Source\TGP_Project\Public\Areas.h">
 			<Filter>Source\TGP_Project\Public</Filter>
