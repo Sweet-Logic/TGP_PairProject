@@ -6,6 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "gm_TGPGAME.generated.h"
 
+class UPaperFlipbookComponent;
+
 enum CurrentGameState
 {
 	GS_PAUSED = 0,
@@ -97,6 +99,10 @@ public:
 		bool _playerDied = false;
 	UPROPERTY(BlueprintReadOnly)
 		bool _playerNeverDetected = true;
+
+
+	UPROPERTY(BlueprintReadOnly)
+		UPaperFlipbookComponent* _targetTexture = nullptr;
 
 	UPROPERTY(BlueprintReadOnly)
 		int32 _civilianKillCount = 0;

@@ -9,6 +9,7 @@
 #include "Paper2D/Classes/PaperFlipbookComponent.h"
 #include "Paper2D/Classes/PaperFlipbook.h"
 #include "Paper2D/Classes/PaperSprite.h"
+#include "Runtime/Engine/Classes/Engine/Texture2D.h"
 #include  "BaseCharacter.h"
 
 
@@ -46,7 +47,7 @@ void Agm_TGPGAME::ChooseVIP()
 
 	if (targetSelected && Target != nullptr)
 	{
-		//Target->GetSprite()->GetFlipbook()->GetSpriteAtFrame(1)->GetSourceTexture();
+		_targetTexture = Target->GetSprite();
 	}
 	else
 	{

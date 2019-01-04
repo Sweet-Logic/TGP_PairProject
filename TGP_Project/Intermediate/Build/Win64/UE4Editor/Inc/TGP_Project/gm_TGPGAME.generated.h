@@ -14,7 +14,7 @@ class ABaseCharacter;
 #endif
 #define TGP_PROJECT_gm_TGPGAME_generated_h
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_RPC_WRAPPERS \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetLevelTarget) \
 	{ \
@@ -25,7 +25,7 @@ class ABaseCharacter;
 	}
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetLevelTarget) \
 	{ \
@@ -36,9 +36,9 @@ class ABaseCharacter;
 	}
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_EVENT_PARMS
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_CALLBACK_WRAPPERS
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_INCLASS_NO_PURE_DECLS \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_EVENT_PARMS
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_CALLBACK_WRAPPERS
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAgm_TGPGAME(); \
 	friend struct Z_Construct_UClass_Agm_TGPGAME_Statics; \
@@ -47,7 +47,7 @@ public: \
 	DECLARE_SERIALIZER(Agm_TGPGAME)
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_INCLASS \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_INCLASS \
 private: \
 	static void StaticRegisterNativesAgm_TGPGAME(); \
 	friend struct Z_Construct_UClass_Agm_TGPGAME_Statics; \
@@ -56,7 +56,7 @@ public: \
 	DECLARE_SERIALIZER(Agm_TGPGAME)
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_STANDARD_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API Agm_TGPGAME(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(Agm_TGPGAME) \
@@ -69,7 +69,7 @@ private: \
 public:
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_ENHANCED_CONSTRUCTORS \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API Agm_TGPGAME(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -82,36 +82,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(Agm_TGPGAME); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(Agm_TGPGAME)
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_PRIVATE_PROPERTY_OFFSET \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Civilian() { return STRUCT_OFFSET(Agm_TGPGAME, Civilian); } \
 	FORCEINLINE static uint32 __PPO__BodyGuard() { return STRUCT_OFFSET(Agm_TGPGAME, BodyGuard); } \
 	FORCEINLINE static uint32 __PPO__Target() { return STRUCT_OFFSET(Agm_TGPGAME, Target); }
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_21_PROLOG \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_EVENT_PARMS
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_23_PROLOG \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_EVENT_PARMS
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_GENERATED_BODY_LEGACY \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_RPC_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_CALLBACK_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_INCLASS \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_STANDARD_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_RPC_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_CALLBACK_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_INCLASS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_GENERATED_BODY \
+#define TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_PRIVATE_PROPERTY_OFFSET \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_CALLBACK_WRAPPERS \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_INCLASS_NO_PURE_DECLS \
-	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_24_ENHANCED_CONSTRUCTORS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_PRIVATE_PROPERTY_OFFSET \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_CALLBACK_WRAPPERS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_INCLASS_NO_PURE_DECLS \
+	TGP_Project_Source_TGP_Project_Public_gm_TGPGAME_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
