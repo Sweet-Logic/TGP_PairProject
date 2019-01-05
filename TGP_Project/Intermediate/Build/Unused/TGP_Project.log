@@ -1,12 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for TGP_ProjectEditor (no existing makefile)
-  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Deleting old hot reload file: "D:\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-7186.dll".
-  Deleting old hot reload file: "D:\Documents\GitHub\TGP_PairProject\TGP_Project\Binaries\Win64\UE4Editor-TGP_Project-7186.pdb".
-  Building 2 actions with 4 processes...
-    [1/2] UE4Editor-TGP_Project.lib
-       Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.exp
-    [2/2] UE4Editor-TGP_Project.dll
-       Creating library D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.lib and object D:\Documents\GitHub\TGP_PairProject\TGP_Project\Intermediate\Build\Win64\UE4Editor\Development\TGP_Project\UE4Editor-TGP_Project.suppressed.exp
+  Target is up to date
   Deploying TGP_ProjectEditor Win64 Development...
-  Total build time: 21.11 seconds (Parallel executor: 1.66 seconds)
+  Total build time: 1.89 seconds (NoActionsToExecute executor: 0.00 seconds)
